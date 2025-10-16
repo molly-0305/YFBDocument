@@ -44,7 +44,7 @@ const config = {
       ({
         //文档相关（侧边栏sidebars.js，编辑连接editUrl）
         docs: {
-          routeBasePath: '/docs',
+          routeBasePath: '/',
           sidebarPath: './sidebars.js',
           editUrl: 'https://github.com/Molly-0305/Knowledge-Graph/edit/master/docs/'
         },
