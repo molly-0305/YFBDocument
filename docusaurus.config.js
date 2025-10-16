@@ -25,6 +25,9 @@ const config = {
   projectName: 'Knowledge-Graph', 
   deploymentBranch: 'master', // 使用 main 分支而不是 gh-pages
 
+  // 添加这个配置来启用自动部署
+  scripts: [],
+
   trailingSlash: false,
 
   //链接失效是报错或者警告
