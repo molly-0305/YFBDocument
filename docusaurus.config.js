@@ -25,6 +25,8 @@ const config = {
   projectName: 'Knowledge-Graph', 
   deploymentBranch: 'master', // 使用 main 分支而不是 gh-pages
 
+  trailingSlash: false,
+
   //链接失效是报错或者警告
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -48,20 +50,6 @@ const config = {
           sidebarPath: './sidebars.js',
           editUrl: 'https://github.com/Molly-0305/Knowledge-Graph/edit/master/docs/'
         },
-        //博客相关（是否显示阅读时间、RSS、Atom等订阅资源）
-        // blog: {
-        //   showReadingTime: true,   //显示阅读时长，不显示可以用False关掉
-        //   feedOptions: {
-        //     type: ['rss', 'atom'],
-        //     xslt: true,
-        //   },
-        //   editUrl:
-        //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        //   onInlineTags: 'warn',
-        //   onInlineAuthors: 'warn',
-        //   onUntruncatedBlogPosts: 'warn',
-        // },
-        //主题样式（引入自定义CSS）
         theme: {
           customCss: './src/css/custom.css',
         },

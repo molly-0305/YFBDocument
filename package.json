@@ -12,6 +12,8 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
+
+    "deploy:gh-pages": "set GIT_USER=Molly-0305 && npm run deploy",
     "push-algolia": "node pushToAlgolia.js"
   },
   "dependencies": {
