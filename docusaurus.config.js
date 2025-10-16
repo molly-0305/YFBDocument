@@ -44,12 +44,9 @@ const config = {
       ({
         //文档相关（侧边栏sidebars.js，编辑连接editUrl）
         docs: {
-          routeBasePath: '/',
+          routeBasePath: '/docs',
           sidebarPath: './sidebars.js',
-         editUrl: ({ versionDocsDirPath, docPath }) => {
-          // 直接返回正确的 GitHub 路径
-          return `https://github.com/Molly-0305/Knowledge-Graph/tree/master/${docPath}`;
-        },
+          editUrl: 'https://github.com/Molly-0305/Knowledge-Graph/edit/master/docs/'
         },
         //博客相关（是否显示阅读时间、RSS、Atom等订阅资源）
         // blog: {
