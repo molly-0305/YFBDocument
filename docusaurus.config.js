@@ -18,11 +18,11 @@ const config = {
 
   //部署相关配置
   url: 'https://Molly-0305.github.io',   //可以将自己部署的网址域名写到这个上面
-  baseUrl: '/Knowledge-Graph/',     
+  baseUrl: '/YFBDocument/',     
 
   //放在githubPage上使用的
   organizationName: 'Molly-0305', 
-  projectName: 'Knowledge-Graph', 
+  projectName: 'YFBDocument', 
   deploymentBranch: 'master', // 使用 main 分支而不是 gh-pages
 
   // 添加这个配置来启用自动部署
