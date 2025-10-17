@@ -34,12 +34,6 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  future: {
-    experimental_fixes: {
-      webpackDevserverFixes: true,
-    },
-  },
-
 
   //设置语言：en:英语，zh-Hans:中文
   i18n: {
