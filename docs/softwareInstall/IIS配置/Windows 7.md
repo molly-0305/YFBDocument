@@ -15,27 +15,32 @@ sidebar_position: 2
 <p style={{ marginLeft:"2em" ,fontSize:"20px"}}>
   1）打开“控制面板”---“程序”---“打开或关闭Windows功能”---“Internet信息服务”
 </p> 
-<img src="/img/softwareInstall/12.png" alt="步骤2" style={{ marginLeft: "4em"}} />
+<!-- <img src="/img/softwareInstall/12.png" alt="步骤2" style={{ marginLeft: "4em"}} /> -->
+<img src={require('@site/static/img/softwareInstall/12.png').default} alt="logo" style={{marginLeft:"4em"}} />
 
 <p style={{ marginLeft:"2em" ,fontSize:"20px"}}>
   2）将Web管理工具和万维网服务二者进行勾选
 </p> 
-<img src="/img/softwareInstall/13.png" alt="步骤2" style={{ marginLeft: "4em"}} />
+<!-- <img src="/img/softwareInstall/13.png" alt="步骤2" style={{ marginLeft: "4em"}} /> -->
+<img src={require('@site/static/img/softwareInstall/13.png').default} alt="logo" style={{marginLeft:"4em"}} />
 
 <p style={{ marginLeft:"2em" ,fontSize:"20px"}}>
   3）Web管理工具设置如下图所示
 </p> 
-<img src="/img/softwareInstall/14.png" alt="步骤2" style={{ marginLeft: "4em"}} />
+<!-- <img src="/img/softwareInstall/14.png" alt="步骤2" style={{ marginLeft: "4em"}} /> -->
+<img src={require('@site/static/img/softwareInstall/14.png').default} alt="logo" style={{marginLeft:"4em"}} />
 
 <p style={{ marginLeft:"2em" ,fontSize:"20px"}}>
   4）在“万维网服务-安全性”中按照下图所示进行勾选
 </p> 
-<img src="/img/softwareInstall/15.png" alt="步骤2" style={{ marginLeft: "4em"}} />
+<!-- <img src="/img/softwareInstall/15.png" alt="步骤2" style={{ marginLeft: "4em"}} /> -->
+<img src={require('@site/static/img/softwareInstall/15.png').default} alt="logo" style={{marginLeft:"4em"}} />
 
 <p style={{ marginLeft:"2em" ,fontSize:"20px"}}>
   5）“万维网服务-应用程序开发功能”设置如下
 </p> 
-<img src="/img/softwareInstall/16.png" alt="步骤2" style={{ marginLeft: "4em"}} />
+<!-- <img src="/img/softwareInstall/16.png" alt="步骤2" style={{ marginLeft: "4em"}} /> -->
+<img src={require('@site/static/img/softwareInstall/16.png').default} alt="logo" style={{marginLeft:"4em"}} />
 
 ### （2）设置Internet信息服务（IIS）管理器
 <p style={{ marginLeft:"2em" ,fontSize:"20px"}}>
@@ -43,9 +48,11 @@ sidebar_position: 2
 相应的应用程序池会出现在右边<br />
 右键单击修改每个应用程序池，点击 “高级设置”修改
 </p> 
-<img src="/img/softwareInstall/17.png" alt="步骤2" style={{ marginLeft: "4em"}} />
+<!-- <img src="/img/softwareInstall/17.png" alt="步骤2" style={{ marginLeft: "4em"}} /> -->
+<img src={require('@site/static/img/softwareInstall/17.png').default} alt="logo" style={{marginLeft:"4em"}} />
 
 <p style={{ marginLeft:"2em" ,fontSize:"20px"}}>
   2）在启用32位应用程序在拉菜单中选择“True”，点击确定
 </p> 
-<img src="/img/softwareInstall/18.png" alt="步骤2" style={{ marginLeft: "4em"}} />
+<!-- <img src="/img/softwareInstall/18.png" alt="步骤2" style={{ marginLeft: "4em"}} /> -->
+<img src={require('@site/static/img/softwareInstall/18.png').default} alt="logo" style={{marginLeft:"4em"}} />
