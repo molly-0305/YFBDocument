@@ -2,6 +2,7 @@
   "name": "yfbdocument",
   "version": "0.0.0",
   "private": true,
+  "homepage": "https://molly-0305.github.io/YFBDocument",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
