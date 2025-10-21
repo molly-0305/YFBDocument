@@ -24,7 +24,6 @@ const config = {
   staticDirectories: [
     'public',
     'static',
-    'build'  // 添加这一行
   ],
 
 
