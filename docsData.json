@@ -1,0 +1,110 @@
+[
+  {
+    "objectID": "knowledgeBase/test.md",
+    "title": "知识库测试页",
+    "content": "<p>hello</p>\n",
+    "url": "/docs/knowledgeBase/test"
+  },
+  {
+    "objectID": "softwareInstall/前期准备.md",
+    "title": "前期准备",
+    "content": "<h3>1、防火墙设置</h3>\n",
+    "url": "/docs/softwareInstall/前期准备"
+  },
+  {
+    "objectID": "softwareInstall/单机版/test.md",
+    "title": "单机版测试8",
+    "content": "<p>hello</p>\n",
+    "url": "/docs/softwareInstall/单机版/test"
+  },
+  {
+    "objectID": "softwareInstall/单机版/上海阿尔卡特/test.md",
+    "title": "单机版测试1",
+    "content": "<p>hello</p>\n",
+    "url": "/docs/softwareInstall/单机版/上海阿尔卡特/test"
+  },
+  {
+    "objectID": "softwareInstall/单机版/亿联UME/test.md",
+    "title": "单机版测试2",
+    "content": "<p>hello</p>\n",
+    "url": "/docs/softwareInstall/单机版/亿联UME/test"
+  },
+  {
+    "objectID": "softwareInstall/单机版/华为/test.md",
+    "title": "单机版测试3",
+    "content": "<p>hello</p>\n",
+    "url": "/docs/softwareInstall/单机版/华为/test"
+  },
+  {
+    "objectID": "softwareInstall/单机版/星纵/test.md",
+    "title": "单机版测试4",
+    "content": "<p>hello</p>\n",
+    "url": "/docs/softwareInstall/单机版/星纵/test"
+  },
+  {
+    "objectID": "softwareInstall/单机版/星网锐捷/test.md",
+    "title": "单机版测试5",
+    "content": "<p>hello</p>\n",
+    "url": "/docs/softwareInstall/单机版/星网锐捷/test"
+  },
+  {
+    "objectID": "softwareInstall/单机版/潮流/test.md",
+    "title": "单机版测试6",
+    "content": "<p>hello</p>\n",
+    "url": "/docs/softwareInstall/单机版/潮流/test"
+  },
+  {
+    "objectID": "softwareInstall/单机版/鼎信通达/test.md",
+    "title": "单机版测试7",
+    "content": "<p>hello</p>\n",
+    "url": "/docs/softwareInstall/单机版/鼎信通达/test"
+  },
+  {
+    "objectID": "softwareInstall/组网版/test.md",
+    "title": "组网版测试1",
+    "content": "<p>hello</p>\n",
+    "url": "/docs/softwareInstall/组网版/test"
+  },
+  {
+    "objectID": "softwareInstall/软件安装.md",
+    "title": "软件安装",
+    "content": "<h2>一、安装管理程序</h2>\n<h3>1、安装管理程序（计费服务端程序）</h3>\n<h3>2、功能授权</h3>\n<p>&#x3C;img src=\"/img/softwareInstall/7.png\" alt=\"步骤1\" style={{ marginLeft: \"4em\"}} /></p>\n<h2>二、安装Web查询系统</h2>\n<h3>1、IIS配置</h3>\n<h3>2、安装Web查询系统</h3>\n<h3>2、登录Web查询系统方法</h3>\n<h2>三、安装客户端</h2>\n<h3>1、安装中间件客户端</h3>\n<h3>2、安装酒店版话务台客户端</h3>\n<h3>3、安装办公版话务台客户端</h3>\n",
+    "url": "/docs/softwareInstall/软件安装"
+  },
+  {
+    "objectID": "technicalsupport/远程客户信息.md",
+    "title": "远程客户信息",
+    "content": "<h3>20250928话务台沟通群</h3>\n<p>客户名称：</p>\n<p>产品信息：统信Linux组网版Docker部署-组网计费&#x26;话务台</p>\n",
+    "url": "/docs/technicalsupport/远程客户信息"
+  },
+  {
+    "objectID": "update/SIP录音/test.md",
+    "title": "更新测试1",
+    "content": "<p>hello</p>\n",
+    "url": "/docs/update/SIP录音/test"
+  },
+  {
+    "objectID": "update/test.md",
+    "title": "更新测试5",
+    "content": "<p>hello</p>\n",
+    "url": "/docs/update/test"
+  },
+  {
+    "objectID": "update/计费-单机版/test.md",
+    "title": "更新测试2",
+    "content": "<p>hello</p>\n",
+    "url": "/docs/update/计费-单机版/test"
+  },
+  {
+    "objectID": "update/计费-组网版/test.md",
+    "title": "更新测试2",
+    "content": "<p>hello</p>\n",
+    "url": "/docs/update/计费-组网版/test"
+  },
+  {
+    "objectID": "update/话务台/test.md",
+    "title": "更新测试4",
+    "content": "<p>hello</p>\n",
+    "url": "/docs/update/话务台/test"
+  }
+]

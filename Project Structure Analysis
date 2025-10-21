@@ -1,0 +1,11 @@
+my-website/
+├── blog/                 # 博客文章 (Markdown/MDX)
+├── docs/                 # 文档 (Markdown/MDX)
+├── src/                  # 自定义 React 组件 & 前端资源
+│   ├── css/              # 全局样式
+│   └── pages/            # 自定义页面 (React/MDX)
+├── static/               # 静态资源 (不会被编译，直接拷贝到 build/)
+├── docusaurus.config.js  # 全站配置文件
+├── sidebars.js           # 文档侧边栏配置
+├── package.json          # 依赖管理 (NPM)
+└── build/                # `npm run build` 输出的静态文件
