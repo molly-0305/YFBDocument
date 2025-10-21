@@ -51,7 +51,7 @@ const config = {
         docs: {
           routeBasePath: '/',
           sidebarPath: './sidebars.js',
-          editUrl: 'https://github.com/Molly-0305/Knowledge-Graph/edit/source/'
+          editUrl: 'https://github.com/Molly-0305/YFBDocument/edit/source/'
         },
         theme: {
           customCss: './src/css/custom.css',
