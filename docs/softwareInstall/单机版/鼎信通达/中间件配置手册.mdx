@@ -1,0 +1,115 @@
+---
+title: 中间件配置手册
+sidebar_position: 3
+---
+import React from 'react';
+import '../../../../src/css/style.css'; // 导入 CSS 文件
+
+## 一、配置交换机通讯管理系统
+<p>
+打开“中间件基础管理系统”所安装的“BillCommon”，并对其进行设置<br />
+<span class="red">注意：在打开之前，右键单机“BillCommon”选择“属性”---“兼容性”---勾选“以管理员身份运行”，操作如下图：</span>
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/3/1.png').default} alt=""/>
+
+### 1、服务器设置
+<p>
+本机信息-IP地址，例如：192.168.6.27（是安装软件的服务器IP地址）<br />
+<span class="red">注：此IP地址要与IPPBX地址互联互通</span><br />
+数据库信息-IP地址：localhost，测试连接---成功---保存
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/3/2.png').default} alt=""/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/3/3.png').default} alt=""/>
+
+### 2、配置登录页面
+<p>
+(1) 用户名：admin，密码：88888<br />
+选上记住密码和自动登录，点击登录
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/3/4.png').default} alt=""/>
+
+<p>
+(2) 下图为管理端首页面
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/3/5.png').default} alt=""/>
+
+### 3、CDR连接
+<p>
+交换机型号：<span class="red">UC</span><br />
+通讯方式：<span class="red">HTTP Listener</span><br />
+URL：<span class="red">ht<span>tp</span>://服务器IP地址:8181/</span><br />
+填写完毕后点击<span class="red">保存，启动</span>
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/3/6.png').default} alt=""/>
+
+
+### 4、PMSI连接设置
+<p>
+按照下图填写pbx信息<br />
+交换机型号：<span class="red">UC</span><br />
+IP地址：<span class="red">鼎信ippbx的IP地址</span><br />
+端口号：<span class="red">5060</span><br />
+用户名：<span class="red">admin</span><br />
+密码：<span class="red">鼎信pbx上查看</span><br />
+Enable密码：<span class="red">鼎信pbx上查看</span><br />
+<span class="red">注：密码和enable密码在鼎信pbx---服务对接---API查看（如图）</span>
+</p>
+
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/3/7.png').default} alt=""/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/3/8.png').default} alt=""/>
+
+### 5、网关接口参数设置
+<p class="red">
+叫醒设置<br />
+匹配参数：<span class="red">Alarm Clock</span><br />
+语音文件：<span class="red">在pbx上传叫醒语音文件，再在此处选择</span><br />
+房态迷你吧设置<br />
+房态号码：<span class="red">999</span><br />
+迷你吧号码： <span class="red">888</span><br />
+最后保存
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/3/9.png').default} alt=""/>
+
+<p class="red">
+语音文件上传：
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/3/10.png').default} alt=""/>
+
+### 6、房态迷你吧测试
+<p>
+先用TCP/IP工具模拟酒管系统接收<br />
+（1）酒管通讯设置：按照下图设置<br />
+&nbsp;&nbsp;&nbsp;&nbsp;目标IP地址为第三方酒管IP地址
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/3/11.png').default} alt=""/>
+
+<p>
+（2）TCP测试工具设置<br />
+&nbsp;&nbsp;&nbsp;&nbsp;1）创建连接
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/3/12.png').default} alt=""/>
+
+<p>
+2）核对无误后，点击连接
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/3/13.png').default} alt=""/>
+
+<p>
+（3）房态迷你吧测试<br />
+在话机按键步骤为：<br />
+<strong>房态：</strong><br />
+999*房间号码\*房间状态<br />
+房态测试：例如999\*8004\*1<br />
+接收区显示此数据（如下图）即为连接成功
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/3/14.png').default} alt=""/>
+
+
+<p>
+<strong>迷你吧：</strong><br />
+888\*房间号码\*商品编号\*商品数量<br />
+迷你吧测试，例如：在话机上输入888\*8004\*1\*1，然后点击OK键即可<br />
+接收区显示此数据（如下图）即为连接成功
+</p>
+
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/3/15.png').default} alt=""/>

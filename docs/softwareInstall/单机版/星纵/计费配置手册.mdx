@@ -1,0 +1,101 @@
+---
+title: 计费配置手册
+sidebar_position: 1
+---
+import React from 'react';
+import '../../../../src/css/style.css'; // 导入 CSS 文件
+
+## 一、配置交换机通讯管理系统
+<p>
+打开“中间件基础管理系统”所安装的“BillCommon”，并对其进行设置<br />
+<span class="red">注意：在打开之前，右键单机“BillCommon”选择“属性”---“兼容性”---勾选“以管理员身份运行”，操作如下图：</span>
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/1/1.png').default} alt=""/>
+
+
+### 1、服务器设置
+<p>
+本机信息-IP地址，例如：192.168.6.27（是安装软件的服务器IP地址）
+<span class="red">注：此IP地址要与IPPBX地址互联互通</span><br />
+数据库信息-IP地址：localhost，测试连接---成功---保存
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/1/2.png').default} alt=""/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/1/3.png').default} alt="" style={{marginLeft:"8em"}} />
+
+### 2、配重登录页面
+<p>
+(1)用户名：admin，密码：88888<br />
+选上记住密码和自动登录，点击登录
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/1/4.png').default} alt=""/>
+
+<p>
+(2)下图为管理端首页面
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/1/5.png').default} alt=""/>
+
+### 3、CDR连接
+### （1）数据库相关配置
+<p>
+1）右键单击交换机通讯管理系统---打开文件所在的位置
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/1/6.png').default} alt=""/>
+
+<p>
+2）右键解压Navicat8，解压到当前文件夹
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/1/7.png').default} alt=""/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/1/8.png').default} alt=""/>
+
+<p>
+3）解压完成后进入Navicat8文件夹，点击navicat应用程序
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/1/9.png').default} alt=""/>
+
+<p>
+4）对billcommonstandard中的s_appconfig进行配置
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/1/10.png').default} alt=""/>
+
+<p>
+5）找到DataPBX键值对，按照如下格式输入值（内容按照需求进行更改）<br />
+MySqlData,192.168.6.170,cdr,p43CT0QL,Huawei@123,3306
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/1/11.png').default} alt=""/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/1/12.png').default} alt=""/>
+
+<p>
+6）配置好后关闭s_appconfig表，对刚才配置好的数据库进行测试
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/1/13.png').default} alt=""/>
+
+<p>
+7）连接成功则表示配置无误
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/1/14.png').default} alt=""/>
+
+<p>
+8）打开刚测试好的数据库中的cdr表查看是否存在通话记录
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/1/15.png').default} alt=""/>
+
+### （2）点击CDR连接，按照下图填写
+<p>
+交换机型号：<span class="red">P</span><br />
+通讯方式：<span class="red">数据库</span><br />
+通讯设置<br />
+数据库类型：<span class="red">MySqlData</span><br />
+数据库地址：<span class="red">星纵ippbx的IP地址</span><br />
+数据库名称：<span class="red">cdr</span><br />
+用户名：<span class="red">和ippbx上的数据库授权一致</span><br />
+密码：<span class="red">和ippbx上的数据库授权一致</span><br />
+端口号：<span class="red">3306</span><br />
+填写完毕后点击<span class="red">保存，启动</span>
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/1/16.png').default} alt=""/>
+<p style={{marginLeft:"25em" ,fontSize:"15px"}}><strong>CDR连接</strong></p>
+
+<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/1/17.png').default} alt=""/>
+<p style={{marginLeft:"22em" ,fontSize:"15px"}}><strong>Ippbx数据库授权信息</strong></p>
+
+
