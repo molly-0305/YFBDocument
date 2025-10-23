@@ -11,139 +11,196 @@ import '../../../../src/css/style.css'; // 导入 CSS 文件
 ## 一、配置eSpaceU19XX
 ### 1、登录华为eSpace
 <p>
-<span></span>
-<span></span>
+配置地址是华为eSpace地址：例如192.168.6.7<br />
+登陆地址，进入配置页面点击“进入管理员管理系统登陆“<br />
+用户名：<span class="red">admin</span><br />
+密码：<span class="red">Change_Me</span><br />
+点击“登陆
 </p>
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/1.png').default} alt=""/>
 
 ### 2、局向选择码
 <p>
-
+新增一个系统中没有的选择码，用于酒店通讯中间件<br />
+点击中继管理---局向选择码---新增创建<br />
+例如：80，设置好保存
 </p>
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/2.png').default} alt=""/>
 
 ### 3、局向
 <p>
-
+新增一个系统中没有的局向号，并关联刚新增的局向选择码，确定保存
 </p>
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/3.png').default} alt=""/>
 
 ### 4、字冠配置
 <p>
-
+创建一个话务台接入码字冠，用于接入到话务台客户端（接入码可随酒店需求设置）<br />
+下面以接入码为“555”举例如下<br />
+创建一个字冠：4444；业务类型：基本业务；呼叫属性：本地呼叫<br />
+创建好点击“确定”保存
 </p>
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/4.png').default} alt=""/>
 
 ### 5、中继配置——SIP
 <p>
-
+增加一个对局<br />
+例如：对局设备域名：OM，对局IP地址：192.168.6.137 （IP地址是网关IP地址）<br />
+局向号：80；<br />
+设置好保存
 </p>
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/5.png').default} alt=""/>
 
 ### 6、设置自定义权限
 <p>
-<span></span>
+<span class="red">
+当有话务台功能时，需要在出局字冠里设置自定义权限；目的是当客房分机设置内线时，可以打进话务台
+</span><br />
+举例如下：在出局字冠9设置“自定义1”权限
 </p>
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/6.png').default} alt=""/>
 <p>
-<span></span>
+然后把分机用批量命令全部都加上自定义权限即可
+命令如下：
+config modify subscriber dn <span class="red">8881</span> operateout add outgoingrights cus1
+<span class="red">
+（红色标注是分机号码）
+</span>
 </p>
 
 ## 二、配置网关
 ### 1、登录网关
 <p>
-
+网关接通电源，连接好网络，获取网关初始IP地址，登录网关<br />
+登录默认密码是：admin<br />
+举例如下图所示：
 </p>
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/7.png').default} alt=""/>
 
 ### 2、基本设置---网络
 <p>
-
+连接方式下拉选择“固定IP地址”，IP地址填写网关IP地址；<br />
+例如：192.168.6.137，下面的字段要与网关字段相同，然后点击“保存”
 </p>
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/8.png').default} alt=""/>
 
 ### 3、外线设置---SIP外线
 <p>
-
+要创建一个SIP外线，此SIP外线也是用于话务台的接入码；<br />
+所以要创建和华为eSpace网关一致的接入码<br />
+举例如下：<br />
+中继类型：直连；<br />
+SIP服务器是华为eSpace的IP地址，如：192.168.6.7<br />
+号码：555，用户名：555<br />
+并发通道数为10（可以自己设置），密码：自己常用密码即可<br />
+确定保存
 </p>
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/9.png').default} alt=""/>
 
 ### 4、应用服务---API
 <p>
-
+服务器地址是安装中间件服务器IP地址加端口号8989  <br />  
+如：192.168.6.27:8989 
 </p>
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/10.png').default} alt=""/>
 
 <p>
-
+设置下面的API功能开关<br /> 
+点击下面的SIP外线，把来电应答后控制和状态监控都选上，然后保存
 </p>
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/11.png').default} alt=""/>
 
 ### 5、基本设置---语音管理
 <p>
-
+上传录音提示文件，选择上传欢迎词，把录好的文件放在C盘根目录下，点击上传，文件上传成功即可（提示：文件大小最好不要超过2M）上传uaer_blank和uaer_blank2，点击下方链接即可下载语音文件
 </p>
+<span style={{marginLeft:"10em"}}><a href={require('@site/static/vedio/user_blank.wav').default} download>• user_blank.wav</a></span>
+<span style={{marginLeft:"10em"}}><a href={require('@site/static/vedio/user_blank2.wav').default} download>• user_blank2.wav</a></span>
+<br /><br />
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/12.png').default} alt=""/>
 
 ### 6、分机设置---IP分机（语音信箱）
 <p>
-
+新建一个IP分机的号码修改为：8888<br /> 
+使用IP鉴权时的IP地址修改为：1.1.1.1（目的是使该分机号永久在线）<br /> 
+设置后当华为eSpaceU1900上的分机号码无人接听或忙线时即会转移至此语音信箱
 </p>
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/13.png').default} alt=""/>
 
 <p>
-
+再点击“设置”，按下图修改
 </p>
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/14.png').default} alt=""/>
 
 ### 7、高级设置---路由表（语音信箱）
 <p>
-
+添加以下内容，其中IP地址替换成华为eSpace的IP地址  <br /> 
+举例如下：<br /> 
+FXS *99 ADD -#<br /> 
+FXS *99x ROUTE IP   192.168.6.130:5060<br /> 
+FXS #99 ADD -#<br /> 
+FXS #99x ROUTE IP   192.168.6.130:5060
 </p>
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/15.png').default} alt=""/>
 
 ### 8、高级设置---功能码（语音信箱）
 <p>
-
+若功能码的常用功能导航与路由表中的*99重复，请将功能码修改成其它号码<br /> 
+举例：修改成*97
 </p>
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/16.png').default} alt=""/>
 
 ### 9、应用服务---媒体（语音信箱）
 <p>
-
+编解码修改为：G.711U/20（使留言声音更清晰）
 </p>
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/17.png').default} alt=""/>
 
 ### 10、安全---安全配置
 <p>
-
+勾选启用“允许SSH访问”<br /> 
+并把SSH两个访问身份root和operator都设置好访问密码（两个访问身份密码最好一致）<br /> 
+举例如下图所示：
 </p>
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/18.png').default} alt=""/>
 
 ## 三、配置话务台电话
 ### 1、设置话务台电话
 <p>
-<span></span>
-<span></span>
-<span></span>
+查看话务台话机的IP地址，点击话机上OK键查看IP<br /> 
+登陆配置信息<br /> 
+网址是：<span class="red">话机IP地址</span><br /> 
+账号：<span class="red">admin</span><br /> 
+密码：<span class="red">admin</span><br /> 
+例如：<br /> 
+话机IP地址：192.168.6.73<br /> 
+用户名：admin    <br /> 
+密码：admin   然后点击“登入”进入配置页面
 </p>
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/19.png').default} alt=""/>
 
 ### 2、账号-话机账号
 <p>
-
+根据网关中IP分机设置的分机信息，来设置名称和密码<br /> 
+账号信息：与网关设置的分机号码信息必须一致，填写好即可<br /> 
+SIP服务器：填写的是网关IP地址与端口号等信息<br /> 
+配置好“提交”即可
 </p>
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/20.png').default} alt=""/>
 
 ### 3、功能-远程控制
 <p>
-
+点击“功能”里的“远程控制”<br /> 
+允许控制IP列表：填写的是安装话务台的客户端IP地址
 </p>
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/21.png').default} alt=""/>
 
 ### 4、功能-基本信息
 <p>
-
+点击“功能”里的“基本信息”<br /> 
+禁用---送号键（去电盲转功能）<br /> 
+禁用---保留#送号（去电盲转功能）<br /> 
+启用---RFC 2543保持模式，目的是保持音乐
 </p>
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/22.png').default} alt=""/>
 
@@ -161,34 +218,158 @@ import '../../../../src/css/style.css'; // 导入 CSS 文件
 
 ## 四、交换机通讯管理系统
 <p>
-打开“中间件基础管理系统”所安装的“BillCommon”，并对其进行设置
-<span class="red">注意：在打开之前，右键单机“BillCommon”选择“属性”---“兼容性”---勾选“以管理员身份运行”，操作如下图：</span>
+打开“中间件基础管理系统”所安装的“BillCommon”，并对其进行设置<br />
+<span class="red">
+注意：在打开之前，右键单机“BillCommon”选择“属性”---“兼容性”---勾选“以管理员身份运行”，操作如下图：
+</span>
 </p>
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/1/11.png').default} alt=""/>
 
 ### 1、服务器设置
+<p>
+本机信息-IP地址，例如：192.168.6.27（是安装软件的服务器IP地址）<br />
+<span class="red">
+注：此IP地址要与IPPBX地址互联互通
+</span><br />
+数据库信息-IP地址：localhost，测试连接---成功---保存
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/24.png').default} alt=""/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/25.png').default} alt=""/>
 
 
 ### 2、配重登录页面
+<p>
+(1)用户名：admin，密码：88888<br />
+选上记住密码和自动登录，点击登录
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/26.png').default} alt=""/>
 
+<p>
+(2)下图为管理端首页面
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/27.png').default} alt=""/>
 
 ### 3、网关设置---网关接口参数
-
+<p>
+话务台语音号码需要和网关中设置的一致；<br />
+话务台日服号码需要与话机中设置的账号一致；<br />
+<span>
+语音排除号码：填写网关SIP外线号码（包括叫醒语音号码，房态迷你吧语音号码，语音信箱语音号码、话务台语音号码）<br />
+如在中间件网关设置前缀，需要把相应的前缀填写上<br />
+</span>
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/28.png').default} alt=""/>
 
 ## 五、话务台客户端配置
 ### 1、服务器设置
+<p>
+打开话务台客户端配置，首先配置“服务器设置”
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/29.png').default} alt=""/>
 
+<p>
+服务器地址：填写交换机通讯管理系统服务器IP地址<br />
+数据库IP地址：填写交换机通讯管理系统服务器IP地址<br />
+点击“测试连接“连接成功之后，保存
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/30.png').default} alt=""/>
+
+<p>
+用户名：admin；密码：88888；点击登陆即可
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/31.png').default} alt=""/>
+
+<p>
+进入“话务台”客户端页面
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/32.png').default} alt=""/>
+
+<p>
+<span class="red">
+注：酒店版话务台一般不涉及“强插”“强拆”功能，并且企业通讯录一般使用较频繁，可在HotelManagement.exe.configw文件中进行参数修改。修改如下：
+</span><br />
+<strong>取消“强插”“强拆”功能：</strong><br />
+\<add key="DirectoryIndex" value="1" /><br />
+<strong>企业通讯录置顶：</strong><br />
+\<add key="ForcedHide" value="true" />
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/33.png').default} alt=""/>
+
+<p>
+修改后界面图：
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/34.png').default} alt=""/>
 
 ### 2、设置话机信息
+<p>
+点击话务台客户端右上角的设置---话机<br />
+设置话务员话机信息<br />
+通话方式有两种：手柄模式和耳机模式   根据需求设置即可<br />
+如下图
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/35.png').default} alt=""/>
 
+<p>
+设置话务员话机信息，如下图：<br />
+<span>
+注：话机密码是登录网页后台的密码
+</span>
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/36.png').default} alt=""/>
+<strong stylr={{marginLeft:"23em"}}>最后保存并重启客户端</strong>
 
 ### 3、话务台强插功能配置
+<p>
+(1)安装华为BMU<br />
+安装华为BMU前提：<br />
+安装服务器系统环境必须是Windows Server系统<br />
+数据库必须是SQL Server 2008	版本或更高版本<br />
+(2)输入强插命令<br />
+Win+R打开“运行”输入cmd打开命令提示符<br />
+输入：telnet ＋华为eSpace的IP地址<br />
+例如：telnet 192.168.6.7<br />
+输入账号密码登录成功后<br />
+输入：show trunkgroup<br />
+查询SIP中继号，即局向对应的GroupNo<br />
+如下图所示：
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/37.png').default} alt=""/>
 
+<p>
+修改该中继强插强拆权限为Yes<br />
+xxx为搜索出的权限为No的中继号。<br />
+config modify trunkgroup no xxx operator yes<br />
+如下图所示：
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/38.png').default} alt=""/>
 
 ### 4、开通长途权限
+<p>
+话务台开通长途（国内、国际）权限<br />
+(1)分机设置---IP分机<br />
+在网关---分机设置---IP分机<br />
+修改话务台话机呼出权限，根据需求设置即可<br />
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/39.png').default} alt=""/>
 
+<p>
+(2)输入修改权限命令<br />
+Win+R打开“运行”输入cmd打开命令提示符<br />
+输入：telnet ＋华为eSpace的IP地址<br />
+例如：telnet 192.168.6.7<br />
+输入账号密码登录成功后<br />
+输入：show trunkgroup<br />
+话务台开通长途权限  （ddd是国内  idd是国际）根据需要输入即可<br />
+config modify trunkgroup no XXX restrict yes outgoingright inter&local&ddd&idd
+</p>
 
 ### 5、修改Config文件
+<p>
+修改话务台Config文件里的区号参数，修改和中间件服务端一致的区号<br />
+\<add key="LocalAreaName" value="天津" />（填写与服务端一致的区号）<br />
+如下图所示：
+</p>
+<img src={require('@site/static/img/softwareInstall/Standalone/Huawei/5/40.png').default} alt=""/>
 
 
 

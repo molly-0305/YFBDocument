@@ -7,6 +7,6 @@ p {
     color:red;
 }
 
-img {
-  margin-left: 4em;
+img:not(.custom-logo) {
+  margin-left: 6em;
 }

@@ -107,6 +107,7 @@ const config = {
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
+          className: 'custom-logo',
         },
         items: [
           {
