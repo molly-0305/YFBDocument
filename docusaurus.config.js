@@ -59,7 +59,7 @@ const config = {
         docs: {
           routeBasePath: '/',
           sidebarPath: './sidebars.js',
-          editUrl: 'https://github.com/Molly-0305/YFBDocument/edit/source/'
+          editUrl: 'https://github.com/Molly-0305/YFBDocument/edit/master/'
         },
         theme: {
           customCss: './src/css/custom.css',
