@@ -39,7 +39,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./build  # 根据你的项目调整
+          path: ./dist
 
   deploy:
     environment:
