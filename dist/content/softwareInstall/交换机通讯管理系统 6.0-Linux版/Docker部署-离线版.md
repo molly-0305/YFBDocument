@@ -1,0 +1,169 @@
+# Docker部署(离线版)
+
+## 一、Docker安装
+### 1、安装前期准备
+（1）输入"uname -s"命令，查看当前操作系统内核版本。
+<img src="/YFBDocument/content/assets/img/softwareInstall/Networking/6.0/1.png" alt=""/>
+
+（2）输入"uname -m"命令，查看当前操作系统架构版本。
+<img src="/YFBDocument/content/assets/img/softwareInstall/Networking/6.0/2.png" alt=""/>
+
+### 2、下载相应版本文件
+（1）进入下面的网址，根据第一步查看的内核版本和架构版本，下载对应Docker安装文件。  
+https://download.docker.com
+
+（2）根据第一步查看的内核版本和架构版本，下载对应Docker安装文件。  
+需要下载一下三个指定文件：  
+· docker-ce-cli-\<发行版本>-\<架构版本>.rpm  
+· docker-ce-\<发行版本>-\<架构版本>.rpm  
+· containerd.io-\<发行版本>-\<架构版本>.rpm  
+<img src="/YFBDocument/content/assets/img/softwareInstall/Networking/6.0/3.png" alt=""/>
+
+### 3、Docker安装
+以Linux操作系统，内核版本为arm架构为例，输入以下命令安装Docker。  
+（1）创建Docker数据目录  
+sudo mkdir /var/lib/docker
+```
+sudo mkdir /var/lib/docker
+```
+<img src="/YFBDocument/content/assets/img/softwareInstall/Networking/6.0/4.png" alt=""/>
+
+（2）将上述三个文件放入docker目录下
+
+
+（3）进入docker目录  
+cd /var/lib/docker
+```
+cd /var/lib/docker
+```
+
+
+（4）输入以下命令进行安装  
+sudo rpm -ivh *.rpm --nodeps --force --noscripts
+```
+sudo rpm -ivh *.rpm --nodeps --force --noscripts
+```
+
+（5）验证安装  
+rpm -qa | grep -E "docker|containerd"
+```
+rpm -qa | grep -E "docker|containerd"
+```
+
+（6）验证Docker是否安装成功  
+docker --version
+```
+docker --version
+```
+
+（7）添加Docker用户组  
+创建docker用户组：  
+sudo groupadd docker
+```
+sudo groupadd docker
+```
+
+<br /><br />
+
+将当前用户加入docker组：  
+sudo usermod -aG docker $USER
+```
+sudo usermod -aG docker $USER
+```
+<br /><br />
+
+验证组是否存在：  
+getent group docker
+```
+getent group docker
+```
+
+（8）设置开机自动启动  
+  sudo systemctl enable docker
+```
+sudo systemctl enable docker
+```
+
+（9）启动Docker  
+  sudo systemctl start docker
+```
+sudo systemctl start docker
+```
+
+<span class="red" style="font-size:22px">注：如上步骤结束后，证明Docker安装成功，进行第二部安装Docker—Compose</span>
+
+## 二、Docker-Compose安装
+### 1、根据系统架构版本选择相应Docker-Compose文件
+<span class="red" style="font-size:22px">未在网页版中，请联系技术人员提供相应文件</span><br /><br />
+<a href="/YFBDocument/content/assets/updateSoftware/docker-compose6.0/docker-compose-darwin-aarch64.rar" download="docker-compose-darwin-aarch64.rpm">
+  <span style="color:#2e8555;font-size:18px">docker-compose-darwin-aarch64</span>
+</a>
+<span>适用于 macOS 苹果芯片（M1/M2/M3 等 ARM64 架构）</span><br/>
+
+
+<a href="/YFBDocument/content/assets/updateSoftware/docker-compose6.0/docker-compose-darwin-x86_64.rar" download="docker-compose-darwin-x86_64.rpm">
+  <span style="color:#2e8555;font-size:18px">docker-compose-darwin-x86_64</span>
+</a>
+<span>macOS Intel 芯片（x86_64 架构）</span><br/>
+
+<a href="/YFBDocument/content/assets/updateSoftware/docker-compose6.0/docker-compose-linux-aarch64.rar" download="docker-compose-linux-aarch64.rpm">
+  <span style="color:#2e8555;font-size:18px">docker-compose-linux-aarch64</span>
+</a>
+<span>适用于 ARM64 架构的 Linux 系统（例如树莓派 4/5、AWS Graviton等）</span><br/>
+
+<a href="/YFBDocument/content/assets/updateSoftware/docker-compose6.0/docker-compose-linux-armv6.rar" download="docker-compose-linux-armv6.rpm">
+  <span style="color:#2e8555;font-size:18px">docker-compose-linux-armv6</span>
+</a>
+<span>适用于 ARMv6 架构的 Linux 系统（例如树莓派 1、树莓派 Zero 等旧型号）</span><br/>
+
+<a href="/YFBDocument/content/assets/updateSoftware/docker-compose6.0/docker-compose-linux-armv7.rar" download="docker-compose-linux-armv7.rpm">
+  <span style="color:#2e8555;font-size:18px">docker-compose-linux-armv7</span>
+</a>
+<span>适用于 ARMv7 架构的 Linux 系统（例如树莓派 2、3，以及许多旧版 ARM 单板机）</span><br/>
+
+<a href="/YFBDocument/content/assets/updateSoftware/docker-compose6.0/docker-compose-linux-ppc64le.rar" download="docker-compose-linux-ppc64le.rpm">
+  <span style="color:#2e8555;font-size:18px">docker-compose-linux-ppc64le</span>
+</a>
+<span>适用于 PowerPC 64位小端架构的 Linux 系统</span><br/>
+
+<a href="/YFBDocument/content/assets/updateSoftware/docker-compose6.0/docker-compose-linux-riscv64.rar" download="docker-compose-linux-riscv64.rpm">
+  <span style="color:#2e8555;font-size:18px">docker-compose-linux-riscv64</span>
+</a>
+<span>适用于 RISC-V 64位架构的 Linux 系统</span><br/>
+
+<a href="/YFBDocument/content/assets/updateSoftware/docker-compose6.0/docker-compose-linux-s390x.rar" download="docker-compose-linux-s390x.rpm">
+  <span style="color:#2e8555;font-size:18px">docker-compose-linux-s390x</span>
+</a>
+<span>适用于 IBM z/Architecture（s390x）的 Linux 系统（IBM Z 大型机）</span><br/>
+
+<a href="/YFBDocument/content/assets/updateSoftware/docker-compose6.0/docker-compose-linux-x86_64.rar" download="docker-compose-linux-x86_64.rpm">
+  <span style="color:#2e8555;font-size:18px">docker-compose-linux-x86_64</span>
+</a>
+<span>适用于最常见的x86_64架构的Linux系统（绝大多数台式机、服务器）</span><br/>
+
+
+### 2、将Docker-Compose文件放入/usr/local/bin/目录下
+<span class="red" style="font-size:22px">在放入目录下之前，请将文件更名为：docker-compose</span>
+
+
+
+### 3、进入/usr/local/bin/目录
+  cd /usr/local/bin/
+```
+cd /usr/local/bin/
+```
+
+
+### 2、赋予执行权限
+sudo chmod +x /usr/local/bin/docker-compose
+```
+sudo chmod +x /usr/local/bin/docker-compose
+```
+
+### 3、验证安装
+docker-compose --version
+```
+docker-compose --version
+```
+
+<span class="red" style="font-size:22px">注：如上步骤结束后，Docker部署步骤完成</span>

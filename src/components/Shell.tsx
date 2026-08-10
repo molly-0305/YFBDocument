@@ -5,7 +5,7 @@ import {
   useRef,
   useState,
   type FormEvent,
-  type KeyboardEvent,
+  type KeyboardEvent as ReactKeyboardEvent,
   type ReactNode,
 } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
@@ -222,7 +222,7 @@ export function Shell({
     function onDocClick(e: MouseEvent) {
       if (!wrapRef.current?.contains(e.target as Node)) setOpen(false);
     }
-    function onKey(e: KeyboardEvent) {
+    function onKey(e: globalThis.KeyboardEvent) {
       if (e.key === 'Escape') setOpen(false);
     }
     document.addEventListener('mousedown', onDocClick);
@@ -246,7 +246,7 @@ export function Shell({
     return '搜索文档…';
   }, [indexError, indexReady]);
 
-  function onInputKeyDown(e: KeyboardEvent<HTMLInputElement>) {
+  function onInputKeyDown(e: ReactKeyboardEvent<HTMLInputElement>) {
     if (!open || !hits.length) return;
     if (e.key === 'ArrowDown') {
       e.preventDefault();

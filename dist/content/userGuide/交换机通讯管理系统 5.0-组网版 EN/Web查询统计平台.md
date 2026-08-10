@@ -1,7 +1,5 @@
 # Web Query Statistics Platform
 
-<div id="page-metadata" data-doc-title="Web查询统计平台" style="display:none" />
-
 ## 一、Login
 
 &emsp;Open the "Switch Communication Management System WEB Query Statistics" software, which will automatically launch the browser and display the user login interface  

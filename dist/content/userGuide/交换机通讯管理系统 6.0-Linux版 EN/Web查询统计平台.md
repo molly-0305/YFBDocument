@@ -1,7 +1,5 @@
 # Web查询统计平台
 
-<div id="page-metadata" data-doc-title="Web查询统计平台" style="display:none" />
-
 ## 一、Log In
 
 Open the 'Switch Communication Management System WEB Query and Statistics' software, and it will automatically open the browser and enter the user login interface.  

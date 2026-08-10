@@ -784,15 +784,15 @@
           "children": [
             {
               "type": "doc",
-              "id": "knowledgeBase/CS端排错/计费Config说明",
-              "title": "计费Config说明",
-              "file": "content/knowledgeBase/CS端排错/计费Config说明.md"
-            },
-            {
-              "type": "doc",
               "id": "knowledgeBase/CS端排错/区域格式导致安装CS端报错",
               "title": "CS端安装报错",
               "file": "content/knowledgeBase/CS端排错/区域格式导致安装CS端报错.md"
+            },
+            {
+              "type": "doc",
+              "id": "knowledgeBase/CS端排错/计费Config说明",
+              "title": "计费Config说明",
+              "file": "content/knowledgeBase/CS端排错/计费Config说明.md"
             }
           ]
         },

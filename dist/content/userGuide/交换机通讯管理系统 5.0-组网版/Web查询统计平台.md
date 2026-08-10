@@ -1,7 +1,5 @@
 # Web查询统计平台
 
-<div id="page-metadata" data-doc-title="Web查询统计平台" style="display:none" />
-
 ## 一、登录
 
 打开“交换机通讯管理系统WEB查询统计“软件，会自动打开浏览器，进入用户登录界面
