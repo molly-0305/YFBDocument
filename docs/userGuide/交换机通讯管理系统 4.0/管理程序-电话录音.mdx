@@ -1,0 +1,137 @@
+---
+title: 管理程序-电话录音
+sidebar_position: 6
+---
+import React from 'react';
+import '../../../src/css/style.css'; // 导入 CSS 文件
+import SimpleWordDownload from '../../../src/components/SimpleWordDownload';
+
+## 一、登录
+
+打开“交换机通讯管理系统“软件，进入登录界面  
+用户名：admin  
+密  码：88888  
+点击“登录“  进入程序
+
+<img src={require('@site/static/img/userGuide/manageBill/1.png').default} alt="" style={{marginLeft:"10em"}}/>
+<br /><br /><br />
+<img src={require('@site/static/img/userGuide/manageBill/2.png').default} alt=""/>
+ 
+## 二、开启分机录音
+### 1、开启录音
+
+点开分机信息，选中想要开启录音的分机，可以双击一个分机或者勾选多个分机点击批量设置，勾选电话录音开启录音
+
+<img src={require('@site/static/img/userGuide/manageRecord/1.png').default} alt="" style={{marginLeft:"12em"}}/>
+<strong style={{ marginLeft:"23em"}}>双击单个分机开启录音</strong>
+
+<img src={require('@site/static/img/userGuide/manageRecord/2.png').default} alt="" style={{marginLeft:"12em"}}/>
+<strong style={{ marginLeft:"23em"}}>勾选多个分机点击批量设置</strong>
+
+### 2、查询类型
+
+查询类型分为：查询全部录音、不查询内线录音  
+可以按需选择
+
+<img src={require('@site/static/img/userGuide/manageRecord/3.png').default} alt="" style={{marginLeft:"12em"}}/>
+### 3、录音类型
+
+
+此功能仅支持华为分机进行选择
+
+<img src={require('@site/static/img/userGuide/manageRecord/4.png').default} alt="" style={{marginLeft:"12em"}}/>
+
+## 三、查询分机录音
+
+### 1、登录
+
+打开“交换机通讯管理系统WEB查询统计“软件，会自动打开浏览器，进入登录界面  
+用户名：<span class="red">admin</span>  
+密  码：<span class="red">88888</span>  
+点击“登录“  进入WEB页面    
+h<span>ttp</span>://127.0.0.1:10805/Login/Index此地址为访问计费服务器地址  
+同一个局域网的可以把计费IP127.0.0.1改成安装WEB服务器的IP地址进行访问  
+举例如下：h<span>ttp</span>://192.168.6.27:10805/Login/Index  
+用户名：<span class="red">admin</span>  
+密码：<span class="red">88888</span>  
+如在服务端设置好其他管理员，直接登录管理员账号即可
+
+<img src={require('@site/static/img/userGuide/manageRecord/5.png').default} alt=""/>
+<br /><br /><br />
+
+进入页面，主要分为“主页”、“查询记录”、“统计表报”  
+截图如下：
+
+<img src={require('@site/static/img/userGuide/manageRecord/6.png').default} alt=""/>
+
+
+### 2、录音页面
+
+录音页面主要统计的是当前月份的录音和相应的统计图表显示
+
+<img src={require('@site/static/img/userGuide/manageRecord/7.png').default} alt=""/>
+
+### 3、录音记录
+
+通话费用预警记录功能有：查询、高级查询、录音播放、录音下载、导出、打印  
+（查询、高级查询、导出、打印功能使用请参考“通话记录”的功能介绍使用即可）  
+<span class="red">通话费用预警记录：是为了防止分机出现话费超出，然后设置话费预警，并做相应的记录</span>
+
+<img src={require('@site/static/img/userGuide/manageRecord/8.png').default} alt=""/>
+<br /><br /><br />
+
+（1）查询  
+普通查询可以选择要查询话单的通话日期：下拉可以选择  
+可以在输入框输入要进行查询的条件
+
+<img src={require('@site/static/img/userGuide/manageRecord/9.png').default} alt=""/>
+<br /><br /><br />
+
+（2）高级查询  
+点击“高级查询”会弹出高级查询页面  
+根据需求填写查询需求，进行详细查询  
+例如：
+
+<img src={require('@site/static/img/userGuide/manageRecord/10.png').default} alt=""/>
+<br /><br /><br />
+
+（3）导出  
+查询好的话单，按需求选择要导出的文件类型，进行导出通话记录    
+例如：
+
+<img src={require('@site/static/img/userGuide/manageRecord/11.png').default} alt=""/>
+<br /><br /><br />
+
+
+（4）打印  
+查询后的话单，点击“打印”，设置好打印信息，点击“打印”即可    
+例如：
+
+<img src={require('@site/static/img/userGuide/manageRecord/12.png').default} alt=""/>
+<br /><br /><br />
+
+设置好打印格式，然后打印即可
+
+<img src={require('@site/static/img/userGuide/manageRecord/13.png').default} alt=""/>
+<br /><br /><br />
+
+
+（5）录音播放  
+勾选想要播放的录音，点击“录音播放”按钮即可
+
+<img src={require('@site/static/img/userGuide/manageRecord/14.png').default} alt=""/>
+<br /><br /><br />
+
+（6）录音下载  
+勾选想要下载的录音，点击“录音下载”按钮即可
+
+<img src={require('@site/static/img/userGuide/manageRecord/15.png').default} alt=""/>
+<br /><br /><br />
+
+（7）语音识别  
+勾选想要识别的录音，点击“语音识别”按钮即可
+
+<img src={require('@site/static/img/userGuide/manageRecord/16.png').default} alt=""/>
+
+
+<SimpleWordDownload />

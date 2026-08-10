@@ -1,0 +1,483 @@
+---
+title: 管理程序-电话计费
+sidebar_position: 5
+---
+
+import React from 'react';
+import '../../../src/css/style.css'; // 导入 CSS 文件
+import SimpleWordDownload from '../../../src/components/SimpleWordDownload';
+
+## 一、登录
+打开“交换机通讯管理系统“软件，进入登录界面  
+用户名：admin  
+密  码：88888  
+点击“登录“  进入程序
+<img src={require('@site/static/img/userGuide/manageBill/1.png').default} alt="" style={{marginLeft:"11em"}}/>
+<br /><br /><br />
+<img src={require('@site/static/img/userGuide/manageBill/2.png').default} alt=""/>
+
+
+## 二、交换机通讯管理系统
+
+### 1、组织架构
+组织架构功能：部门信息、员工信息、后付费员工、预付费员工
+<img src={require('@site/static/img/userGuide/manageBill/3.png').default} alt=""/>
+<br /><br /><br />
+
+(1)部门信息  
+&emsp;1）新增部门  
+&emsp;右键点击“部门信息”可新增部门，新增部门后可继续右键刚刚创建好的部门进行创建子部门（默认部门无法创建子部门）
+<img src={require('@site/static/img/userGuide/manageBill/4.png').default} alt=""/>
+<br /><br /><br />
+<img src={require('@site/static/img/userGuide/manageBill/5.png').default} alt="" style={{marginLeft:"11em"}}/>  
+<span class="red">客户端显示：如果安装话务台后，此选项可以决定此部门是否显示在话务台通讯录中</span><br /><br />
+&emsp;2）移动部门  
+<span class="red">勾选要移动的部门，一次只能勾选移动一个部门</span>  
+点击“移动“，选择要移动到的部门后，点击”保存“
+<img src={require('@site/static/img/userGuide/manageBill/6.png').default} alt=""/>
+<br /><br /><br />
+
+(2)员工信息  
+员工信息功能介绍：新增、删除、批量设置、移动、导出、查询、高级查询、导出
+<img src={require('@site/static/img/userGuide/manageBill/7.png').default} alt=""/>
+<br /><br /><br />
+
+&emsp;1）新增  
+新增员工信息：组织架构---员工信息---新增  
+举例说明如下：  
+组织架构---员工信息---新增，员工信息按需求填写  
+<span class="red">注意：分机号码不可手动填写，只能去分机信息做关联 </span>  
+填写好点击“保存“ 
+<img src={require('@site/static/img/userGuide/manageBill/8.png').default} alt=""/>
+<br /><br /><br />
+
+
+&emsp;2）删除  
+勾选想要删除的员工，点击删除按钮即可
+<img src={require('@site/static/img/userGuide/manageBill/9.png').default} alt=""/>
+<br /><br /><br />
+
+
+&emsp;3）批量设置  
+选中想要批量设置的员工，点击批量设置按钮即可
+<img src={require('@site/static/img/userGuide/manageBill/10.png').default} alt=""/>  
+
+
+
+<br /><br /><br />
+<span class="red" style={{fontSize:"20px" ,marginLeft:"2em"}}>注意：批量设置只可以设置付费方式以及费用限额和时长限额 </span>  
+<img src={require('@site/static/img/userGuide/manageBill/11.png').default} alt=""/>
+<br /><br /><br />
+
+&emsp;4）移动  
+选中想要移动的员工，点击移动按钮选择想要移动到的部门即可
+<img src={require('@site/static/img/userGuide/manageBill/12.png').default} alt=""/>
+<br /><br /><br />
+
+
+&emsp;5）导入  
+点击此按钮可以对员工进行批量导入  
+打开“员工信息“，点击”导入“，会弹出”员工导入“页面；  
+先选择“模板下载“，可以按需求选择”空数据模板“或”有实例模板“了解导入格式
+<img src={require('@site/static/img/userGuide/manageBill/13.png').default} alt=""/>
+<br /><br /><br />
+
+
+按下载的导入模板，填写好员工导入信息 例如：
+<img src={require('@site/static/img/userGuide/manageBill/14.png').default} alt=""/>
+<br /><br /><br />
+
+
+选择“要导入的文件“，软件就会自动读取文件，并对导入文件进行检查数据是否有误  例如：
+<img src={require('@site/static/img/userGuide/manageBill/15.png').default} alt=""/>
+<br /><br /><br />
+
+
+如果导入数据无误，点击“下一步“，  例如： 例如：
+<img src={require('@site/static/img/userGuide/manageBill/16.png').default} alt=""/>
+<br /><br /><br />
+
+
+
+确认导入数据无误，点击“导入“即可  
+员工信息和相关分机号码就都成功导入
+<img src={require('@site/static/img/userGuide/manageBill/17.png').default} alt=""/>
+<br /><br /><br />
+
+
+
+&emsp;6）查询  
+输入想要查询的条件，点击查询即可<br />  
+&emsp;7）高级查询  
+点击高级查询后，填写想要查询的员工的详细信息即可
+<img src={require('@site/static/img/userGuide/manageBill/18.png').default} alt=""/>
+<br /><br /><br />
+
+
+&emsp;8）导出  
+&emsp;员工可以导入，当然也可以导出  
+&emsp;员工导出可选导出文件类型：导出单一文件、单一文件按部门多标签拆分、多个文件按部门拆分，选择类型导出即可  
+&emsp;导出单一文件：就是把所有数据都放在导出excel文件的一个工作表中  
+&emsp;单一文件按部门多标签拆分：导出excel文件，按部门分拆，每一个部门在一个工作表中  
+&emsp;多个文件按部门拆分：按部门拆分，一个部门是一个excel文件
+<img src={require('@site/static/img/userGuide/manageBill/19.png').default} alt=""/>
+<br /><br /><br />
+
+(3)后付费员工  
+&emsp;打开“后付费员工”，就会把设置后付费的员工全显示出来，可以进行查询、高级查询、导出员工信息
+<img src={require('@site/static/img/userGuide/manageBill/20.png').default} alt=""/>
+<br /><br /><br />
+
+
+还可以对后付费员工进行批量设置  
+勾选要设置的员工，按需求设置后付费的费用限额和时长限额，建议设置业务预警  
+设置好，点击保存即可
+<img src={require('@site/static/img/userGuide/manageBill/21.png').default} alt=""/>
+<br /><br /><br />
+
+(4)预付费员工  
+&emsp;打开“预付费员工”，就会把设置预付费的员工全显示出来，可以进行查询、高级查询、导出员工信息
+<img src={require('@site/static/img/userGuide/manageBill/22.png').default} alt=""/>
+<br /><br /><br />
+
+可以批量设置预付费的套餐需求
+<img src={require('@site/static/img/userGuide/manageBill/23.png').default} alt=""/>
+<br /><br /><br />
+
+可以勾选员工进行充值（一次只能勾选一个话机进行充值）  
+填写要充值的金额，点击“保存”，充值成功可以在下面查看记录
+<img src={require('@site/static/img/userGuide/manageBill/24.png').default} alt=""/>
+<br /><br /><br />
+
+也可以批量充值，勾选要充值的话机，点击“批量充值”，填写好充值金额，点击“保存”
+<img src={require('@site/static/img/userGuide/manageBill/25.png').default} alt=""/>
+
+
+### 2、分机信息
+&emsp;分机信息功能：新增、批量新增，批量设置、删除、查询  
+&emsp;<span class="red">注意：电话录音只有在开通录音许可才可以勾选查询，已自动降级功能只有在开通停复机许可后才可以勾选进行查询</span>
+<img src={require('@site/static/img/userGuide/manageBill/26.png').default} alt=""/>
+<br /><br /><br />
+
+(1)新增  
+&emsp;新增“分机信息“，点击”分机姓名“，选择刚创建的员工信息，其它分机属性按需求填写好保存即可
+<img src={require('@site/static/img/userGuide/manageBill/27.png').default} alt=""/>
+<br /><br /><br />
+
+
+(2)批量新增  
+&emsp;<span class="red">分机信息可以批量新增分机号码和相关员工信息（分机号码是连续的且较多建议使用批量新增）</span>  
+&emsp;打开“分机信息“，点击”批量新增“，填写好条件，点击”保存“即可
+<img src={require('@site/static/img/userGuide/manageBill/28.png').default} alt=""/><br /><br /><br />
+<span class="red" style={{fontSize:"20px" ,marginLeft:"2em"}}>注意：分机批量新增的员工信息的付费方式是后付费，如需修改，请在员工信息里面修改 </span> 
+<img src={require('@site/static/img/userGuide/manageBill/29.png').default} alt=""/>
+<br /><br /><br />
+
+
+(3)批量设置  
+选择多个想要修改的分机信息，点击批量设置按钮进行修改即可
+<img src={require('@site/static/img/userGuide/manageBill/30.png').default} alt=""/><br />
+<span class="red" style={{fontSize:"20px" ,marginLeft:"2em"}}>注：若分机信息为话务台的房间分机，可以将分机类型设置为管控分机，这样分机信息就可以在话务台中显示。 </span><br />
+<img src={require('@site/static/img/userGuide/manageBill/31.png').default} alt=""/>
+<br /><br /><br />
+
+
+(4)删除  
+选择一个或者多个分机，点击删除按钮即可对一个或多个分机进行删除
+<img src={require('@site/static/img/userGuide/manageBill/32.png').default} alt=""/>
+<br /><br /><br />
+
+
+(5)查询  
+输入想要查询的分机信息，点击查询即可
+
+
+### 3、资费参数
+(1)运营商设置  
+系统内置主流运营商标准资费，资费类别包括：市话、国内长途、港澳台长途、国际长途、IP长途、本地声讯台、本地拨号上网、本地400/800、其它和内线资费；  
+这些资费都可自定义添加/修改资费标准，还可设置日常及节假日优惠，且支持资费重算功能；  
+若通话时间在[日常优惠]、[周末优惠]、[假期优惠]内，则费用按照优惠优先计算。
+<img src={require('@site/static/img/userGuide/manageBill/33.png').default} alt=""/>
+<br /><br /><br />
+
+
+(2)新增运营商  
+新增运营商和修改运营商，设置运营商信息，设置好，保存即可
+<img src={require('@site/static/img/userGuide/manageBill/34.png').default} alt=""/>
+<img src={require('@site/static/img/userGuide/manageBill/35.png').default} alt=""/>
+<br /><br /><br />
+
+
+(3)运营商标准资费  
+<span class="red">运营商标准资费根据需求设置即可，这里以市话、国内长途、其它、内线资费设置举例讲解，其它资费参考市话、国内长途参数设置即可</span>  
+1）市话  
+市话：市话可以设置固定电话和移动电话的资费参数  
+去电：按需求填写资费参数  
+来电：先要勾选“启用”，打开设置来电资费，再按需求设置资费  
+日常优惠、周末优惠、假期优惠按需求设置  
+可以新增和删除优惠  
+设置好，“保存”  
+示例1：拨打固话前3分钟0.22元，之后0.11元/分钟。  
+A.通话时长1分4秒（不足60秒按照60秒计算，计费时长2分钟）话费金额：0.22元  
+B.通话时长4分45秒（不足60秒按照60秒计算，计费时长5分钟）  
+计算方法：5分-3分=2分  
+话费金额：0.22+2\*0.11=0.44  
+示例2：拨打移动电话0.2元/分钟。  
+A.通话时长4秒（不足60秒按照60秒计算，计费时长1分钟）  
+话费金额：0.2元  
+B.通话时长2分24秒（不足60秒按照60秒计算，计费时长3分钟）话费金额：3\*0.2=0.6元  
+举例如图：
+<img src={require('@site/static/img/userGuide/manageBill/36.png').default} alt=""/>
+<br /><br /><br />
+
+
+2）国内长途  
+国内长途：可以新增、删除、查询相关资费参数设置
+<img src={require('@site/static/img/userGuide/manageBill/37.png').default} alt=""/>
+<br /><br /><br />
+
+
+新增设置资费参数，首先勾选“区号”  
+通话方向：来电   只能选择“来电”，并设置好资费参数  
+叠加本地资费：按需求勾选  
+日常优惠、周末优惠、假期优惠，根据需求新增和删除  
+长途资费示例：平常时段0.07/6秒，每日00:00-07:00，0.04元/6秒。  
+A.不在优惠时段，通话时长1分20秒（不足6秒按照6秒计算，计费时长1分钟24钞）  
+计算方法：1分24秒=84秒，84/6=14。  
+话费金额：14\*0.07=0.98元  
+B.在优惠时段内，通话时长1分30秒（不足6秒按照6秒计算，计费时长1分钟30钞）  
+计算方法：1分30秒=90秒，90/6=15  
+话费金额：15\*0.04=0.6元  
+ 如下图：
+<img src={require('@site/static/img/userGuide/manageBill/38.png').default} alt=""/>
+<br /><br /><br />
+
+
+<span class="red">港澳台长途、国际长途、IP长途、本地声讯台、本地拨号上网、本地400/800资费设置请参考：市话和国际长途设置</span>  
+3）本地400/800  
+本地400/800资费示例：在“目标号码”中填写来电400/800呼入时的被叫号码（或虚拟分机），来电话单按资费设置中的参数进行计算
+<img src={require('@site/static/img/userGuide/manageBill/39.png').default} alt=""/>
+<br /><br /><br />
+
+
+4）国内长途  
+其它资费：示例：“开头号码”可以用通配符表示，N代表多个字符，X代表单个字符，该字母只能为大写，如：3XXX代表3开头的4位分机  
+当交换机组网时，出局分机无需计费或执行单独资费，需在此处将对端PBX分机加进来
+<img src={require('@site/static/img/userGuide/manageBill/40.png').default} alt=""/>
+<br /><br /><br />
+
+
+5）内线  
+内线资费如果是分支架构（用的是中继服务器）费用就由各分支机构平分  
+可以新增内线资费  举例如下图：
+<img src={require('@site/static/img/userGuide/manageBill/41.png').default} alt=""/>
+<br /><br /><br />
+
+
+
+<span class="red">
+注意：在安装目录下BillCommonSetupManage\Manage\  
+RepeatCalculate，打开程序可以进行指定时间段的话务类型话费重算，清空所有非基础资料的所有数据
+</span>
+<img src={require('@site/static/img/userGuide/manageBill/42.png').default} alt=""/>
+<br /><br /><br />
+
+
+
+
+进行话费重算时系统停止接收话单，话单重算结速软件将会自动打开<br />
+如果话单量较大，建议半个月或一个月重算一次，不要太长时间不清空重算
+<img src={require('@site/static/img/userGuide/manageBill/43.png').default} alt=""/>
+
+### 4、话费账单
+（1）发送设置  
+发送设置：是用来测试是否可以用邮件发送账单设置的  
+邮件发送服务器（SMTP）  
+服务器地址：填写公司服务器地址  
+端口号：默认  
+用户名和密码：填写公司发送账单邮箱的邮箱和密码（<span class="red">用户名一定要填写完整</span>）  
+<span class="red">注意：如果是个人邮箱，请按照个人使用邮箱的网站的指导对SMTP服务进行开通，并且获取SMTP开通密码，将以上的服务器地址、端口号、用户名（为个人邮箱），密码（为开启SMTP授权后网站给出的授权密码）对照网站配置要求进行配置</span>  
+点击“测试连接”，显示“连接成功”则成功  
+代理服务器：按需求启用服务器，如果启用代理服务器，邮件发送服务器有问题，则有代理服务器发送邮件  
+发送测试：  
+地址：填写接收测试邮件地址，点击“发送”，接收邮件收到邮件，证明邮件服务器没有问题，就可以设置其它账单设置需求了
+<img src={require('@site/static/img/userGuide/manageBill/44.png').default} alt=""/>
+<br /><br /><br />
+
+
+(2)账单设置  
+按需求设置账单发送周期，并设置好参数，点击“保存“
+<img src={require('@site/static/img/userGuide/manageBill/45.png').default} alt=""/>
+<br /><br /><br />
+
+
+
+(3)公司账单  
+要发送公司账单，勾选“启用”，设置要介绍账单的对象，添加接收账单人员（注：接收账单人员必须填写好邮箱信息）；  
+邮件内容设置：可以随意设置内容和是否把通话明细随邮件发送  
+如下图：
+<img src={require('@site/static/img/userGuide/manageBill/46.png').default} alt=""/>
+<br /><br /><br />
+
+
+
+(4)部门账单  
+账单部门设置请参考“公司账单”
+<img src={require('@site/static/img/userGuide/manageBill/47.png').default} alt=""/>
+<br /><br /><br />
+
+
+
+(5)个人账单  
+个人账单设置请参考“公司账单”
+<img src={require('@site/static/img/userGuide/manageBill/48.png').default} alt=""/>
+
+### 5、CDR处理
+（1）去电号码过滤  
+当拨打IP长途或话机设有出局码时，在话单显示中，只想显示所拨打的电话号码，就需要设置去电号码过滤，把不需要出现的数字过滤掉  
+例如：拨打长途，话单里显示的[电话号码]为：1795102258674577；  
+需要把17951过滤掉 设置如下：  
+[开头号码]设为17951（原始话单中[电话号码]的开头号码）；  
+[号码位长]为5（与开头号码匹配共5位字符）；  
+[删除位长]为5（从开头号码的左边开始依次删除5位字符）；  
+点击“保存”，这样话单就只会显示拨打的电话号码 02258674577  
+例如：
+<img src={require('@site/static/img/userGuide/manageBill/49.png').default} alt="" style={{marginLeft:"10em"}}/>
+<br /><br /><br />
+<img src={require('@site/static/img/userGuide/manageBill/50.png').default} alt=""/>
+<br /><br /><br />
+
+&emsp;1）删除：勾选需要删除的去电号码过滤信息  
+&emsp;2）查询：查询条件可以是：开头号码、号码位长、删除位长进行模糊查询；  
+<br />
+（2）话单过滤  
+    话单过滤通常运用在话单筛选，把不想出现的话单过滤掉  
+&emsp;1）新增：  
+话单过滤条件，通话方向根据不想要的通话类型进行勾选  
+例如：[通话方向]：不需要去电的话单那么就把去电的勾给去掉。  
+[分机号码]、[电话号码]、[中继号码]都可设为N，那么就是过滤掉所有去电的话单；  
+N代表任意许多字符，X代表任意一个字符  
+例如：
+<img src={require('@site/static/img/userGuide/manageBill/51.png').default} alt=""/>
+<br /><br /><br />
+
+2）删除：勾选需要删除的话单过滤信息  
+3）查询：查询条件可以是：通话方向、分机号码、电话号码、中继号码进行模糊查询；
+
+
+
+### 6、业务预警
+业务预警有通话费用预警、话单异常预警、通讯异常预警和电话盗打预警，详细设置 可参考 话费账单-发送设置   
+<span class="red">发送设置测试请参考话费账单功能中的发送测试</span>
+<img src={require('@site/static/img/userGuide/manageBill/52.png').default} alt=""/>
+<br /><br /><br />
+
+（1）通话费用预警  
+通话费用预警设置，当话机所用费用到达设置的预警费用时，就会发送邮件提醒  
+如需使用通话费用预警功能  
+首先勾选：“启用”  
+设置好预警接收邮箱对象和接收相应的邮箱  
+预警邮件内容也可根据需求填写  
+举例如下图所示：
+<img src={require('@site/static/img/userGuide/manageBill/53.png').default} alt=""/>
+<br /><br /><br />
+
+（2）话单异常预警  
+长时间未接收话单，会发送预警邮件。  
+需要点击“启用”  
+预警参数：根据需求设置相应未接收到话单时间，就发送预警邮件  
+接收对象：根据需求设置接收预警邮件人员和相应邮箱  
+内容设置：程序会根据预警情况发送相应的预警邮件，方便工作人员及时知道并处理预警情况
+<img src={require('@site/static/img/userGuide/manageBill/54.png').default} alt=""/>
+<br /><br /><br />
+
+（3）通讯异常预警  
+接收异常预警在以下异常情况下会发送预警邮件  
+1）通讯连接中断预警  
+2）数据库插入异常预警  
+需要使用接收异常预警功能  
+需要点击“启用”  
+预警参数：根据需求设置相应未接收到话单时间，就发送预警邮件  
+接收对象：根据需求设置接收预警邮件人员和相应邮箱  
+内容设置：程序会根据两种种预警情况发送相应的预警邮件，方便工作人员及时知道是哪种预警并处理预警情况  
+举例如下图所示：
+<img src={require('@site/static/img/userGuide/manageBill/55.png').default} alt=""/>
+<br /><br /><br />
+
+（4）电话盗打预警  
+电话盗打预警设置，系统出现非指定国家的通话记录，可能被盗打，就会发送邮件提醒  
+如需使用通话费用预警功能  
+首先勾选：“启用”  
+接收设置：设置好预警接收邮箱对象和接收相应的邮箱  
+内容设置：预警邮件内容也可根据需求填写  
+可信区号国家地名：增加可信区号，当系统出现该区号国家的通话记录，不会发送邮件提醒。  
+举例如下图所示：
+<img src={require('@site/static/img/userGuide/manageBill/56.png').default} alt=""/>
+<br /><br /><br />
+
+### 7、AD集成
+使用AD集成功能，需要授权许可（联系相关工作人员授权）  
+当企业信息有变动与交换机无法同步时，可以使用AD集成完成同步，员工和分机信息实时同步  
+使用AD集成，勾选“启用”，设置好连接信息和同步参数即可
+<img src={require('@site/static/img/userGuide/manageBill/57.png').default} alt=""/>
+
+### 8、停复机控制
+使用停复机控制功能，需要授权许可（联系相关工作人员授权）  
+停复机控制功能，当分机话费到达设定的限额，会降低分机等级，不可拨打市话或国内长途等资费业务  
+需要“停复机控制功能”，勾选“启用”，并填写好配置信息即可  
+（1）当选择交换机（支持停复机）后， 分机等级编码默认内容自动带出，且可根据实际环境自行修改参数。  
+（2）手动填写交换机系统参数：IPBX地址、用户名、密码  
+举例如下图：
+<img src={require('@site/static/img/userGuide/manageBill/58.png').default} alt=""/>
+
+
+### 9、系统参数
+
+（1）管理员信息  
+   功能有：新增管理员、删除管理员、批量设置和查询
+<img src={require('@site/static/img/userGuide/manageBill/59.png').default} alt=""/>
+<br /><br /><br />
+
+1）新增管理员：电子邮箱建议填写；勾选管理员相关功能权限；设置好管理的员工信息  
+设置好保存即可   
+举例如下：
+<img src={require('@site/static/img/userGuide/manageBill/60.png').default} alt=""/>
+<br /><br /><br />
+<span class="red">注意：管理员用户名不能重复创建；管理员可设置不同数据权限，在话单查询及统计时，仅显示已选员工/话务类型的话单信息。</span>  
+2）删除管理员：勾选要删除的管理员，点击“删除”即可  
+3）批量设置：勾选要设置的管理员，可以批量设置---数据权限的员工，设置好保存即可   例如：
+<img src={require('@site/static/img/userGuide/manageBill/61.png').default} alt=""/>
+<br /><br /><br />
+
+4）查询：查询条件可以是：用户名或姓名
+<img src={require('@site/static/img/userGuide/manageBill/62.png').default} alt=""/>
+<br /><br /><br />
+
+
+（2）固话信息库  
+输入电话区号进行查询可以查找该区号所属地区
+<img src={require('@site/static/img/userGuide/manageBill/63.png').default} alt=""/>
+<br /><br /><br />
+
+（3）手机信息库  
+根据手机开头号码进行查询，可以查到号码归属地
+<img src={require('@site/static/img/userGuide/manageBill/64.png').default} alt=""/>
+<br /><br /><br />
+
+（4）数据库维护  
+数据库维护主要有两大功能：数据清空和备份数据  
+数据情况：就是把之前的数据都清空  
+备份数据包括：自动备份和手动备份（按需求选择备份数据方式）
+<img src={require('@site/static/img/userGuide/manageBill/65.png').default} alt=""/>
+<br /><br /><br />
+
+手动备份：填写好手动备份条件，点击“备份”，备份状态显示“成功”，备份记录出现记录即成功  例如：
+<img src={require('@site/static/img/userGuide/manageBill/66.png').default} alt=""/>
+<br /><br /><br />
+
+
+自动备份：勾选“启用”，填写好备份条件，点击“保存”，执行时间一到，也会出现“备份记录”
+<img src={require('@site/static/img/userGuide/manageBill/67.png').default} alt=""/>
+
+
+<SimpleWordDownload />

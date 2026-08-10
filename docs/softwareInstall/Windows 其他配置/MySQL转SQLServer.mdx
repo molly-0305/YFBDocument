@@ -1,0 +1,87 @@
+---
+title: MySQL转SQLServer
+sidebar_position: 2
+---
+
+import React from 'react';
+import '../../../src/css/style.css'; // 导入 CSS 文件
+import SimpleWordDownload from '../../../src/components/SimpleWordDownload';
+
+## 一、ODBC驱动
+
+### 1、下载ODBC驱动
+<a href={require('@site/static/updateSoftware/Other/mysql-connector-odbc-9.4.0-winx64.zip').default} download="mysql-connector-odbc-9.4.0-winx64.zip">
+<p style={{color: '#2e8555'}}>mysql-connector-odbc-9.4.0-winx64.zip</p>
+</a>
+
+
+### 2、安装ODBC驱动
+（1）弹出安装界面，直接点击"Next"
+<img src={require('@site/static/img/softwareInstall/WindowsOther/2/1.png').default} alt=""/><br /><br /> <br />  
+
+（2）点击"我同意"，之后直接下一步即可
+<img src={require('@site/static/img/softwareInstall/WindowsOther/2/2.png').default} alt=""/><br /><br /> <br />  
+
+（3）选择"Custom"自定义安装方式，点击"Next"进行下一步
+<img src={require('@site/static/img/softwareInstall/WindowsOther/2/3.png').default} alt=""/><br /><br /> <br />  
+
+（4）选择好安装位置后，点击"Next"进行下一步
+<img src={require('@site/static/img/softwareInstall/WindowsOther/2/4.png').default} alt=""/><br /><br /> <br />  
+
+（5）此界面为安装成功
+<img src={require('@site/static/img/softwareInstall/WindowsOther/2/5.png').default} alt=""/><br />
+
+### 2、配置ODBC数据源
+（1）从控制面板-管理工具，打开你的 数据源(ODBC)，根据系统架构选择
+<img src={require('@site/static/img/softwareInstall/WindowsOther/2/6.png').default} alt=""/><br /><br /> <br />  
+
+（2）根据以下图片添加相应驱动信息
+<img src={require('@site/static/img/softwareInstall/WindowsOther/2/7.png').default} alt=""/><br /><br /> <br />  
+
+（3）完成后会出现MySQL 链接对话框，添加你的 MySQL 数据库账号信息，并确认"root"账号是否有全部的权限，如果你安装MySQL 没有修改的话， 不要改 3306这个端口号。  
+如下图所示：
+<img src={require('@site/static/img/softwareInstall/WindowsOther/2/8.png').default} alt=""/><br /><br /> <br /> 
+
+（4）测试成功后，保存即可
+<img src={require('@site/static/img/softwareInstall/WindowsOther/2/9.png').default} alt=""/><br />
+
+
+## 二、SSMA迁移助手
+
+### 1、下载SSMA迁移助手
+<a href={require('@site/static/updateSoftware/Other/SSMAforMySQL_10.4.25315.zip').default} download="SSMAforMySQL_10.4.25315.zip">
+<p style={{color: '#2e8555'}}>SSMAforMySQL_10.4.25315.zip</p>
+</a>
+
+
+### 2、软件主界面
+<img src={require('@site/static/img/softwareInstall/WindowsOther/2/10.png').default} alt=""/><br /><br /> <br /> 
+
+### 3、迁移步骤
+
+（1）新建Project
+<img src={require('@site/static/img/softwareInstall/WindowsOther/2/11.png').default} alt=""/><br /><br /> <br /> 
+
+
+（2）连接MySQL和SQL Server
+<img src={require('@site/static/img/softwareInstall/WindowsOther/2/12.png').default} alt=""/><br />
+<img src={require('@site/static/img/softwareInstall/WindowsOther/2/13.png').default} alt=""/><br /><br /> <br /> 
+
+（3）生成迁移报告
+<img src={require('@site/static/img/softwareInstall/WindowsOther/2/14.png').default} alt=""/><br />
+<img src={require('@site/static/img/softwareInstall/WindowsOther/2/15.png').default} alt=""/><br /><br /> <br /> 
+
+（4）在源数据库进行Convert Schema  
+这步操作之后将会在目的数据库看到和源数据库同名的数据库，但是没有任何表
+<img src={require('@site/static/img/softwareInstall/WindowsOther/2/16.png').default} alt=""/><br /><br /> <br /> 
+
+（5）在目的数据库同步表结构  
+这步操作之后，可以在目的数据库看到所有的表结构（如果全部成功的话）
+<img src={require('@site/static/img/softwareInstall/WindowsOther/2/17.png').default} alt=""/><br /><br /> <br /> 
+
+（6）进行数据迁移  
+这步操作将完成数据表记录的迁移
+<img src={require('@site/static/img/softwareInstall/WindowsOther/2/18.png').default} alt=""/><br />
+<img src={require('@site/static/img/softwareInstall/WindowsOther/2/19.png').default} alt=""/><br />
+
+<SimpleWordDownload />

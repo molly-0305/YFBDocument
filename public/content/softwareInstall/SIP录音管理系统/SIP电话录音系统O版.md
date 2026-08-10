@@ -1,0 +1,63 @@
+# SIP电话录音系统 O版
+
+## 一、安装程序
+
+### 1、安装SIP录音系统
+（1）双击程序开始安装
+<img src="/YFBDocument/content/assets/img/softwareInstall/SIP/old/1.png" alt=""/><br />
+
+（2）出现此界面后直接点击"安装"即可
+<img src="/YFBDocument/content/assets/img/softwareInstall/SIP/old/2.png" alt=""/><br />
+
+（3）WinPcap所有配置默认，连续点击下一步直至安装完成即可  
+<span class="red" style="font-size:22px">注：在SIP录音系统安装过程中需要安装WinPcap，安装完WinPcap才可继续安装SIP录音系统</span>
+<img src="/YFBDocument/content/assets/img/softwareInstall/SIP/old/11.png" alt=""/>
+WinPcap安装完成后，继续安装SIP录音系统，直到安装完成即可<br /><br />
+
+（4）选择SIP录音安装路径，点击"下一步"即可
+ <img src="/YFBDocument/content/assets/img/softwareInstall/SIP/old/8.png" alt=""/><br />
+
+ （5）在如下弹窗中点击“完成”
+  <img src="/YFBDocument/content/assets/img/softwareInstall/SIP/old/9.png" alt=""/><br />
+
+（6）弹出一下弹窗后，即为程序安装成功
+ <img src="/YFBDocument/content/assets/img/softwareInstall/SIP/old/10.png" alt=""/><br />
+
+
+
+## 二、替换相应版本程序
+### 1、切换SIP录音网卡
+（1）打开Tomcat7安装目录，点击"InstallService.bat"，然后点击"开启服务.bat"  
+ <img src="/YFBDocument/content/assets/img/softwareInstall/SIP/old/12.png" alt=""/><br />
+
+
+（2）将Tomcat7，设置属性，启动类型设置为"自动"  
+ <img src="/YFBDocument/content/assets/img/softwareInstall/SIP/old/13.png" alt=""/><br />
+
+（3）关闭数据库  
+找到安装软件目录的相应位置，右键以管理员身份运行"uninstall.bat"即可关闭数据库
+ <img src="/YFBDocument/content/assets/img/softwareInstall/SIP/old/17.png" alt=""/><br />
+
+（4）替换相应版本程序  
+找到最新版程序文件GoodSoftRecord，复制粘贴到安装目录下进行覆盖  
+
+（5）启动数据库  
+找到安装软件目录的相应位置，右键以管理员身份运行"install.bat"即可启动数据库
+ <img src="/YFBDocument/content/assets/img/softwareInstall/SIP/old/18.png" alt=""/><br />
+
+（6）Sip录音网卡切换程序，将网卡切换为带有镜像接口的网卡，点击"切换网卡.bat"即可完成切换
+ <img src="/YFBDocument/content/assets/img/softwareInstall/SIP/old/16.png" alt=""/><br />
+
+（7）替换后找到"服务"，将"OrkAudio"服务重启即可
+ <img src="/YFBDocument/content/assets/img/softwareInstall/SIP/old/14.png" alt=""/><br />
+
+### 2、功能授权
+（1）双击打开SIP录音程序并弹出“软件授权”页面  
+（2）将“机器授权码”发送给“代理商相关工作人员”后工作人员会将“授权码”发送给客户进行授权  
+（3）授权码填写完毕后，点击“授权”  
+（4）显示“授权成功”后进行重启，即服务端程序安装成功  
+<img src="/YFBDocument/content/assets/img/softwareInstall/SIP/8.png" alt=""/>
+
+
+## 三、启动程序
+程序重启打开后，点击启动即可

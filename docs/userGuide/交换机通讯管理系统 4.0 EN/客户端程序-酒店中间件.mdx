@@ -1,0 +1,307 @@
+---
+title: 客户端程序-酒店中间件
+sidebar_position: 2
+---
+import React from 'react';
+import '../../../src/css/style.css'; // 导入 CSS 文件
+import SimpleWordDownload from '../../../src/components/SimpleWordDownload';
+
+## 一、登录
+
+打开“交换机通讯管理系统酒店管理“软件，进入登录界面  
+用户名：admin  
+密  码：88888  
+点击“登录“  进入程序
+
+<img src={require('@site/static/img/userGuide/hotelMiddle/1.png').default} alt="" style={{marginLeft:"10em"}}/>
+<br /><br /><br />
+
+
+进入交换机通讯管理系统---酒店管理页面
+
+<img src={require('@site/static/img/userGuide/hotelMiddle/2.png').default} alt=""/>
+
+
+## 二、酒店管理
+
+### 1、房态状态显示模块
+
+房间状态显示有列表显示和块状显示  
+（1） 列表显示  
+列表显示如下：
+<img src={require('@site/static/img/userGuide/hotelMiddle/3.png').default} alt=""/>
+<br /><br /><br />
+
+
+
+（2） 块状显示  
+块状显示如下：
+<img src={require('@site/static/img/userGuide/hotelMiddle/4.png').default} alt=""/>
+
+
+
+### 2、房态功能模块
+
+（1）入住  
+&emsp;1）入住方法  
+&emsp;入住：指客人入住酒店客房，软件可以有两种方法入住  
+&emsp;一种是直接点击“入住”，手动输入要入住的房间号码及入住的信息 （每次只能输入一个房间号码，不可多个一起入住）；设置好可以点击“保存”也可以点击“保存并新增”  
+&emsp;如下图举例：点击“入住”---手动填写入住房间号码“1005”及入住信息；填写好保存即可  
+<img src={require('@site/static/img/userGuide/hotelMiddle/5.png').default} alt=""/>
+<br /><br /><br />
+
+
+
+
+&emsp;另一种是先勾选要入住的房间，再点击“入住”，入住的房间号码会根据勾选的房间号码自动填写好，再填好下面的入住信息即可（每次只能勾选一个入住，不可勾选多个一起入住）  
+&emsp;如下图举例：列表显示举例  
+&emsp;先勾选要入住的房间号码---再点击“入住”；填写好入住信息保存即可
+
+<img src={require('@site/static/img/userGuide/hotelMiddle/6.png').default} alt=""/>
+<br /><br /><br />
+
+
+
+如下图举例：块状显示举例  
+先点击要入住的房间号码---再点击“入住”；填写好入住信息保存即可
+
+<img src={require('@site/static/img/userGuide/hotelMiddle/7.png').default} alt=""/>
+<br /><br /><br />
+
+
+
+2）入住信息设置  
+入住的相关信息设置说明说下  ：  
+房间号码：  房间号码在交换机通讯管理系统中必须有，否则无法入住  
+当前房态：  填写好房间号码相关房态自动弹出  
+客户姓名：  按需求填写好客户姓名  
+团队号码：  按需求填写，没有可以不填（团队号码是指团队里所有人入住多个房间后，填写统一房间号，可设置同时叫醒）  
+分级等级：  按需求下拉修改分机等级  
+语    言：  按需求下拉选择语言  
+入住日期：  根据情况填写好入住日期  
+入住时间：  根据情况填写好入住时间  
+电话限额：  设置好分机电话限额（超出限额可以根据需求勾选超限后分机限制拨打外线）
+
+<img src={require('@site/static/img/userGuide/hotelMiddle/8.png').default} alt=""/>
+<br /><br /><br />
+
+
+
+（2）退房  
+&emsp;1）退房方法  
+&emsp;退房：软件可以有两种方法退房  
+&emsp;一种是直接点击“退房”，手动输入要退房的房间号码，输入好房间号码，此房间号码的相关信息和通话明细都会显示出来，可以查看（每次只能输入一个房间号码，不可多个一起退房）；确定退房可以点击“保存”也可以点击“保存并新增”  
+&emsp;如下图举例：  
+&emsp;点击“退房”---手动填写退房房间号码“1004”，此房间的相关信息和入住期间的通话明细都会显示出来；填写好保存即可
+
+<img src={require('@site/static/img/userGuide/hotelMiddle/9.png').default} alt=""/>
+<br /><br /><br />
+
+
+
+&emsp;另一种是先勾选要退房的房间，再点击“退房”，此房间号码的相关信息和通话明细都会显示出来，可以查看（每次只能勾选一个退房，不可勾选多个一起退房）  
+&emsp;如下图举例：列表显示举例  
+&emsp;先勾选要退房的房间号码---再点击“退房”；退房相关信息自动显示出来，可查看相关信息和通话明细，然后保存即可
+
+<img src={require('@site/static/img/userGuide/hotelMiddle/10.png').default} alt=""/>
+<br /><br /><br />
+
+
+
+&emsp;如下图举例：块状显示举例  
+&emsp;先点击要退房的房间号码---再点击“退房”；退房相关信息自动出来，可查看相关信息和通话明细，然后保存即可
+
+<img src={require('@site/static/img/userGuide/hotelMiddle/11.png').default} alt=""/>
+<br /><br /><br />
+
+
+
+&emsp;2）退房信息设置  
+&emsp;退房信息：只要填写好退房的房间号码（或勾选上要退房的房间）退房相关信息会自动显示出来  
+&emsp;可查看详细的通话明细
+
+<img src={require('@site/static/img/userGuide/hotelMiddle/12.png').default} alt=""/>
+<br /><br /><br />
+
+
+
+（3）换房  
+&emsp;换房：从一个房间换到另一个房间  
+&emsp;换房时，除了房间号码不变，会把要换房的所有房间信息都换到新的房间里  
+&emsp;1）换房方法  
+&emsp;一种是直接点击“换房”，手动输入要换房的房间号码和要换到的新房间号码  
+&emsp;如下图举例：  
+&emsp;点击“换房”---手动填写房间号码“3566”和要换到的“新房间号码：1001”；填写好保存即可
+
+<img src={require('@site/static/img/userGuide/hotelMiddle/13.png').default} alt=""/>
+<br /><br /><br />
+
+
+
+另一种是先勾选要换房的房间，再点击“换房”， 房间号码会自动显示出来，再填写好“新房间号码”即可  
+如下图举例：列表显示举例  
+先勾选要换房的房间号码---再点击“换房”；填写新房间号码保存即可
+
+<img src={require('@site/static/img/userGuide/hotelMiddle/14.png').default} alt=""/>
+<br /><br /><br />
+
+
+
+如下图举例：块状显示举例  
+先点击要换房的房间号码---再点击“换房”；填写新房间号码保存即可
+
+<img src={require('@site/static/img/userGuide/hotelMiddle/15.png').default} alt=""/>
+<br /><br /><br />
+
+
+
+（4） 修改房态	  
+&emsp;修改房态：把房间状态按需求修改成相应的房间状态  
+&emsp;1）修改房态方法  
+&emsp;一种是直接点击“修改房态”，手动输入要修改房间状态的房间号码，原房态会自动显示出来；再下拉选择要修改的新房间状态，设置好保存即可  
+&emsp;如下图举例：  
+&emsp;点击“修改房态”---手动输入要修改房间状态的房间号码：9001--- 下拉选择要修改的房态---然后保存；房间状态就修改了
+
+<img src={require('@site/static/img/userGuide/hotelMiddle/16.png').default} alt=""/>
+<br /><br /><br />
+
+
+
+另一种是先勾选要修改状态的房间，再点击“修改房态”，原房态会自动显示出来；再下拉选择要修改的新房间状态，设置好保存即可  
+如下图举例：列表显示举例  
+先勾选要修改房态的房间号码---再点击“修改房态”；下拉选择新房态后保存即可
+
+<img src={require('@site/static/img/userGuide/hotelMiddle/17.png').default} alt=""/>
+<br /><br /><br />
+
+
+
+如下图举例：块状显示举例  
+先点击要修改房态的房间号码---再点击“修改房态”；下拉选择新房态后保存即可
+
+<img src={require('@site/static/img/userGuide/hotelMiddle/18.png').default} alt=""/>
+<br /><br /><br />
+
+
+
+
+（5）修改等级  
+&emsp;修改等级：修改房间里分机的等级  
+&emsp;1）修改等级方法  
+&emsp;一种是直接点击“修改等级”，手动填写要修改等级的房间号码，原等级会根据填写好的房间号码自动生成，下拉选择要修改的新等级，设置好保存即可
+
+<img src={require('@site/static/img/userGuide/hotelMiddle/19.png').default} alt=""/>
+<br /><br /><br />
+
+
+
+
+另一种是先勾选要修改等级的房间，再点击“修改等级”，原等级会自动显示出来；再下拉选择要修改的新等级，设置好保存即可  
+如下图举例：列表显示举例  
+先勾选要修改等级的房间号码---再点击“修改等级”；下拉选择等级后保存即可
+
+<img src={require('@site/static/img/userGuide/hotelMiddle/20.png').default} alt=""/>
+<br /><br /><br />
+
+
+
+
+如下图举例：块状显示举例  
+先点击要修改等级的房间号码---再点击“修改等级”；下拉选择新等级后保存即可
+
+<img src={require('@site/static/img/userGuide/hotelMiddle/21.png').default} alt=""/>
+<br /><br /><br />
+
+
+
+### 3、叫醒功能模块
+
+叫醒功能用于叫醒客房入住的客人  
+（1） 打开叫醒  
+&emsp;1）打开叫醒方法  
+&emsp;一种是直接点击“打开叫醒”，手动输入“要叫醒的房间号码” （叫醒多个房间可以英文逗号隔开），和设置需要叫醒的时间、日期及需要提前叫醒的时间
+
+<img src={require('@site/static/img/userGuide/hotelMiddle/22.png').default} alt=""/>
+<br /><br /><br />
+
+
+
+
+另一种是在“列表显示”的状态下，直接“勾选要叫醒的房间”，房间号码会自动显示出来，再设置好叫醒相关参数即可
+
+<img src={require('@site/static/img/userGuide/hotelMiddle/23.png').default} alt=""/>
+<br /><br /><br />
+
+
+
+
+2）叫醒信息设置  
+例如如下：  
+房间号码：  可以勾选一个或多个房间号码  
+团队号码：  可填可不填  
+当前房态：  填写好房间号码自动生成，多个房间不显示房态  
+客户姓名：  填写好房间号码自动生成，多个房间不显示姓名  
+叫醒日期：  根据客人需求设置好叫醒日期  
+叫醒时间：  根据客人需求设置好叫醒时间  
+设置好，保存即可
+
+<img src={require('@site/static/img/userGuide/hotelMiddle/24.png').default} alt=""/>
+<br /><br /><br />
+
+
+
+
+（2）关闭叫醒  
+勾选要关闭叫醒的房间号码，点击“关闭叫醒”确定即可（列表显示可勾选多个房间关闭叫醒；块状显示只能点击一个房间进行关闭）
+
+<img src={require('@site/static/img/userGuide/hotelMiddle/25.png').default} alt=""/>
+<br /><br /><br />
+
+
+
+
+（3）叫醒记录  
+点击“叫醒记录”下拉选择查询的叫醒日期，填写叫醒时间，输入叫醒房间号码进行模糊查询  
+查询的记录也可以导出、打印
+
+<img src={require('@site/static/img/userGuide/hotelMiddle/26.png').default} alt=""/>
+
+
+
+### 4、免打扰模块
+
+根据客房客人需求，设置开/关免打扰  
+（1）开免打扰  
+开启免打扰，房间的分机就不可以打进电话  
+勾选要开启免打扰的房间，只能勾选一个，不可多个一起设置（列表显示和块状显示设置类似）
+
+<img src={require('@site/static/img/userGuide/hotelMiddle/27.png').default} alt=""/>
+<br /><br /><br />
+
+
+
+（2）关免打扰  
+关闭免打扰，房间的分机就可以打进电话  
+勾选要关闭免打扰的房间，只能勾选一个，不可多个一起设置
+
+<img src={require('@site/static/img/userGuide/hotelMiddle/28.png').default} alt=""/>
+
+
+
+### 5、黑名单模块
+
+添加到黑名单的号码就无法呼入  
+可以新增、删除和查询黑名单，根据需求设置即可
+
+<img src={require('@site/static/img/userGuide/hotelMiddle/29.png').default} alt=""/>
+
+
+### 6、查询模块
+
+
+可以查询房间状态，下拉选择即可  
+还可以填写要查询的其它条件，进行查询
+
+<img src={require('@site/static/img/userGuide/hotelMiddle/30.png').default} alt=""/>
+
+<SimpleWordDownload />

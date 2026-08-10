@@ -1,0 +1,177 @@
+---
+title: 酒店版话务台配置手册
+sidebar_position: 5
+---
+
+import IPAddressConfig from '@site/src/components/IPAddressConfig';
+import React from 'react';
+import '../../../../src/css/style.css'; // 导入 CSS 文件
+import SimpleWordDownload from '../../../../src/components/SimpleWordDownload';
+
+
+## 一、鼎信IPPBX配置
+### 1、API
+登录鼎信IPPBX后台，点击服务对接---API，勾选状态，启用API，  
+API密码：<span class="red">admin@123#</span>  
+保存并点击右上角的应用
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/5/1.png').default} alt="" />
+
+
+### 2、事件上报
+登录鼎信IPPBX后台，点击服务对接---事件上报，填写URL上报地址，勾选Json格式，如下图所示：  
+呼叫状态：<span class="red">ht&#8203;tp://服务器IP地址:8182/</span>  
+话单信息：<span class="red">ht&#8203;tp://服务器IP地址:8181/</span>  
+保存并点击右上角的应用
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/5/2.png').default} alt="" />
+
+
+
+## 二、交换机通讯管理系统
+&emsp;打开“中间件基础管理系统”所安装的“BillCommon”，并对其进行设置  
+&emsp;<span class="red">注意：在打开之前，右键单机“BillCommon”选择“属性”---“兼容性”---勾选“以管理员身份运行”，操作如下图：</span>
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/5/3.png').default} alt="" />
+
+
+### 1、服务器设置
+本机信息-IP地址，例如：192.168.6.27（是安装软件的电脑IP地址）  
+<span class="red">注意： 此IP地址要与IPPBX地址互连互通</span>  
+数据库信息-IP地址：localhost，测试连接---成功---保存  
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/5/4.png').default} alt="" style={{maxWidth: "50%"}} />
+<br />
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/5/5.png').default} alt=""  style={{maxWidth: "40%"}}/>
+
+
+### 2、配置登录页面
+(1)用户名：admin，密码：88888  
+&emsp;选上记住密码和自动登录，点击登录
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/5/6.png').default} alt="" style={{maxWidth: "50%"}} />
+<br />
+
+(2)下图为管理端首页面
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/5/7.png').default} alt="" />
+
+
+### 3、CDR连接
+交换机型号：<span class="red">UC</span>  
+通讯方式：<span class="red">Http Listener</span>  
+URL：<span class="red">ht&#8203;tp://服务器IP:8181/</span>  
+填写完毕后点击<span class="red">保存，启动</span>
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/5/8.png').default} alt="" style={{maxWidth: "70%"}} />
+
+
+### 4、PMSI连接
+填写鼎信PBX信息，如下图：  
+交换机品牌：<span class="red">鼎信通达</span>  
+交换机型号：<span class="red">UC</span>  
+IP地址：<span class="red">鼎信pbx的IP地址</span>  
+端口号：<span class="red">80</span>  
+用户名：<span class="red">admin</span>  
+密码：<span class="red">鼎信pbx上查看</span>  
+Enable密码：<span class="red">鼎信pbx上查看</span>  
+<span class="red">注：密码和enable密码在鼎信pbx---服务对接---API查看</span>  
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/5/9.png').default} alt="" style={{maxWidth: "60%"}} />
+
+
+### 5、接口参数
+（1）叫醒设置  
+匹配参数：<span class="red">Alarm Clock</span>  
+语音文件：<span class="red">在pbx上传叫醒语音文件，再在此处选择</span>  
+
+
+（2）房态迷你吧设置  
+房态号码：<span class="red">\*999</span>  
+迷你吧号码：<span class="red">\*888</span>  
+最后保存
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/5/10.png').default} alt="" />
+<br />
+
+语音文件上传：
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/5/11.png').default} alt="" />
+<br />
+
+（3）话务台设置  
+语音号码：<span class="red">在鼎信PBX上的扩展业务---呼叫队列上查看或者新建</span>  
+日服号码：<span class="red">按照话务台绑定的分机号码进行填写</span>  
+呼叫状态监听URL：<span class="red">htt&#8203;p://服务器IP地址:8182/（和PBX里【事件上报】的呼叫状态URL一致）</span>  
+最后保存，并重启服务端
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/5/12.png').default} alt="" style={{maxWidth: "70%"}} />
+
+
+## 三、配置话务台话机
+按话机OK键查看话机的IP地址，打开浏览器登录话机后台
+
+### 1、修改网络
+点击网络---基本，将话机IP地址设置为静态IP
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/5/13.png').default} alt="" />
+
+
+### 2、注册账号 
+点击账号---基本，为话机注册一个账号，如下图，  
+例如：注册分机号码2002  
+密码和PBX里分机2002的密码一致  
+服务IP：填写鼎信pbx的IP地址
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/5/14.png').default} alt="" />
+
+
+### 3、远程控制
+点击话机---通话特性，找到远程控制  
+填写<span class="red">话务台客户端所在电脑的IP</span>地址
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/5/15.png').default} alt="" />
+
+
+## 四、话务台客户端配置
+<span class="red">
+&emsp;注意：在打开之前，右键单机“交换机通讯管理系统话务台”选择“属性”---“兼容性”---勾选“以管理员身份运行”，操作如下图：
+</span>
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/5/16.png').default} alt="" />
+
+
+### 1、服务器设置
+打开话务台客户端配置，首先配置“服务器设置”
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/5/17.png').default} alt="" style={{maxWidth: "50%"}} />
+<br />
+
+服务器地址：填写交换机通讯管理系统服务器IP地址  
+数据库IP地址：填写交换机通讯管理系统服务器IP地址  
+点击“测试连接“连接成功之后，保存
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/5/18.png').default} alt="" style={{maxWidth: "40%"}} />
+<br />
+
+用户名：admin；密码：88888；点击登录即可
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/5/19.png').default} alt="" style={{maxWidth: "50%"}} />
+<br />
+
+进入“话务台”客户端页面
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/5/20.png').default} alt="" />
+
+
+<span class="red">
+注：酒店版话务台一般不涉及“强插”“强拆”功能，并且企业通讯录一般使用较频繁，可在HotelManagement.exe.configw文件中进行参数修改。修改如下：
+</span>  
+<strong>取消“强插”“强拆”功能：</strong>  
+\<add key="DirectoryIndex" value="1" />  
+<strong>企业通讯录置顶：</strong>  
+\<add key="ForcedHide" value="true" />
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/5/21.png').default} alt="" />
+<br />
+
+修改后界面图：
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/5/22.png').default} alt="" />
+
+
+### 2、设置话机信息
+点击话务台客户端右上角的设置---话机  
+设置话务员话机信息  
+通话方式有两种：手柄模式和耳机模式   根据需求设置即可  
+如下图
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/5/23.png').default} alt="" />
+<br />
+
+
+设置话务员话机信息，如下图：  
+<span class="red">注：话机密码是登录网页后台的密码</span>
+<img src={require('@site/static/img/softwareInstall/Standalone/Dinstar/5/24.png').default} alt="" />
+<strong style={{marginLeft:"23em"}}>最后保存并重启客户端</strong>
+
+
+<SimpleWordDownload />

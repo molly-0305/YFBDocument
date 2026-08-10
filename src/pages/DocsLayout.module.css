@@ -1,0 +1,85 @@
+.layout {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  gap: 0;
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: calc(100vh - 64px);
+}
+
+.sidebar {
+  padding: 1.25rem 1rem 2rem;
+  border-right: 1px solid rgba(15, 23, 42, 0.08);
+  background: rgba(255, 255, 255, 0.72);
+  max-height: calc(100vh - 64px);
+  overflow: auto;
+  position: sticky;
+  top: 64px;
+}
+
+.sideTitle {
+  margin: 0 0 0.85rem;
+  font-size: 1rem;
+  color: #0f172a;
+}
+
+.tree {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 0.15rem;
+}
+
+.tree ul {
+  list-style: none;
+  margin: 0.25rem 0 0.4rem;
+  padding: 0 0 0 0.75rem;
+}
+
+.cat summary {
+  cursor: pointer;
+  color: #334155;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.35rem 0;
+}
+
+.docLink,
+.docActive {
+  display: block;
+  text-decoration: none;
+  color: #475569;
+  font-size: 0.88rem;
+  padding: 0.32rem 0.45rem;
+  border-radius: 6px;
+  line-height: 1.4;
+}
+
+.docLink:hover {
+  background: #f1f5f9;
+  color: #0b6bcb;
+}
+
+.docActive {
+  background: #e8f2ff;
+  color: #0b6bcb;
+  font-weight: 600;
+}
+
+.content {
+  padding: 1.5rem 1.5rem 3rem;
+  min-width: 0;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: relative;
+    top: 0;
+    max-height: none;
+    border-right: 0;
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+  }
+}

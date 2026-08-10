@@ -1,0 +1,147 @@
+---
+title: WindowsServer IIS配置
+sidebar-position: 6
+---
+
+import React from 'react';
+import '../../../src/css/style.css'; // 导入 CSS 文件
+import SimpleWordDownload from '../../../src/components/SimpleWordDownload';
+
+
+
+{/* 只用隐藏元素，不用 export const */}
+<div id="page-metadata" data-doc-title="Windows 2019 llS配置" style={{display: 'none'}} />
+
+
+<span class="red" style={{fontSize:"21px"}}>&emsp;注：此文档同时适用于Windows Server2012,2016,2019,2022版本，以上版本可按照此文档进行配置</span>
+## 一、服务器管理器
+### 1、服务器管理器
+
+  找到控制面板---查看方式选择"大图标"---选择管理工具---服务管理器
+<img src={require('@site/static/img/softwareInstall/IIS/WinServer/1.png').default} alt=""/>
+
+### 2、添加角色和功能
+
+  在弹出的服务器管理器界面找到添加角色和功能
+<img src={require('@site/static/img/softwareInstall/IIS/WinServer/2.png').default} alt=""/>
+
+
+  选择下一步
+<img src={require('@site/static/img/softwareInstall/IIS/WinServer/3.png').default} alt=""/>
+
+### 3、基于角色或基于功能
+
+  选择：基于角色或基于功能的安装，然后下一步
+<img src={require('@site/static/img/softwareInstall/IIS/WinServer/4.png').default} alt=""/>
+
+### 4、服务器选择
+
+  选择：从服务器池中选择服务器，然后下一步
+<img src={require('@site/static/img/softwareInstall/IIS/WinServer/5.png').default} alt=""/>
+
+### 5、服务器角色
+
+  勾选Web服务器(IIS)点击“下一步”
+  <img src={require('@site/static/img/softwareInstall/IIS/WinServer/6.png').default} alt=""/>
+
+
+## 二、添加Web所需功能
+### 1、添加web所需功能
+
+  选择：Web服务器（IIS），在弹出的对话框选择添加功能
+<img src={require('@site/static/img/softwareInstall/IIS/WinServer/7.png').default} alt=""/>
+<br /><br /><br />
+
+  确保web服务器（IIS）选项有打钩，然后点击下一步
+<img src={require('@site/static/img/softwareInstall/IIS/WinServer/8.png').default} alt=""/>
+<br /><br /><br />
+
+  勾选.NET4.5功能，继续点击下一步  
+  <span class="red" style={{fontSize:"22px"}}>注：.NET3.5也需安装，但是现在无需勾选，后续会有.NET3.5安装教程</span>
+<img src={require('@site/static/img/softwareInstall/IIS/WinServer/9.png').default} alt=""/>
+<br /><br /><br />
+
+  默认下一步
+<img src={require('@site/static/img/softwareInstall/IIS/54.png').default} alt=""/>
+
+### 2、勾选功能
+
+  (1)安全性勾选如下
+<img src={require('@site/static/img/softwareInstall/IIS/WinServer/10.png').default} alt=""/>
+<br /><br /><br />
+
+  (2)常见HTTP功能勾选如下 
+<img src={require('@site/static/img/softwareInstall/IIS/WinServer/11.png').default} alt=""/>
+<br /><br /><br />
+
+  (3)性能勾选动态和静态压缩 
+<img src={require('@site/static/img/softwareInstall/IIS/WinServer/12.png').default} alt=""/>
+<br /><br /><br />
+
+  (4)运行状况和诊断勾选如下
+<img src={require('@site/static/img/softwareInstall/IIS/WinServer/13.png').default} alt=""/>
+<br /><br /><br />
+
+  (5)应用程序开发可全部勾选也可以勾选需要的功能（建议全部勾选以免缺少后期需要还得重新来安装）
+  <img src={require('@site/static/img/softwareInstall/IIS/WinServer/14.png').default} alt=""/>
+<br /><br /><br />
+
+  (6)勾选FTP服务器（打开FTP功能）和管理工具如下，勾选完上述如下功能后继续点击下一步
+<img src={require('@site/static/img/softwareInstall/IIS/WinServer/15.png').default} alt=""/>
+  <img src={require('@site/static/img/softwareInstall/IIS/WinServer/17.png').default} alt=""/>
+
+
+### 3、确认安装功能
+
+  确认安装以下功能，点击安装后等待安装进度完成
+  <img src={require('@site/static/img/softwareInstall/IIS/WinServer/20.png').default} alt=""/>
+
+### 4、等待安装
+
+  安装中，等待安装完成
+<img src={require('@site/static/img/softwareInstall/IIS/WinServer/18.png').default} alt=""/>
+
+
+
+### 5、安装完成
+
+  安装完成后点击关闭
+  <img src={require('@site/static/img/softwareInstall/IIS/WinServer/19.png').default} alt=""/>
+
+
+
+### 6、添加.Net3.5功能
+<span class="red" style={{fontSize:"21px"}}>&emsp;注：在 Windows Server上安装 .NET Framework 3.5 时，可能会遇到网络问题或离线环境的限制，导致无法自动下载所需的 SXS 文件夹。</span>  
+<span class="red" style={{fontSize:"21px"}}>&emsp;SXS 文件夹包含了安装 .NET Framework 3.5 所需的所有文件，这些文件是从系统镜像中提取的原版文件，确保了安装过程的稳定性和兼容性。</span>  
+请按照所需版本进行下载（提取码8888）：  
+
+[sxs2012.zip](https://pan.baidu.com/s/1nrAkzQ63PKSBYOevPPEf-Q)&emsp;&emsp;
+[sxs2016.zip](https://pan.baidu.com/s/170EjneeEgcRWh3hBmJZUdA)&emsp;&emsp;
+[sxs2019.zip](https://pan.baidu.com/s/1TE6jgwUXsO89pXSnqPE9WA)&emsp;&emsp;
+[sxs2022.zip](https://pan.baidu.com/s/1YWGP1jDTi-BOD4vq_-2tbQ)
+
+<br /><br /><br />
+
+再次操作以上步骤到下图位置：  
+（1）勾选.NET3.5功能，点击下一步
+  <img src={require('@site/static/img/softwareInstall/IIS/WinServer/21.png').default} alt=""/>
+
+（2）确认所安装的功能，并且点击"指定备用源路径"
+  <img src={require('@site/static/img/softwareInstall/IIS/WinServer/22.png').default} alt=""/>
+
+（3）选择下载好指定版本的SXS文件的路径
+<img src={require('@site/static/img/softwareInstall/IIS/WinServer/23.png').default} alt=""/>
+
+（4）确认路径后点击安装
+<img src={require('@site/static/img/softwareInstall/IIS/WinServer/24.png').default} alt=""/>
+
+（5）等待安装即可
+<img src={require('@site/static/img/softwareInstall/IIS/WinServer/25.png').default} alt=""/>
+
+
+（6）安装成功
+<img src={require('@site/static/img/softwareInstall/IIS/WinServer/26.png').default} alt=""/>
+
+
+
+<SimpleWordDownload />

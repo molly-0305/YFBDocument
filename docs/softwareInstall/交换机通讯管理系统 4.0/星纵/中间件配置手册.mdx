@@ -1,0 +1,101 @@
+---
+title: 中间件配置手册
+sidebar_position: 2
+---
+
+import React from 'react';
+import '../../../../src/css/style.css'; // 导入 CSS 文件
+import SimpleWordDownload from '../../../../src/components/SimpleWordDownload';
+
+## 一、IPPBX配置
+### 1、上传叫醒提示文件
+
+登录星纵后台，上传叫醒文件（中文、日文、韩文、英文版）
+<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/1.png').default} alt=""/>
+
+### 2、呼出路由
+
+
+在“呼叫控制”中选择“呼出路由”，按照：内线、市话、国内长途、国际长途，添加呼出路由。  
+<span class="red">注：控制分机呼叫等级，呼出路由需按下图填写</span>
+<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/2.png').default} alt=""/>
+
+## 二、配置交换机通讯管理系统
+
+&emsp;打开“中间件基础管理系统”所安装的“BillCommon”，并对其进行设置  
+&emsp;<span class="red">注意：在打开之前，右键单机“BillCommon”选择“属性”---“兼容性”---勾选“以管理员身份运行”，操作如下图：</span>
+<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/3.png').default} alt=""/>
+
+
+### 1、服务器设置
+
+本机信息-IP地址，例如：192.168.6.27（是安装软件的服务器IP地址）  
+<span class="red">注：此IP地址要与IPPBX地址互联互通</span>  
+数据库信息-IP地址：localhost，测试连接---成功---保存
+<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/4.png').default} alt="" style={{maxWidth: "50%"}}/>
+<br />
+<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/5.png').default} alt="" style={{maxWidth: "40%"}} />
+
+
+
+### 2、配重登录页面
+
+(1) 用户名：admin，密码：88888  
+&emsp;选上记住密码和自动登录，点击登录
+<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/6.png').default} alt="" style={{maxWidth: "50%"}}/>
+<br />
+
+(2) 下图为管理端首页面
+<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/7.png').default} alt=""/>
+
+
+
+### 3、CDR连接
+### 点击CDR连接，按照下图填写
+交换机型号：<span class="red">P</span>  
+通讯方式：<span class="red">数据库</span>  
+通讯设置  
+数据库类型：<span class="red">MySqlData</span>  
+数据库地址：<span class="red">星纵ippbx的IP地址</span>  
+数据库名称：<span class="red">cdr/cdr/utf8mb4</span>  
+<b class="red">cdr代表数据库，cdr代表数据表，utf8mb4代表编码</b>  
+用户名：<span class="red">和ippbx上的数据库授权一致</span>  
+密码：<span class="red">和ippbx上的数据库授权一致</span>  
+端口号：<span class="red">3306</span>  
+填写完毕后点击<span class="red">保存，启动</span>
+
+<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/1/18.png').default} alt="" />
+<span style={{marginLeft:"25em" ,fontSize:"15px"}}><strong>CDR连接</strong></span>
+<br />
+
+<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/1/17.png').default} alt=""/>
+<span style={{marginLeft:"22em" ,fontSize:"15px"}}><strong>Ippbx数据库授权信息</strong></span>
+
+### 4、PMSI连接
+
+填写星纵PBX信息，如下图
+交换机品牌：<span class="red">星纵</span>
+交换机型号：<span sclass="red">P</span>
+IP地址：<span class="red">星纵pbx的IP地址</span>
+端口号：<span class="red">8088</span>
+用户名：<span class="red">和星纵pbx上的二次开发接口一致</span>
+密码：<span class="red">和星纵pbx上的二次开发接口一致</span>
+enable密码：空
+
+
+<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/20.png').default} alt="" style={{marginLeft:"11em" ,maxWidth: "60%"}}/>
+<strong style={{marginLeft:"25em"}}>PMSI连接</strong>
+<br />
+
+<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/21.png').default} alt=""/>
+<strong style={{marginLeft:"22em"}}>星纵pbx二次开发接口</strong>
+
+
+
+### 5、叫醒次数设置
+
+在“业务参数”中选择“叫醒设置”，根据项目需求进行修改并保存即可。
+<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/22.png').default} alt=""/>
+
+
+<SimpleWordDownload />

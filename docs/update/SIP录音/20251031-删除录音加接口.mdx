@@ -1,0 +1,26 @@
+---
+title: 20251031-删除录音加接口
+sidebar_position: 1
+---
+
+import React from 'react';
+import '../../../src/css/style.css'; // 导入 CSS 文件
+
+
+更新内容：  
+&emsp;1、可以把没有在录音系统分机信息中的录音文件自动删除，以节省硬盘空间；  
+&emsp;2、项目提供一个HTTP API接口，让客户在自己的OA系统中也可以添加或删除录音系统中的分机。
+<br /><br />
+此版本下载链接：
+<a href={require('@site/static/updateSoftware/SIPRecord/SIPRecordingService20251031(删除录音加接口).rar').default} download="SIPRecordingService20251031(删除录音加接口).rar" >
+  <p style={{color: '#2e8555'}}>&emsp;SIPRecordingService20251031(删除录音加接口)</p> 
+</a>
+<a href={require('@site/static/updateSoftware/SIPRecord/SIP录音API接口文档20251031.docx').default} download="SIP录音API接口文档20251031.docx" >
+  <p style={{color: '#2e8555'}}>&emsp;SIP录音API接口文档20251031</p> 
+</a>
+
+此版本对应数据库脚本：  
+  ```
+  delete from s_appconfig where itemKey='HttpListenerUrl';
+  insert into s_appconfig (itemKey,itemValue) values ('HttpListenerUrl','http://:8185/');
+  ```

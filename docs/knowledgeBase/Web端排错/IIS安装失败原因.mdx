@@ -1,0 +1,14 @@
+---
+title: IIS安装失败原因
+sidebar_position: 1
+---
+
+import React from 'react';
+import '../../../src/css/style.css'; // 导入 CSS 文件
+
+问题出现描述：  
+&emsp;在客户服务器IIS的安装中提示安装失败，有可能在"应用程序开发功能"中的.NET 3.5出现问题导致无法安装
+
+解决方案：  
+&emsp;将.NET3安装取消，只安装.NET4就可以了
+<img src={require('@site/static/img/knowledgeBase/Web/1.png').default} alt="" style={{maxWidth: "50%"}}/>

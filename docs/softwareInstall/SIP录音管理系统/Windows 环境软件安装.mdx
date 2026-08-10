@@ -1,0 +1,104 @@
+---
+title: Windows 环境前期配置
+sidebar_position: 1
+---
+import React from 'react';
+import '../../../src/css/style.css'; // 导入 CSS 文件
+import SimpleWordDownload from '../../../src/components/SimpleWordDownload';
+
+## 一、防火墙设置
+
+&emsp;&emsp;打开控制面板---系统和安全---Windows Defender 防火墙---启用或关闭Windows Defender 防火墙
+
+<img src={require('@site/static/img/softwareInstall/8.png').default} alt="" />
+
+
+## 二、用户账户设置
+### 1、更改用户账户设置
+
+控制面板---用户账户---用户账户---更改用户账户控制设置修改为从不通知，点击确定
+
+<img src={require('@site/static/img/softwareInstall/9.png').default} alt=""/>
+
+
+### 2、关闭输入用户名密码权限
+&emsp;&emsp;打开“运行”---输入“Control Userpasswords2”进入“用户账户”页面，“要使用本计算机，用户输入用户名和密码”默认是勾选的，把勾选去掉。<br />
+&emsp;&emsp;点击“应用”---输入服务器登录密码---确定保存即可，举例如下：
+
+<img src={require('@site/static/img/softwareInstall/10.png').default} alt=""/>
+
+## 三、操作系统设置
+
+为了使计费软件正常运行，建议服务器系统配置按照下面的要求配置：<br />
+&emsp;&emsp;目的是防止服务器因突然断电或自动重启等其他原因重启之后不输入密码进不到系统等原因，导致计费服务器不能正常运行
+
+
+### 1、禁止Windows 更新
+
+&emsp;&emsp;打开服务把Windows更新服务禁止，“恢复”设置成无操作<br />
+&emsp;&emsp;举例截图如下：
+
+<img src={require('@site/static/img/softwareInstall/11.png').default} alt=""/>
+
+### 2、排查系统升级程序
+查看下系统程序里有没有微软易升等软件，要是有卸载掉
+
+
+### 3、服务器电源休眠状态
+服务器电源休眠状态改成从不休眠
+
+## 四、IIS配置
+### 1、IIS配置
+<span class="red">
+&emsp;&emsp;注意：安装WEB查询统计，根据电脑系统的不同，IIS安装配置方法就不同，请按照相应电脑系统先配置好IIS配置，再安装“WEB查询统计”（IIS安装方法可以根据系统版本点击跳转）
+</span>
+
+<div style={{ display: 'flex', justifyContent: 'space-between', width: '90%' ,marginLeft:"2em"}}>
+  <span >• [Windows xp](../Windows%20IIS配置/Windows%20xp.mdx)</span>
+  <span>• [Windows 7](../Windows%20IIS配置/Windows%207.mdx)</span>
+  <span>• [Windows 8](../Windows%20IIS配置/Windows%208.mdx)</span>
+  <span>• [Windows 2003](../Windows%20IIS配置/Windows%202003.mdx)</span>
+</div>
+<div style={{ display: 'flex', justifyContent: 'space-between', width: '65%' ,marginLeft:"2em"}}>
+  <span>• [Windows 2008](../Windows%20IIS配置/Windows%202008.mdx)</span>
+</div>
+
+
+
+<br />
+
+<span class="red ">
+&emsp;&emsp;下面以 Windows 7 系统 IIS配置为例（其他系统请选择如上跳转链接进行配置）,Windows 7配置案例，Windows10\11同时适用
+</span>
+
+### （1）设置Internet信息服务
+  1）打开“控制面板”---“程序”---“打开或关闭Windows功能”---“Internet信息服务”
+<img src={require('@site/static/img/softwareInstall/12.png').default} alt=""/>
+<br />
+
+  2）将Web管理工具和万维网服务二者进行勾选
+<img src={require('@site/static/img/softwareInstall/13.png').default} alt=""/>
+<br />
+
+  3）Web管理工具设置如下图所示
+<img src={require('@site/static/img/softwareInstall/14.png').default} alt=""/>
+<br />
+
+  4）在“万维网服务-安全性”中按照下图所示进行勾选
+<img src={require('@site/static/img/softwareInstall/15.png').default} alt=""/>
+<br />
+
+  5）“万维网服务-应用程序开发功能”设置如下
+<img src={require('@site/static/img/softwareInstall/16.png').default} alt=""/>
+
+### （2）设置Internet信息服务（IIS）管理器
+
+  1）控制面板---系统与安全---Windows工具---InternetInformation Services（IIS）管理器 ---“应用程序池” <br />
+ &emsp;&emsp;相应的应用程序池会出现在右边，右键单击修改每个应用程序池，点击 “高级设置”修改
+<img src={require('@site/static/img/softwareInstall/17.png').default} alt=""/>
+<br />
+
+  2）在启用32位应用程序在拉菜单中选择“True”，点击确定
+<img src={require('@site/static/img/softwareInstall/18.png').default} alt=""/>
+
+<SimpleWordDownload />

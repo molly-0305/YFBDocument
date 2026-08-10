@@ -1,0 +1,282 @@
+# Web management platform
+
+## 一、Login
+&emsp;Open the "Switch Communication Management System WEB Management" page, which will automatically open the browser and enter the login interface  
+&emsp;Username: admin  
+&emsp;Password: 88888   
+&emsp;Click "Login" to enter the WEB page    
+&emsp;ht&#8203;tp://127.0.0.1:10801/Login/Index,This address is the address for accessing the billing server  
+&emsp;In the same local area network, you can change the billing IP 127.0.0.1 to the IP address of the installed WEB server for access  
+&emsp;For example:  
+&emsp;<span class="blue">ht&#8203;tp://192.168.6.27:10801/Login/Index</span>  
+&emsp;<span class="blue">Username: admin</span>  
+&emsp;<span class="blue">Password: 88888</span>  
+&emsp;If other administrators are set up on the server side, you can log in directly with the administrator account  
+
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/1.png" alt=""/>
+<br /><br />
+
+
+&emsp;Upon entering the page, it is primarily divided into "Home," "Voice Switch Settings," "Organization Structure," "Billing Settings," and "System Settings."  
+&emsp;Here is the screenshot:  
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/2.png" alt=""/>
+
+
+## 二、HomePage
+### 1、ShortCut
+&emsp;"Basic Information Shortcuts "and" Other Basic Settings Shortcuts "do not require searching in the navigation bar, and can be directly clicked to jump to the corresponding operation interface  
+&emsp;As shown in the following figure:
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/3.png" alt=""/>
+
+### 2、Version Information
+&emsp;You can view the version information involved in this interface, and you can also click to view more related information  
+&emsp;Here is the screenshot:
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/4.png" alt=""/>
+
+## 三、organizational structure
+&emsp;The organizational structure mainly has the following functions (as shown in the following figure)  
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/5.png" alt=""/>
+
+### 1、Department Information
+&emsp;Department information function introduction: Add, move, query, delete  
+（1）Add department  
+&emsp;Right-click "Department Information" to add a department. After adding a department, you can continue to right-click the newly created department to create a sub-department.  
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/6.png" alt=""/>
+
+<br /><br />
+&emsp;&emsp;&emsp;&emsp;&emsp;Fill in the information for the new department and click Save
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/7.png" alt=""/>
+
+<br /><br />
+&emsp;&emsp;&emsp;&emsp;&emsp;You can also modify the corresponding department information
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/8.png" alt=""/><br /><br />
+
+
+（2）Move department  
+&emsp;<span class="red">Note: Select the department you want to move on the left, and you can only move one department at a time</span>  
+&emsp;Click "Move", select the department to move to, and then click "Save"  
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/9.png" alt=""/><br /><br />
+
+（3）Search department  
+&emsp;Enter the name of the department you want to query and click on the query icon  
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/10.png" alt=""/><br /><br />
+
+（4）Delete department  
+&emsp;Select the department you want to delete, click the "Delete" button, and then click "OK"
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/11.png" alt=""/><br /><br />
+
+### 2、Employee Information
+&emsp;Employee information function introduction: Add, delete, batch settings, move, export, query, advanced query, export
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/12.png" alt=""/><br /><br />
+（1）Add employee  
+&emsp;New Employee Information: Organizational Structure - Employee Information - Add  
+For example:  
+&emsp;Organizational Structure - Employee Information - Add, fill in employee information as needed  
+<span class="red">Note: The department name cannot be manually filled in and can only be selected after the corresponding department information has been added</span>  
+&emsp;After filling in, click "Save"  
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/13.png" alt=""/><br /><br />
+
+（2）Delete employee  
+&emsp;Select the employee you want to delete, and click the delete button  
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/14.png" alt=""/><br /><br />
+
+（3）Batch setting of employees  
+&emsp;Select the employees you want to batch set, and click the batch setting button  
+&emsp;<span class="red">Note: Batch settings can only set the postpaid cost limit</span>  
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/15.png" alt=""/><br /><br />
+
+（4）Move employee  
+&emsp;Select the employee you want to move, click the move button, and choose the department you want to move to  
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/16.png" alt=""/><br /><br />
+
+（5）Import employees  
+&emsp;Click the 'Import' button to batch import employees  
+&emsp;Open "Employee Information", click "Import", and the "Employee Import" page will pop up;  
+&emsp;First select "Template Download", download the template  
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/17.png" alt=""/><br /><br />
+
+&emsp;Fill in the employee import information according to the downloaded import template, for example:  
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/18.png" alt=""/><br /><br />
+
+&emsp;Click "Browse", select the file to import, and the software will automatically read the file. If the information is correct, it will display "Importing, please wait" for example:
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/19.png" alt=""/><br /><br />
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/20.png" alt=""/><br /><br />
+
+
+
+
+（6）Query employees  
+&emsp;Enter the name of the employee you want to query and click on the query icon  
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/21.png" alt=""/><br /><br />
+
+
+（7）Advanced query  
+&emsp;Click on the advanced query and fill in the detailed information of the employee you want to query  
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/22.png" alt=""/><br /><br />
+
+
+（8）Export employees  
+&emsp;Employees can be imported, of course, they can also be exported  
+&emsp;Employee export optional export file types: export a single file, a single file split by multiple tags by department, and multiple files split by department, select the type to export  
+&emsp;Export a single file: all data is placed in a single worksheet of the exported excel file  
+&emsp;Single file split by multiple tags by department: export excel file, split by department, each department in a worksheet  
+&emsp;Multiple files split by department: split by department, one department is one excel file  
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/23.png" alt=""/><br /><br />
+
+
+
+## 四、Voice switch settings
+&emsp;Voice switch settings mainly have the following functions (as shown in the figure below)  
+
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/24.png" alt=""/>
+
+### 1、Extension information
+&emsp;Extension information functions: add, batch add, delete, query  
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/25.png" alt=""/><br /><br />
+（1）Add extension  
+&emsp;Add "Extension Information", click "Extension Name", select the newly created employee information, the department information will be synchronized with the employee, and the other extension attributes can be filled in as needed and saved  
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/26.png" alt=""/><br /><br />
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/27.png" alt=""/><br /><br />
+&emsp;Fill in the information and click "Save"  
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/28.png" alt=""/><br /><br />
+（2）Batch add extensions  
+&emsp;<span class="red">Extension information can be batch added with extension numbers and related employee information</span>  
+&emsp;<span class="red">（If the extension numbers are continuous and numerous, it is recommended to use batch addition）</span>  
+&emsp;Open "Extension Information", click "Batch Add", fill in the conditions, and click "Save"  
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/29.png" alt=""/><br /><br />
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/30.png" alt=""/><br /><br />
+（3）Delete extensions  
+&emsp;Select one or more extensions and click the delete button to delete one or more extensions  
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/31.png" alt=""/><br /><br />
+（4）Query extension  
+&emsp;Enter the extension information you want to query, click on the query button  
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/32.png" alt=""/>
+### 2、Trunk Information
+&emsp;This module is intended for use by technicians, so it will not be explained here
+
+### 3、Phone Number Change
+&emsp;This module is intended for use by technicians, so it will not be explained here
+
+### 4、Bill Filter
+&emsp;This module is intended for use by technicians, so it will not be explained here
+
+## 五、Billing Set
+&emsp;The billing settings mainly have the following functions (as shown in the following figure)  
+
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/33.png" alt=""/>
+
+### 1、Operator Set
+&emsp;This module is intended for use by technicians, so it will not be explained here  
+
+### 2、Call Bill
+（1）Send settings    
+&emsp;Send settings: is used to test whether the email can be used to send bill settings  
+&emsp;Email sending server (SMTP)  
+&emsp;Server address: fill in the company server address  
+&emsp;Port number: default  
+&emsp;Username and password: fill in the email and password of the company's billing email (<span class="red">the username must be filled in completely</span>)  
+&emsp;<span class="red">Note: If it is a personal email, please follow the guidance of the personal email website to open the SMTP service, and obtain the SMTP opening password. The above server address, port number, username (for personal email), and password (for the authorization password given by the website after opening SMTP authorization) should be configured according to the website configuration requirements</span>  
+&emsp;Click "Test Connection", if "Connection Successful" is displayed, it is successful  
+&emsp;Proxy server: Enable the server as needed. If the proxy server is enabled and there is a problem with the email sending server, the proxy server will send the email  
+&emsp;Send test:  
+&emsp;Address: Fill in the email address to receive the test email, click "Send", if the received email is received, it proves that the email server is no problem, and you can set other billing settings requirements  
+
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/34.png" alt=""/><br /><br />
+
+（2）Billing Settings  
+&emsp;Set the billing cycle according to the requirements, set the parameters, and click "Save"  
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/35.png" alt=""/><br /><br />
+
+（3）Company Billing  
+&emsp;To send company bills, check "Enable", set the object to introduce the bill, and add the personnel to receive the bill (Note: The personnel receiving the bill must fill in the email information);  
+&emsp;Email content settings: You can freely set the content and whether to send the call details with the email  
+As shown in the following figure: 
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/36.png" alt=""/><br /><br />
+（4）Billing Department  
+&emsp;Billing department settings refer to "Company Billing"    
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/37.png" alt=""/><br /><br />
+（5）Personal billing    
+&emsp;Please refer to "Company Billing" for personal billing settings  
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/38.png" alt=""/>
+
+### 3、Business Warning
+&emsp;Business alerts include call cost alerts, bill abnormality alerts, communication abnormality alerts, and phone theft alerts. For detailed settings, please refer to the billing statement - send settings   
+&emsp;<span class="red">Please refer to the sending test in the billing function for sending settings testing</span>  
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/34.png" alt=""/>
+(1) Call cost warning  
+&emsp;Call cost warning setting, when the cost of the phone reaches the set warning fee, an email reminder will be sent  
+&emsp;If you need to use the call cost warning function  
+&emsp;First check: 'Enable'  
+&emsp;Set up the alert receiving email object and the corresponding email for receiving alerts  
+&emsp;The content of the warning email can also be filled in according to the needs  
+&emsp;For example, as shown in the following figure:  
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/39.png" alt=""/><br /><br />
+(2) Abnormal alert for bill of lading  
+&emsp;If the call ticket is not received for a long time, a warning email will be sent.     
+&emsp;Need to click 'Enable'  
+&emsp;Warning parameter: Set the corresponding time for not receiving the call ticket according to the requirements, and send a warning email  
+&emsp;Recipient: Set up alert email recipients and corresponding email addresses according to requirements  
+&emsp;Content setting: The program will send corresponding warning emails based on the warning situation, making it convenient for staff to know and handle the warning situation in a timely manner  
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/40.png" alt=""/><br /><br />
+(3) Communication abnormality warning  
+&emsp;Receiving abnormal alerts will send alert emails in the following abnormal situations  
+&emsp;1) Communication connection interruption warning  
+&emsp;2) Database insertion exception warning  
+&emsp;Need to use the function of receiving abnormal alerts  
+&emsp;Need to click 'Enable'  
+&emsp;Warning parameter: Set the corresponding time for not receiving the call ticket according to the requirements, and send a warning email  
+&emsp;Recipient: Set up alert email recipients and corresponding email addresses according to requirements  
+&emsp;Content setting: The program will send corresponding warning emails based on two warning situations, making it convenient for staff to know which warning it is and handle it in a timely manner  
+&emsp;For example, as shown in the following figure:   
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/41.png" alt=""/><br /><br />
+(4) Phone theft warning  
+&emsp;Phone theft warning setting, the system will send email reminders if there are call records from non designated countries that may have been hacked  
+&emsp;If you need to use the call cost warning function  
+&emsp;First check: 'Enable'  
+&emsp;Reception settings: Set up the alert receiving email object and the corresponding email for receiving  
+&emsp;Content setting: The content of the warning email can also be filled in according to needs  
+&emsp;Trusted area code country name: Add a trusted area code. When the system displays call records for the country with that area code, no email reminder will be sent.  
+&emsp;For example, as shown in the following figure:   
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/42.png" alt=""/>
+
+
+
+
+
+
+## 六、System Settings
+&emsp;The system settings mainly have the following functions (as shown in the following figure)  
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/43.png" alt=""/><br /><br />
+
+### 1、Administrator Information
+&emsp;Administrator information functions include: adding administrators, deleting administrators, batch setting, and querying
+
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/44.png" alt=""/><br /><br />
+
+（1）Add Administrator  
+&emsp;It is recommended to fill in the email address; check the relevant functional permissions for the administrator; set up the employee information to be managed  
+&emsp;After setting up, just save it  
+For example:  
+
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/45.png" alt=""/><br /><br />
+
+<span class="red">Attention: The administrator username cannot be created repeatedly;</span>  
+<span class="red">Attention: The administrator can set different data permissions. When querying and counting call records, only the call records of the selected employees/call types will be displayed.</span>    
+
+（2）Delete administrator  
+&emsp;Select the administrator to be deleted and click "Delete"  
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/46.png" alt=""/><br /><br />
+（3）Batch setting  
+&emsp;Select the administrators to be set, and you can batch set the employees with data permissions. After setting, just save it.    
+For example:  
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/47.png" alt=""/><br /><br />
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/48.png" alt=""/><br /><br />
+（4）Query administrator  
+&emsp;The query criteria can be: username or name  
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/EN/49.png" alt=""/>
+
+### 2、Fixed line information database
+&emsp;This module is intended for use by technicians, so it will not be explained here
+
+### 3、Mobile Information Database
+&emsp;This module is intended for use by technicians, so it will not be explained here

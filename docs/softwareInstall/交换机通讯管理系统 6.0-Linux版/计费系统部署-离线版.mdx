@@ -1,0 +1,211 @@
+---
+title: 计费系统部署(离线版)
+sidebar_position: 4
+---
+
+import React from 'react';
+import '../../../src/css/style.css'; // 导入 CSS 文件
+import SimpleWordDownload from '../../../src/components/SimpleWordDownload';
+
+## 一、导入文件
+### 1、上传文件到服务器
+（1）在服务器中的/opt/目录下创建BillCommonManage文件夹  
+sudo mkdir /opt/BillCommonManage
+```
+sudo mkdir /opt/BillCommonManage
+```
+<img src={require('@site/static/img/softwareInstall/Networking/6.0/Bill/1.png').default} alt=""/>
+
+（2）将所有文件上传到/opt/BillCommonManage/目录下
+<img src={require('@site/static/img/softwareInstall/Networking/6.0/Bill/26.png').default} alt=""/>
+<span class="red" style={{fontSize:"22px"}}>注：离线版需要联系技术人员获取相应架构的mysql文件夹</span>
+
+（3）在BillCommonManage文件夹下使用ls命令查看上传的文件是否齐全
+<img src={require('@site/static/img/softwareInstall/Networking/6.0/Bill/28.png').default} alt=""/>
+
+## 二、镜像加载
+### 1、启动数据库服务
+（1）进入mysql目录
+cd /opt/BillCommonManage/mysql
+```
+cd /opt/BillCommonManage/mysql
+```
+（2）加载数据库镜像
+sudo docker load -i mysql.tar
+```
+sudo docker load -i mysql.tar
+```
+
+（3）启动数据库服务
+sudo docker-compose up -d mysql_db
+```
+sudo docker-compose up -d mysql_db
+```
+
+### 2、加载数据库文件
+sudo docker load -i pd.tar
+```
+sudo docker load -i pd.tar
+```
+<img src={require('@site/static/img/softwareInstall/Networking/6.0/Bill/4.png').default} alt=""/><br /><br />
+
+sudo docker load -i tikv.tar
+```
+sudo docker load -i tikv.tar
+```
+<img src={require('@site/static/img/softwareInstall/Networking/6.0/Bill/5.png').default} alt=""/><br /><br />
+
+sudo docker load -i tidb.tar
+```
+sudo docker load -i tidb.tar
+```
+<img src={require('@site/static/img/softwareInstall/Networking/6.0/Bill/6.png').default} alt=""/><br /><br />
+
+### 3、加载计费系统文件
+
+sudo docker load -i manage.tar
+```
+sudo docker load -i manage.tar
+```
+<img src={require('@site/static/img/softwareInstall/Networking/6.0/Bill/7.png').default} alt=""/><br /><br />
+
+sudo docker load -i report.tar
+```
+sudo docker load -i report.tar
+```
+<img src={require('@site/static/img/softwareInstall/Networking/6.0/Bill/8.png').default} alt=""/><br /><br />
+
+## 三、数据库初始化
+### 1、启用tidb服务
+
+sudo docker-compose up -d pd
+```
+sudo docker-compose up -d pd
+```
+<img src={require('@site/static/img/softwareInstall/Networking/6.0/Bill/10.png').default} alt=""/><br /><br />
+
+sudo docker-compose up -d tikv
+```
+sudo docker-compose up -d tikv
+```
+<img src={require('@site/static/img/softwareInstall/Networking/6.0/Bill/11.png').default} alt=""/><br /><br />
+
+sudo docker-compose up -d tidb_db
+```
+sudo docker-compose up -d tidb_db
+```
+<img src={require('@site/static/img/softwareInstall/Networking/6.0/Bill/12.png').default} alt=""/>
+
+
+### 2、将脚本拷入容器中
+
+sudo docker cp billcommonstandard.sql bill_tidb:/billcommonstandard.sql
+```
+sudo docker cp billcommonstandard.sql bill_tidb:/billcommonstandard.sql
+```
+
+### 3、进入相应容器内
+
+sudo docker exec -it bill_mysql bash
+```
+sudo docker exec -it bill_mysql bash
+```
+<img src={require('@site/static/img/softwareInstall/Networking/6.0/Bill/22.png').default} alt=""/>
+
+
+### 4、连接Tidb数据库并初始化数据库
+（1）连接TIDB服务
+mysql -h 宿主机IP -P 4000 -uroot --default-character-set=utf8mb4
+```
+mysql -h 宿主机IP -P 4000 -uroot --default-character-set=utf8mb4
+```
+<img src={require('@site/static/img/softwareInstall/Networking/6.0/Bill/13.png').default} alt=""/>
+
+（2）修改 root 用户的密码为 sa  
+ALTER USER 'root'@'%' IDENTIFIED BY 'sa';
+```
+ALTER USER 'root'@'%' IDENTIFIED BY 'sa';
+```
+<br /><br />
+刷新权限，使密码更改立即生效  
+FLUSH PRIVILEGES;
+```
+FLUSH PRIVILEGES;
+```
+
+<br /><br />
+退出数据库  
+exit
+```
+exit
+```
+<img src={require('@site/static/img/softwareInstall/Networking/6.0/Bill/14.png').default} alt=""/>
+
+
+（3）创建字符集设为utf8mb4的数据库  
+mysql -h 宿主机IP -P 4000 -uroot -psa --default-character-set=utf8mb4 -e "CREATE DATABASE billcommonstandard DEFAULT CHARACTER SET utf8mb4;"
+```
+mysql -h 宿主机IP -P 4000 -uroot -psa --default-character-set=utf8mb4 -e "CREATE DATABASE billcommonstandard DEFAULT CHARACTER SET utf8mb4;"
+```
+<img src={require('@site/static/img/softwareInstall/Networking/6.0/Bill/15.png').default} alt=""/>
+
+（4）将容器内billcommonstandard.sql文件导入到billcommonstandard数据库中  
+mysql -h 宿主机IP -P 4000 -uroot -psa --default-character-set=utf8mb4 billcommonstandard < /billcommonstandard.sql
+```
+mysql -h 宿主机IP -P 4000 -uroot -psa --default-character-set=utf8mb4 billcommonstandard < /billcommonstandard.sql
+```
+<img src={require('@site/static/img/softwareInstall/Networking/6.0/Bill/16.png').default} alt=""/>
+
+（5）清理Docker资源
+sudo docker stop bill_mysql;;;sudo docker rm bill_mysql;;;sudo docker rmi mysql:8.0
+```
+sudo docker stop bill_mysql;;;sudo docker rm bill_mysql;;;sudo docker rmi mysql:8.0
+```
+
+（6）退出镜像容器  
+exit
+```
+exit
+```
+<img src={require('@site/static/img/softwareInstall/Networking/6.0/Bill/23.png').default} alt=""/>
+
+（6）查看tidb数据库容器的IP地址  
+
+<img src={require('@site/static/img/softwareInstall/Networking/6.0/Bill/17.png').default} alt=""/>
+
+（7）将IP地址填写到app文件中appsettings.json的Server="IP地址"中，三个都要改
+<img src={require('@site/static/img/softwareInstall/Networking/6.0/Bill/18.png').default} alt=""/>
+
+
+
+## 四、启动程序服务
+sudo docker-compose up -d bill-manage
+```
+sudo docker-compose up -d bill-manage
+```
+<img src={require('@site/static/img/softwareInstall/Networking/6.0/Bill/19.png').default} alt=""/><br /><br />
+
+sudo docker-compose up -d bill-report
+```
+sudo docker-compose up -d bill-report
+```
+<img src={require('@site/static/img/softwareInstall/Networking/6.0/Bill/20.png').default} alt=""/><br /><br />
+
+
+## 五、程序访问
+### 1、计费管理端
+默认访问地址：ht&#8203;tps://服务器IP地址:6061/  
+账号：admin  
+密码：88888  
+<span class="red" style={{fontSize:"22px"}}>注：初次需要将机器码复制给技术人员，获取授权码粘贴近页面中，才可以使用</span>
+
+
+### 2、计费查询端
+htt&#8203;ps://服务器IP地址:6062/  
+账号：admin  
+密码：88888  
+
+
+
+
+<SimpleWordDownload />

@@ -1,0 +1,41 @@
+# SQL Server备份数据
+
+## 一、SQL Server自动备份
+1、打开数据库管理工具，选择管理–>维护计划
+<img src="/YFBDocument/content/assets/img/softwareInstall/WindowsOther/1.png" alt=""/>
+
+2、右键–>维护计划向导
+<img src="/YFBDocument/content/assets/img/softwareInstall/WindowsOther/2.png" alt=""/>  
+<br />
+<img src="/YFBDocument/content/assets/img/softwareInstall/WindowsOther/3.png" alt=""/>
+
+3、点击下一步，计划名称可以自定义，在计划选项上，点击更改，频率更改为每天（可以自己的实际情况设置时间，每周、每月、或者周几），每天频率：设置自动备份的时间
+<img src="/YFBDocument/content/assets/img/softwareInstall/WindowsOther/4.png" alt=""/>
+<br />
+<img src="/YFBDocument/content/assets/img/softwareInstall/WindowsOther/5.png" alt=""/>
+
+4、设置完成后点击下一步。
+<img src="/YFBDocument/content/assets/img/softwareInstall/WindowsOther/6.png" alt=""/>
+
+5、置计划内容，选择“备份数据库(完整)”任务和“清除维护”任务，然后下一步
+<img src="/YFBDocument/content/assets/img/softwareInstall/WindowsOther/7.png" alt=""/>
+
+6、设置执行顺序，默认即可。
+<img src="/YFBDocument/content/assets/img/softwareInstall/WindowsOther/8.png" alt=""/>
+
+7、下一步，选择需要备份的数据库，备份文件存放位置。
+<img src="/YFBDocument/content/assets/img/softwareInstall/WindowsOther/9.png" alt=""/>
+<br />
+<img src="/YFBDocument/content/assets/img/softwareInstall/WindowsOther/10.png" alt=""/>
+<br />
+<img src="/YFBDocument/content/assets/img/softwareInstall/WindowsOther/11.png" alt=""/>
+
+## 二、SQL Server备份过期自动删除
+1、定义“清楚维护”任务，选择备份文件的文件夹和删除超过多长时间的文件
+<img src="/YFBDocument/content/assets/img/softwareInstall/WindowsOther/12.png" alt=""/>
+
+2、选择报告选项，选择报告存放位置，点击下一步。
+<img src="/YFBDocument/content/assets/img/softwareInstall/WindowsOther/13.png" alt=""/>
+
+3、即可完成对数据库的自动备份和自动删除操作
+<img src="/YFBDocument/content/assets/img/softwareInstall/WindowsOther/14.png" alt=""/>

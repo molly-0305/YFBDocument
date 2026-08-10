@@ -1,0 +1,152 @@
+.red {
+  color: #c62828;
+}
+
+.blue {
+  color: #0b6bcb !important;
+}
+
+/*
+ * 文档正文样式：对齐 brand-docs-portal3 阅读体验
+ * （标题层级、行距、引用块、表格边框、图片等）
+ */
+.markdown {
+  color: #1f2937;
+  line-height: 1.85;
+  font-size: 1.02rem;
+}
+
+.markdown h1 {
+  margin: 0 0 1rem;
+  font-size: 1.85rem;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.markdown h2 {
+  margin: 1.6rem 0 0.7rem;
+  font-size: 1.3rem;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.markdown h3 {
+  margin: 1.2rem 0 0.55rem;
+  font-size: 1.1rem;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.markdown h4 {
+  margin: 1rem 0 0.45rem;
+  font-size: 1.02rem;
+  color: #0f172a;
+}
+
+.markdown p,
+.markdown li {
+  margin: 0.55rem 0;
+  color: #1f2937;
+  line-height: 1.85;
+}
+
+.markdown a {
+  color: #0b6bcb;
+}
+
+.markdown img {
+  display: block;
+  margin: 1rem auto;
+  max-width: min(100%, 920px);
+  height: auto;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.markdown table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.markdown th,
+.markdown td {
+  border: 1px solid #e2e8f0;
+  padding: 0.5rem 0.65rem;
+  text-align: left;
+}
+
+.markdown th {
+  background: #f8fafc;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.markdown blockquote {
+  margin: 1rem 0;
+  padding: 0.55rem 0.9rem;
+  border-left: 3px solid #0b6bcb;
+  background: #f8fafc;
+  color: #475569;
+}
+
+.markdown code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+[data-theme='dark'] .markdown {
+  color: #e5e7eb;
+}
+
+[data-theme='dark'] .markdown h1,
+[data-theme='dark'] .markdown h2,
+[data-theme='dark'] .markdown h3,
+[data-theme='dark'] .markdown h4 {
+  color: #f8fafc;
+}
+
+[data-theme='dark'] .markdown p,
+[data-theme='dark'] .markdown li {
+  color: #e5e7eb;
+}
+
+[data-theme='dark'] .markdown th,
+[data-theme='dark'] .markdown td {
+  border-color: #334155;
+}
+
+[data-theme='dark'] .markdown th {
+  background: #1e293b;
+  color: #f8fafc;
+}
+
+[data-theme='dark'] .markdown blockquote {
+  background: #1e293b;
+  color: #94a3b8;
+}
+
+/* 打印时保留正文配色 */
+@media print {
+  .markdown,
+  .markdown p,
+  .markdown li {
+    color: #1f2937 !important;
+  }
+
+  .markdown h1,
+  .markdown h2,
+  .markdown h3,
+  .markdown h4 {
+    color: #0f172a !important;
+  }
+
+  .blue,
+  .markdown a {
+    color: #0b6bcb !important;
+  }
+
+  .red {
+    color: #c62828 !important;
+  }
+}

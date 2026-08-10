@@ -1,0 +1,365 @@
+# SIP录音管理系统
+
+## 一、登录
+打开“SIP录音查询系统“软件，会自动打开浏览器，进入登陆界面  
+用户名：admin  
+密  码：88888  
+点击"登录"  进入WEB页面  
+h&#8203;ttp://127.0.0.1:11805/Home/Index  这个地址是访问SIP录音服务器地址  
+同一个局域网的可以把IP 127.0.0.1改成安装SIP录音服务器的IP地址进行访问  
+举例如下：  
+h&#8203;ttp://192.168.6.240:11805/Home/Index  
+登录用户名：admin  
+密码：88888  
+如在服务端设置好其他管理员，直接登录管理员账号即可  
+
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/1.png" alt=""/>
+
+进入页面，主要分为"查询记录"、"统计表报"、"文字质检"、"组织架构"和"系统设置"（注：功能使用根据实际购买许可而定）  
+截图如下：
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/2.png" alt=""/>
+
+## 二、查询记录
+查询记录包括主页、录音记录和操作记录
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/3.png" alt=""/>
+
+### 1、主页
+系统主页统计的是当前周以及当前月不同话务类型的通话时长和相应的统计图表显示  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/4.png" alt=""/>
+
+### 2、录音记录
+录音主页统计的是当前录音分机的通话情况  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/5.png" alt=""/>
+
+录音记录有：查询、高级查询、录音播放、录音下载、转写（注：功能使用根据实际购买许可而定）  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/6.png" alt=""/>
+
+（1）查询  
+录音记录普通查询可以选择要查询的录音通话记录日期  
+下拉选择通话日期和根据需求填写查询条件，进行录音记录的模糊查询  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/7.png" alt=""/>
+
+（2）高级查询 
+点击“高级查询”会弹出高级查询页面  
+根据需求填写查询需求，进行详细查询录音记录  
+例如：  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/8.png" alt=""/>
+
+（3）录音播放  
+勾选录音记录（只能勾选一条录音记录），然后点击右上角的"录音播放"按钮，或直接点击对应录音的播放按钮即可播放此条录音记录。  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/9.png" alt=""/>
+
+（4）录音下载  
+勾选要下载的录音文件（可勾选多条录音记录），然后点击“录音下载”选择好路径，即可下载录音文件。   
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/10.png" alt=""/> <br /><br />
+下载单条指定录音可直接点击相应录音前方的下载按钮进行下载。   
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/11.png" alt=""/>
+
+（5）导出  
+根据需求查询录音记录，点击“导出”，按需求选择要导出的文件类型，进行导出录音通话记录   
+例如：  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/12.png" alt=""/>
+
+### 3、操作记录
+操作记录统计的是管理员的操作记录  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/13.png" alt=""/>
+
+（1）查询
+操作记录查询可以选择要查询的操作记录日期：  
+下拉选择操作日期和根据需求填写查询条件，进行操作记录的模糊查询  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/14.png" alt=""/>
+
+
+（2）导出
+根据需求查询操作记录，点击“导出”，按需求选择要导出的文件类型，进行导出操作记录    
+例如：  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/15.png" alt=""/>
+
+## 三、统计报表
+统计报表：主要有以下功能  
+如图所示：  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/16.png" alt=""/>
+
+这些报表功能都可以查询、导出、打印相应的统计记录，查询记录可以以统计图的方式显示  
+根据实际需求查询相应的报表  
+下面以“员工话务数量统计”举例说明，查询（包括统计图）、导出和打印举例说明  
+### 1、员工话务数量统计
+员工话务数量统计功能有：查询、导出、打印；还可以以“统计图”方式显示  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/17.png" alt=""/>
+
+（1）查询  
+普通查询员工话务量，可以选择查询统计日期时间段，选择要查询的部门，查询条件可以是：员工部门和部门名称  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/18.png" alt=""/>
+
+
+为了更方便查看，可以点击“统计图 可以查看“柱状图”或“饼状图” 例如：  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/19.png" alt=""/> 
+
+
+（2）导出  
+查询好的记录，点击“导出”，按需求选择要导出的文件类型，进行导出通话记录  
+例如：  
+根据需求选择导出文件格式  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/20.png" alt=""/> 
+
+
+（3）打印
+查询后的记录，点击“打印”，设置好打印信息，点击“打印”即可  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/21.png" alt=""/><br />
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/22.png" alt=""/>
+
+### 2、员工话务时长统计
+员工话务时长统计功能有：查询、导出、打印；还可以以“统计图”方式显示  
+具体功能使用请参考“员工话务数量统计”的功能介绍使用即可   
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/23.png" alt=""/> 
+
+（1）查询  
+参考“员工话务数量统计”的查询功能
+
+（2）导出  
+参考“员工话务数量统计”的导出功能
+
+（3）打印  
+参考“员工话务数量统计”的打印功能
+
+### 3、员工话务时段统计
+员工话务时段统计功能有：查询、导出、打印；还可以以“统计图”方式显示  
+具体功能使用请参考“员工话务数量统计”的功能介绍使用即可  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/24.png" alt=""/> 
+
+（1）查询  
+参考“员工话务数量统计”的查询功能
+
+（2）导出  
+参考“员工话务数量统计”的导出功能
+
+（3）打印  
+参考“员工话务数量统计”的打印功能
+
+### 4、员工话务排行
+员工话务排行功能有：查询、导出、打印；还可以以“统计图”方式显示  
+具体功能使用请参考“员工话务数量统计”的功能介绍使用即可   
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/25.png" alt=""/>
+
+（1）查询  
+参考“员工话务数量统计”的查询功能
+
+（2）导出  
+参考“员工话务数量统计”的导出功能
+
+（3）打印  
+参考“员工话务数量统计”的打印功能
+
+### 5、部门话务数量统计
+部门话务数量统计功能有：查询、导出、打印；还可以以“统计图”方式显示  
+具体功能使用请参考“员工话务数量统计”的功能介绍使用即可  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/26.png" alt=""/>
+
+（1）查询  
+参考“员工话务数量统计”的查询功能
+
+（2）导出  
+参考“员工话务数量统计”的导出功能
+
+（3）打印  
+参考“员工话务数量统计”的打印功能
+
+### 6、部门话务时长统计
+部门话务时长统计功能有：查询、导出、打印；还可以以“统计图”方式显示  
+具体功能使用请参考“员工话务数量统计”的功能介绍使用即可  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/27.png" alt=""/>
+
+（1）查询  
+参考“员工话务数量统计”的查询功能
+
+（2）导出  
+参考“员工话务数量统计”的导出功能
+
+（3）打印  
+参考“员工话务数量统计”的打印功能
+
+### 7、部门话务时段统计
+部门话务时段统计功能有：查询、导出、打印；还可以以“统计图”方式显示  
+具体功能使用请参考“员工话务数量统计”的功能介绍使用即可  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/28.png" alt=""/> 
+
+（1）查询  
+参考“员工话务数量统计”的查询功能
+
+（2）导出  
+参考“员工话务数量统计”的导出功能
+
+（3）打印  
+参考“员工话务数量统计”的打印功能
+
+### 8、部门话务排行
+部门话务排行功能有：查询、导出、打印；还可以以“统计图”方式显示  
+具体功能使用请参考“员工话务数量统计”的功能介绍使用即可  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/29.png" alt=""/>
+
+（1）查询  
+参考“员工话务数量统计”的查询功能
+
+（2）导出  
+参考“员工话务数量统计”的导出功能
+
+（3）打印  
+参考“员工话务数量统计”的打印功能
+
+## 四、文字质检
+<span class="red" style="font-size:22px">注：此功若为未开通，则无法使用（可以进行隐藏）</span>
+### 1、转写内容查询
+转写内容查询功能有：查询、高级查询、导出、播放录音、下载录音  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/47.png" alt=""/><br />
+（1）查询  
+转写内容查询可以选择要查询的转写内容日期：  
+下拉选择转写内容日期和根据需求填写查询条件，进行转写内容的模糊查询  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/48.png" alt=""/><br />
+（2）高级查询  
+点击“高级查询”会弹出高级查询页面  
+根据需求填写查询需求，进行详细查询转写内容
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/49.png" alt=""/><br />
+（3）导出  
+根据需求查询转写内容，点击“导出”，按需求选择要导出的文件类型，进行导出转写内容
+例如：  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/50.png" alt=""/><br />
+（4）播放录音  
+勾选转写内容记录（只能勾选一条转写内容记录），然后点击右上角的"播放录音"按钮即可播放此条转写内容对应的录音记录。
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/51.png" alt=""/><br />
+（5）下载录音  
+勾选要下载的转写内容记录（可勾选多条转写内容记录），然后点击“下载录音”选择好路径，即可下载转写内容对应的录音文件。   
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/52.png" alt=""/> <br />
+### 2、敏感词统计
+敏感词统计功能有：查询、导出、打印  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/53.png" alt=""/><br />
+（1）查询  
+敏感词统计查询可以选择要查询的敏感词统计日期：  
+下拉选择敏感词统计日期和根据需求填写查询条件，进行敏感词统计的模糊查询  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/54.png" alt=""/><br />
+（2）导出  
+根据需求查询敏感词统计，点击“导出”，按需求选择要导出的文件类型，进行导出敏感词统计
+例如：
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/55.png" alt=""/><br />
+（3）打印  
+查询后的记录，点击“打印”，设置好打印信息，点击“打印”即可  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/56.png" alt=""/>
+### 3、敏感词设置
+敏感词设置功能有：新增、删除、查询  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/57.png" alt=""/><br />
+（1）新增  
+填写相关信息，设置好保存即可  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/58.png" alt =""/><br />
+（2）删除  
+勾选要删除的敏感词，点击“删除”即可。  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/59.png" alt=""/><br />
+（3）查询  
+查询条件可以是：敏感词名称。  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/60.png" alt=""/>
+### 4、热词设置
+热词设置功能有：新增、删除、查询  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/61.png" alt=""/><br />
+（1）新增  
+填写相关信息，设置好保存即可  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/62.png" alt =""/><br />
+（2）删除  
+勾选要删除的热词，点击“删除”即可。  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/63.png" alt=""/><br />
+（3）查询  
+查询条件可以是：热词名称。  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/64.png" alt=""/>
+
+## 五、组织架构
+组织架构分为部门信息和员工信息两部分。
+### 1、部门信息
+部门信息功能介绍：新增、移动、查询、删除  
+（1）新增部门  
+右键点击“部门信息”可新增部门，新增部门后可继续右键刚刚创建好的部门进行创建子部门  
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/CH/9.png" alt=""/>
+
+<br /><br />
+&emsp;&emsp;&emsp;&emsp;&emsp;填写好新增的部门信息后点击保存或保存并新增即可
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/30.png" alt=""/>
+
+<br /><br />
+&emsp;&emsp;&emsp;&emsp;&emsp;也可以对相应的部门信息进行修改
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/31.png" alt=""/><br /><br />
+
+
+（2）移动部门  
+<span class="red">注：左侧选中想要移动的部门，一次只能移动一个部门</span>  
+点击“移动“，选择要移动到的部门后，点击”保存“即可  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/32.png" alt=""/><br /><br />
+
+（3）查询部门  
+输入想要查询的部门名称，点击查询图标即可  
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/CH/13.png" alt=""/><br /><br />
+
+（4）删除部门  
+勾选想要删除的部门，点击“删除”按钮，再点击“确定”即可  
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/CH/14.png" alt=""/><br /><br />
+
+### 2、员工信息
+员工信息功能介绍：新增、删除、移动、查询、高级查询、导出、打印  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/33.png" alt=""/><br /><br />
+（1）添加员工  
+新增员工信息：组织架构---员工信息---添加  
+举例说明如下：  
+组织架构---员工信息---新增，员工信息按需求填写  
+<span class="red">注意：部门名称不可手动填写，只能再添加好对应部门信息之后才可进行选择</span>  
+填写好点击"保存"或"保存并新增"即可   
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/34.png" alt=""/><br /><br />
+
+（2）删除员工  
+勾选想要删除的员工，点击删除按钮即可  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/35.png" alt=""/><br /><br />
+
+
+（3）移动员工  
+选中想要移动的员工，点击移动按钮选择想要移动到的部门即可  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/36.png" alt=""/><br /><br />
+
+
+（5）查询员工  
+输入想要查询的条件，点击查询即可  
+<img src="/YFBDocument/content/assets/img/userGuide/5.0/CH/46.png" alt=""/><br /><br />
+
+
+（6）高级查询  
+点击高级查询后，填写想要查询的员工的详细信息即可  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/37.png" alt=""/><br /><br />
+
+（7）筛选列
+根据实际需求勾选指定的列名进行筛选显示  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/38.png" alt=""/><br /><br />
+
+（8）导出员工  
+员工导出可选导出文件类型导出即可  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/38.png" alt=""/><br /><br />
+
+（9）打印
+员工信息查询后，点击打印，设置好打印信息，点击打印即可  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/40.png" alt=""/><br /><br />
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/41.png" alt=""/>
+
+## 六、系统设置
+### 1、用户设置
+功能有：新增用户、删除用户信息和查询  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/42.png" alt=""/>
+
+（1）新增用户  
+填写相关信息，勾选管理员相关功能权限，设置好管理的员工信息，设置好保存即可  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/43.png" alt=""/>
+
+<span class="red">注意：管理员用户名不能重复创建；管理员可设置不同数据权限，在话单查询及统计时，仅显示已选员工/话务类型的话单信息。</span>
+
+（2）删除管理员
+勾选要删除的管理员，点击“删除”即可。  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/44.png" alt=""/>
+
+（3）查询  
+查询条件可以是：用户姓名或登录名。  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/45.png" alt=""/>
+
+### 2、区号设置
+选择本地区号，所属地区会自动带出，点击“保存”即可  
+<img src="/YFBDocument/content/assets/img/userGuide/SIP/46.png" alt=""/>

@@ -1,0 +1,35 @@
+# SIP电话录音系统
+
+## 一、安装SIP电话录音程序
+### 1、安装程序
+    (1)双击程序开始安装
+    <img src="/YFBDocument/content/assets/img/softwareInstall/SIP/1.png" alt=""/><br />
+
+    (2)进入数据库类型选择界面，选择所需数据库后点击“下一步”  
+    <span class="red">&emsp;注：若单量不算很大，可选择“MySQL”数据库；若单量较大，建议安装SQL Server数据库（SQL Server数据库需自备）</span>
+    <img src="/YFBDocument/content/assets/img/softwareInstall/SIP/3.png" alt=""/><br />
+
+    (3)默认用户名为：admin，密码：88888，选择好安装路径后，点击“安装”
+    <img src="/YFBDocument/content/assets/img/softwareInstall/SIP/4.png" alt=""/><br />
+
+    (4)在如下弹窗中点击“完成”
+    <img src="/YFBDocument/content/assets/img/softwareInstall/SIP/5.png" alt=""/><br />
+
+    (5)弹出一下弹窗后，即为程序安装成功
+    <img src="/YFBDocument/content/assets/img/softwareInstall/SIP/7.png" alt=""/>
+
+
+### 2、功能授权
+（1）安装成功，程序会自动打开，并弹出“软件授权”页面  
+（2）将“机器授权码”发送给“代理商相关工作人员”后工作人员会将“授权码”发送给客户进行授权  
+（3）授权码填写完毕后，点击“授权”  
+（4）显示“授权成功”后进行重启，即服务端程序安装成功
+<img src="/YFBDocument/content/assets/img/softwareInstall/SIP/8.png" alt=""/>
+
+## 二、SIP电话录音程序配置
+&emsp;打开所安装的“SIP录音管理系统.exe”，并对其进行设置  
+<span class="red">&emsp;注意：在打开之前，右键单机“SIP录音管理系统.exe”选择“属性”---“兼容性”---勾选“以管理员身份运行”，操作如下图：</span>
+<img src="/YFBDocument/content/assets/img/softwareInstall/SIP/9.png" alt=""/><br />
+
+按照下图说明进行配置即可
+<img src="/YFBDocument/content/assets/img/softwareInstall/SIP/10.png" alt=""/>

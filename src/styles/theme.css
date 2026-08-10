@@ -1,0 +1,141 @@
+/**
+ * 软件事业部文档站主题变量
+ */
+
+:root {
+  --ifm-color-primary: #0b6bcb;
+  --ifm-color-primary-dark: #0a60b6;
+  --ifm-color-primary-darker: #095bac;
+  --ifm-color-primary-darkest: #084b8e;
+  --ifm-color-primary-light: #1c7ad6;
+  --ifm-color-primary-lighter: #2a84da;
+  --ifm-color-primary-lightest: #4d9ae2;
+  --ifm-code-font-size: 95%;
+  --ifm-font-family-base: "DM Sans", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+  --docusaurus-highlighted-code-line-bg: rgba(11, 107, 203, 0.08);
+  --doc-hero-bg: linear-gradient(135deg, #061a2e 0%, #0b3d6e 48%, #0b6bcb 100%);
+  --ifm-heading-color: #0f172a;
+  --ifm-font-color-base: #1f2937;
+  --ifm-background-color: #ffffff;
+
+  /* ===== 左上角 Logo：只改下面这几项即可 ===== */
+  --doc-logo-height: 33px;   /* 高度（变大/变小主要改这个） */
+  --doc-logo-width: auto;    /* 宽度，一般保持 auto */
+  --doc-logo-nudge-x: 0px;   /* 左右：正数右移，负数左移，如 4px / -4px */
+  --doc-logo-nudge-y: 0px;   /* 上下：正数下移，负数上移，如 2px / -2px */
+  --doc-logo-gap: 0.15rem;   /* Logo 与右侧「软件事业部」文字的间距 */
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #4da3ff;
+  --ifm-color-primary-dark: #2b91ff;
+  --ifm-color-primary-darker: #1a88ff;
+  --ifm-color-primary-darkest: #006fe6;
+  --ifm-color-primary-light: #6fb4ff;
+  --ifm-color-primary-lighter: #80bdff;
+  --ifm-color-primary-lightest: #a6d0ff;
+  --docusaurus-highlighted-code-line-bg: rgba(77, 163, 255, 0.18);
+}
+
+/* 导航栏左上角图标 */
+.navbar__logo,
+.custom-logo,
+.navbar__brand img {
+  height: var(--doc-logo-height) !important;
+  width: var(--doc-logo-width) !important;
+  margin-right: var(--doc-logo-gap);
+  transform: translate(var(--doc-logo-nudge-x), var(--doc-logo-nudge-y));
+  object-fit: contain;
+}
+
+.navbar {
+  box-shadow: 0 1px 0 rgba(15, 23, 42, 0.06);
+  backdrop-filter: saturate(1.2) blur(8px);
+}
+
+.main-wrapper {
+  background: linear-gradient(180deg, #f8fbff 0%, #ffffff 220px);
+}
+
+.footer__title {
+  letter-spacing: 0.02em;
+}
+
+.no-link {
+  pointer-events: none;
+  cursor: text;
+}
+
+/* ========== PDF / 打印：隐藏站点抬头与无关区域 ========== */
+@page {
+  size: A4;
+  margin: 12mm;
+}
+
+@media print {
+  /* 尽量压缩页边，减少浏览器页眉页脚占位 */
+  html,
+  body {
+    background: #fff !important;
+    color: #111 !important;
+  }
+
+  .navbar,
+  .navbar-sidebar,
+  .theme-doc-sidebar-container,
+  .theme-doc-toc-desktop,
+  .theme-doc-toc-mobile,
+  .pagination-nav,
+  .theme-doc-footer,
+  .theme-doc-breadcrumbs,
+  .breadcrumbs,
+  .footer,
+  .edit-meta-row,
+  [class*='editThisPage'],
+  .theme-doc-footer-edit-meta-row,
+  .word-download-component,
+  .no-print,
+  .theme-doc-sidebar-menu,
+  aside,
+  nav.pagination-nav,
+  .table-of-contents {
+    display: none !important;
+  }
+
+  /* 主内容铺满 */
+  .main-wrapper,
+  .container,
+  .row,
+  .col,
+  article,
+  .theme-doc-markdown,
+  .markdown {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    float: none !important;
+  }
+
+  .theme-doc-markdown {
+    padding: 0 !important;
+  }
+
+  a {
+    color: #0b6bcb !important;
+    text-decoration: none !important;
+  }
+
+  .markdown img {
+    max-width: 100% !important;
+    box-shadow: none !important;
+    break-inside: avoid;
+  }
+
+  h1,
+  h2,
+  h3 {
+    break-after: avoid;
+    color: #111 !important;
+  }
+}

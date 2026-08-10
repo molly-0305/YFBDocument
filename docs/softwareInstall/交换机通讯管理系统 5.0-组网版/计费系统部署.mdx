@@ -1,0 +1,108 @@
+---
+title: 计费系统部署
+sidebar_position: 1
+---
+
+import React from 'react';
+import '../../../src/css/style.css'; // 导入 CSS 文件
+import SimpleWordDownload from '../../../src/components/SimpleWordDownload';
+
+## 一、安装组网计费服务端
+### 1、安装组网计费服务端
+
+（1）左键双击“autorun”应用程序
+<img src={require('@site/static/img/softwareInstall/Networking/5.0/1.png').default} alt=""/>
+
+（2）双击进入系统光盘页面后，点击“安装程序”---服务端
+<img src={require('@site/static/img/softwareInstall/Networking/5.0/2.png').default} alt=""/>
+
+（3）进入数据库类型选择界面，选择所需数据库后点击“下一步”  
+<span class="red">&emsp;&emsp;注：若单量不算很大，可选择“MySQL”数据库；若单量较大，建议安装SQL Server数据库（SQL Server数据库需自备）</span>
+<img src={require('@site/static/img/softwareInstall/Networking/5.0/3.png').default} alt=""/>
+
+
+（4）默认用户名为：admin，密码：88888，选择好安装路径后，点击“安装”。
+<img src={require('@site/static/img/softwareInstall/Networking/5.0/4.png').default} alt=""/>
+
+
+（5）在如下弹窗中点击“完成”
+<img src={require('@site/static/img/softwareInstall/Networking/5.0/5.png').default} alt=""/>
+
+
+（6）弹出以下弹窗后，即为程序安装成功
+<img src={require('@site/static/img/softwareInstall/Networking/5.0/19.png').default} alt=""/>
+
+### 2、功能授权
+
+（1）安装成功，程序会自动打开，并弹出“软件授权”页面  
+（2）将“机器授权码”发送给“代理商相关工作人员”后，工作人员会将“授权码”发送给客户进行授权  
+（3）授权码填写完毕后，点击“授权“  
+（4）显示“授权成功”后进行重启，即服务端程序安装成功。
+<img src={require('@site/static/img/softwareInstall/Networking/5.0/20.png').default} alt=""/>
+
+## 二、安装Web系统
+### 1、安装Web管理系统
+
+（1）左键双击“autorun”应用程序
+<img src={require('@site/static/img/softwareInstall/Networking/5.0/1.png').default} alt=""/>
+
+（2）双击进入系统光盘页面后，点击“安装程序”---管理端
+<img src={require('@site/static/img/softwareInstall/Networking/5.0/6.png').default} alt=""/>
+
+（3）进入数据库类型选择界面，选择所需数据库后点击“下一步”
+<img src={require('@site/static/img/softwareInstall/Networking/5.0/7.png').default} alt=""/>
+
+（4）此界面无需做更改，直接点击“下一步”即可
+<img src={require('@site/static/img/softwareInstall/Networking/5.0/8.png').default} alt=""/>
+
+
+（5）默认用户名为：admin，密码：88888，选择好安装路径后，点击“安装”
+<img src={require('@site/static/img/softwareInstall/Networking/5.0/9.png').default} alt=""/>
+
+
+（6）在如下弹窗中点击“完成”
+<img src={require('@site/static/img/softwareInstall/Networking/5.0/10.png').default} alt=""/>
+
+
+### 2、安装Web查询系统
+
+（1）打开安装文件，左键双击“autorun”应用程序
+<img src={require('@site/static/img/softwareInstall/Networking/5.0/1.png').default} alt=""/>
+
+
+（2）进入系统光盘界面，点击“安装程序”---“Web查询统计”
+<img src={require('@site/static/img/softwareInstall/Networking/5.0/11.png').default} alt=""/>
+
+
+（3）进入数据库类型选择界面，选择所需数据库后点击“下一步”
+<img src={require('@site/static/img/softwareInstall/Networking/5.0/12.png').default} alt=""/>
+
+
+（4）此界面数据库默认信息无需修改，点击下一步  
+&emsp;&emsp;IP地址：127.0.0.1   用户名：root  密码：sa
+<img src={require('@site/static/img/softwareInstall/Networking/5.0/13.png').default} alt=""/>
+
+
+（5）默认用户名为：admin，密码：88888，选择好安装路径后，点击“安装”。
+<img src={require('@site/static/img/softwareInstall/Networking/5.0/14.png').default} alt=""/>
+
+
+（6）安装成功后，点击“完成”即可
+<img src={require('@site/static/img/softwareInstall/Networking/5.0/15.png').default} alt=""/>
+
+
+## 三、交换机配置
+### 1、新增交换机
+
+（1）打开组网计费系统服务端，点击“计费设置”---“交换机设置”
+<img src={require('@site/static/img/softwareInstall/Networking/5.0/16.png').default} alt=""/>
+
+
+（2）点击“新增”，选择相应交换机品牌，根据相应要求填写连接信息（可咨询相应工作人员），填写完成后保存即可
+<img src={require('@site/static/img/softwareInstall/Networking/5.0/17.png').default} alt=""/>
+
+
+（3）保存好后，勾选想要启动的交换机，点击“启动”，查看工作状态是否正常
+<img src={require('@site/static/img/softwareInstall/Networking/5.0/18.png').default} alt=""/>
+
+<SimpleWordDownload />

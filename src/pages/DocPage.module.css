@@ -1,0 +1,119 @@
+.docRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 200px;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.doc {
+  max-width: 820px;
+  min-width: 0;
+}
+
+.crumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.crumb a {
+  color: #0b6bcb;
+  text-decoration: none;
+}
+
+.muted {
+  color: #94a3b8;
+}
+
+.error {
+  color: #b91c1c;
+}
+
+.markdown {
+  /* styles from styles/markdown.css .markdown */
+}
+
+.zoomableImg {
+  cursor: zoom-in;
+  transition: opacity 0.15s ease, box-shadow 0.15s ease;
+}
+
+.zoomableImg:hover {
+  opacity: 0.96;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.12);
+}
+
+.toc {
+  position: sticky;
+  top: 80px;
+  max-height: calc(100vh - 100px);
+  overflow: auto;
+  padding: 0.25rem 0 1rem 0.75rem;
+  border-left: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.tocTitle {
+  margin: 0 0 0.65rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: 0.02em;
+}
+
+.tocList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tocH2,
+.tocH3 {
+  margin: 0;
+}
+
+.tocH3 {
+  padding-left: 0.7rem;
+}
+
+.tocLink,
+.tocActive {
+  display: block;
+  width: 100%;
+  text-align: left;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.82rem;
+  line-height: 1.35;
+  padding: 0.28rem 0.4rem;
+  border-radius: 6px;
+  color: #64748b;
+}
+
+.tocLink:hover {
+  color: #0b6bcb;
+  background: #f1f5f9;
+}
+
+.tocActive {
+  color: #0b6bcb;
+  font-weight: 600;
+  background: #e8f2ff;
+  border-left: 2px solid #0b6bcb;
+  padding-left: calc(0.4rem - 2px);
+}
+
+@media (max-width: 1100px) {
+  .docRow {
+    grid-template-columns: 1fr;
+  }
+
+  .toc {
+    display: none;
+  }
+}

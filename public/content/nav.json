@@ -1,0 +1,1033 @@
+{
+  "base": "/YFBDocument",
+  "sections": [
+    {
+      "id": "softwareInstall",
+      "label": "软件安装",
+      "dir": "softwareInstall",
+      "firstDoc": "softwareInstall/Windows 环境前期准备",
+      "children": [
+        {
+          "type": "doc",
+          "id": "softwareInstall/Windows 环境前期准备",
+          "title": "Windows 环境前期准备",
+          "file": "content/softwareInstall/Windows 环境前期准备.md"
+        },
+        {
+          "type": "doc",
+          "id": "softwareInstall/Windows 环境软件安装",
+          "title": "Windows 环境4.0软件安装",
+          "file": "content/softwareInstall/Windows 环境软件安装.md"
+        },
+        {
+          "type": "category",
+          "id": "softwareInstall/Windows 其他配置",
+          "title": "Windows 其他配置",
+          "children": [
+            {
+              "type": "doc",
+              "id": "softwareInstall/Windows 其他配置/AD集成配置",
+              "title": "AD集成配置",
+              "file": "content/softwareInstall/Windows 其他配置/AD集成配置.md"
+            },
+            {
+              "type": "doc",
+              "id": "softwareInstall/Windows 其他配置/MySQL转SQLServer",
+              "title": "MySQL转SQLServer",
+              "file": "content/softwareInstall/Windows 其他配置/MySQL转SQLServer.md"
+            },
+            {
+              "type": "doc",
+              "id": "softwareInstall/Windows 其他配置/SQL Server备份数据",
+              "title": "SQL Server备份数据",
+              "file": "content/softwareInstall/Windows 其他配置/SQL Server备份数据.md"
+            },
+            {
+              "type": "doc",
+              "id": "softwareInstall/Windows 其他配置/脱机安装程序",
+              "title": ".NET Framework 4.8 脱机安装程序",
+              "file": "content/softwareInstall/Windows 其他配置/脱机安装程序.md"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "id": "softwareInstall/Windows IIS配置",
+          "title": "Windows IIS配置",
+          "children": [
+            {
+              "type": "doc",
+              "id": "softwareInstall/Windows IIS配置/Windows xp",
+              "title": "Windows xp",
+              "file": "content/softwareInstall/Windows IIS配置/Windows xp.md"
+            },
+            {
+              "type": "doc",
+              "id": "softwareInstall/Windows IIS配置/Windows 7",
+              "title": "Windows 7",
+              "file": "content/softwareInstall/Windows IIS配置/Windows 7.md"
+            },
+            {
+              "type": "doc",
+              "id": "softwareInstall/Windows IIS配置/Windows 8",
+              "title": "Windows 8",
+              "file": "content/softwareInstall/Windows IIS配置/Windows 8.md"
+            },
+            {
+              "type": "doc",
+              "id": "softwareInstall/Windows IIS配置/Windows 2003",
+              "title": "Windows 2003",
+              "file": "content/softwareInstall/Windows IIS配置/Windows 2003.md"
+            },
+            {
+              "type": "doc",
+              "id": "softwareInstall/Windows IIS配置/Windows 2008",
+              "title": "Windows 2008",
+              "file": "content/softwareInstall/Windows IIS配置/Windows 2008.md"
+            },
+            {
+              "type": "doc",
+              "id": "softwareInstall/Windows IIS配置/WinServer",
+              "title": "WindowsServer IIS配置",
+              "file": "content/softwareInstall/Windows IIS配置/WinServer.md"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "id": "softwareInstall/Linux 环境前期准备",
+          "title": "Linux 环境前期准备",
+          "file": "content/softwareInstall/Linux 环境前期准备.md"
+        },
+        {
+          "type": "doc",
+          "id": "softwareInstall/Linux 环境软件安装",
+          "title": "Linux 环境软件安装",
+          "file": "content/softwareInstall/Linux 环境软件安装.md"
+        },
+        {
+          "type": "doc",
+          "id": "softwareInstall/Linux Docker 常用命令",
+          "title": "Linux Docker 常用命令",
+          "file": "content/softwareInstall/Linux Docker 常用命令.md"
+        },
+        {
+          "type": "category",
+          "id": "softwareInstall/交换机通讯管理系统 4.0",
+          "title": "交换机通讯管理系统 4.0",
+          "children": [
+            {
+              "type": "category",
+              "id": "softwareInstall/交换机通讯管理系统 4.0/潮流",
+              "title": "潮流",
+              "children": [
+                {
+                  "type": "doc",
+                  "id": "softwareInstall/交换机通讯管理系统 4.0/潮流/计费配置手册",
+                  "title": "计费配置手册",
+                  "file": "content/softwareInstall/交换机通讯管理系统 4.0/潮流/计费配置手册.md"
+                },
+                {
+                  "type": "doc",
+                  "id": "softwareInstall/交换机通讯管理系统 4.0/潮流/酒店版话务台配置手册",
+                  "title": "酒店版话务台配置手册",
+                  "file": "content/softwareInstall/交换机通讯管理系统 4.0/潮流/酒店版话务台配置手册.md"
+                }
+              ]
+            },
+            {
+              "type": "category",
+              "id": "softwareInstall/交换机通讯管理系统 4.0/鼎信通达",
+              "title": "鼎信通达",
+              "children": [
+                {
+                  "type": "doc",
+                  "id": "softwareInstall/交换机通讯管理系统 4.0/鼎信通达/计费配置手册",
+                  "title": "计费配置手册",
+                  "file": "content/softwareInstall/交换机通讯管理系统 4.0/鼎信通达/计费配置手册.md"
+                },
+                {
+                  "type": "doc",
+                  "id": "softwareInstall/交换机通讯管理系统 4.0/鼎信通达/录音配置手册",
+                  "title": "录音配置手册",
+                  "file": "content/softwareInstall/交换机通讯管理系统 4.0/鼎信通达/录音配置手册.md"
+                },
+                {
+                  "type": "doc",
+                  "id": "softwareInstall/交换机通讯管理系统 4.0/鼎信通达/中间件配置手册",
+                  "title": "中间件配置手册",
+                  "file": "content/softwareInstall/交换机通讯管理系统 4.0/鼎信通达/中间件配置手册.md"
+                },
+                {
+                  "type": "doc",
+                  "id": "softwareInstall/交换机通讯管理系统 4.0/鼎信通达/办公版话务台配置手册",
+                  "title": "办公版话务台配置手册",
+                  "file": "content/softwareInstall/交换机通讯管理系统 4.0/鼎信通达/办公版话务台配置手册.md"
+                },
+                {
+                  "type": "doc",
+                  "id": "softwareInstall/交换机通讯管理系统 4.0/鼎信通达/酒店版话务台配置手册",
+                  "title": "酒店版话务台配置手册",
+                  "file": "content/softwareInstall/交换机通讯管理系统 4.0/鼎信通达/酒店版话务台配置手册.md"
+                }
+              ]
+            },
+            {
+              "type": "category",
+              "id": "softwareInstall/交换机通讯管理系统 4.0/华为",
+              "title": "华为",
+              "children": [
+                {
+                  "type": "doc",
+                  "id": "softwareInstall/交换机通讯管理系统 4.0/华为/计费配置手册",
+                  "title": "计费配置手册",
+                  "file": "content/softwareInstall/交换机通讯管理系统 4.0/华为/计费配置手册.md"
+                },
+                {
+                  "type": "doc",
+                  "id": "softwareInstall/交换机通讯管理系统 4.0/华为/录音配置手册",
+                  "title": "录音配置手册",
+                  "file": "content/softwareInstall/交换机通讯管理系统 4.0/华为/录音配置手册.md"
+                },
+                {
+                  "type": "doc",
+                  "id": "softwareInstall/交换机通讯管理系统 4.0/华为/中间件配置手册",
+                  "title": "中间件配置手册",
+                  "file": "content/softwareInstall/交换机通讯管理系统 4.0/华为/中间件配置手册.md"
+                },
+                {
+                  "type": "doc",
+                  "id": "softwareInstall/交换机通讯管理系统 4.0/华为/办公版话务台配置手册",
+                  "title": "办公版话务台配置手册",
+                  "file": "content/softwareInstall/交换机通讯管理系统 4.0/华为/办公版话务台配置手册.md"
+                },
+                {
+                  "type": "doc",
+                  "id": "softwareInstall/交换机通讯管理系统 4.0/华为/酒店版话务台配置手册",
+                  "title": "酒店版话务台配置手册",
+                  "file": "content/softwareInstall/交换机通讯管理系统 4.0/华为/酒店版话务台配置手册.md"
+                },
+                {
+                  "type": "doc",
+                  "id": "softwareInstall/交换机通讯管理系统 4.0/华为/旧话单导入",
+                  "title": "旧话单导入",
+                  "file": "content/softwareInstall/交换机通讯管理系统 4.0/华为/旧话单导入.md"
+                }
+              ]
+            },
+            {
+              "type": "category",
+              "id": "softwareInstall/交换机通讯管理系统 4.0/上海阿尔卡特",
+              "title": "上海阿尔卡特",
+              "children": [
+                {
+                  "type": "doc",
+                  "id": "softwareInstall/交换机通讯管理系统 4.0/上海阿尔卡特/计费配置手册",
+                  "title": "计费配置手册",
+                  "file": "content/softwareInstall/交换机通讯管理系统 4.0/上海阿尔卡特/计费配置手册.md"
+                },
+                {
+                  "type": "doc",
+                  "id": "softwareInstall/交换机通讯管理系统 4.0/上海阿尔卡特/录音配置手册",
+                  "title": "录音配置手册",
+                  "file": "content/softwareInstall/交换机通讯管理系统 4.0/上海阿尔卡特/录音配置手册.md"
+                },
+                {
+                  "type": "doc",
+                  "id": "softwareInstall/交换机通讯管理系统 4.0/上海阿尔卡特/酒店版话务台配置手册",
+                  "title": "酒店版话务台配置手册",
+                  "file": "content/softwareInstall/交换机通讯管理系统 4.0/上海阿尔卡特/酒店版话务台配置手册.md"
+                }
+              ]
+            },
+            {
+              "type": "category",
+              "id": "softwareInstall/交换机通讯管理系统 4.0/星网锐捷",
+              "title": "星网锐捷",
+              "children": [
+                {
+                  "type": "doc",
+                  "id": "softwareInstall/交换机通讯管理系统 4.0/星网锐捷/计费配置手册",
+                  "title": "计费配置手册",
+                  "file": "content/softwareInstall/交换机通讯管理系统 4.0/星网锐捷/计费配置手册.md"
+                },
+                {
+                  "type": "doc",
+                  "id": "softwareInstall/交换机通讯管理系统 4.0/星网锐捷/录音配置手册",
+                  "title": "录音配置手册",
+                  "file": "content/softwareInstall/交换机通讯管理系统 4.0/星网锐捷/录音配置手册.md"
+                },
+                {
+                  "type": "doc",
+                  "id": "softwareInstall/交换机通讯管理系统 4.0/星网锐捷/中间件配置手册",
+                  "title": "中间件配置手册",
+                  "file": "content/softwareInstall/交换机通讯管理系统 4.0/星网锐捷/中间件配置手册.md"
+                },
+                {
+                  "type": "doc",
+                  "id": "softwareInstall/交换机通讯管理系统 4.0/星网锐捷/办公版话务台配置手册",
+                  "title": "办公版话务台配置手册",
+                  "file": "content/softwareInstall/交换机通讯管理系统 4.0/星网锐捷/办公版话务台配置手册.md"
+                }
+              ]
+            },
+            {
+              "type": "category",
+              "id": "softwareInstall/交换机通讯管理系统 4.0/星纵",
+              "title": "星纵",
+              "children": [
+                {
+                  "type": "doc",
+                  "id": "softwareInstall/交换机通讯管理系统 4.0/星纵/计费配置手册",
+                  "title": "计费配置手册",
+                  "file": "content/softwareInstall/交换机通讯管理系统 4.0/星纵/计费配置手册.md"
+                },
+                {
+                  "type": "doc",
+                  "id": "softwareInstall/交换机通讯管理系统 4.0/星纵/中间件配置手册",
+                  "title": "中间件配置手册",
+                  "file": "content/softwareInstall/交换机通讯管理系统 4.0/星纵/中间件配置手册.md"
+                },
+                {
+                  "type": "doc",
+                  "id": "softwareInstall/交换机通讯管理系统 4.0/星纵/办公版话务台配置手册",
+                  "title": "办公版话务台配置手册",
+                  "file": "content/softwareInstall/交换机通讯管理系统 4.0/星纵/办公版话务台配置手册.md"
+                },
+                {
+                  "type": "doc",
+                  "id": "softwareInstall/交换机通讯管理系统 4.0/星纵/酒店版话务台配置手册",
+                  "title": "酒店版话务台配置手册",
+                  "file": "content/softwareInstall/交换机通讯管理系统 4.0/星纵/酒店版话务台配置手册.md"
+                }
+              ]
+            },
+            {
+              "type": "category",
+              "id": "softwareInstall/交换机通讯管理系统 4.0/亿联UME",
+              "title": "亿联UME",
+              "children": [
+                {
+                  "type": "doc",
+                  "id": "softwareInstall/交换机通讯管理系统 4.0/亿联UME/计费配置手册",
+                  "title": "计费配置手册",
+                  "file": "content/softwareInstall/交换机通讯管理系统 4.0/亿联UME/计费配置手册.md"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "id": "softwareInstall/交换机通讯管理系统 5.0-组网版",
+          "title": "交换机通讯管理系统 5.0(组网版)",
+          "children": [
+            {
+              "type": "doc",
+              "id": "softwareInstall/交换机通讯管理系统 5.0-组网版/计费系统部署",
+              "title": "计费系统部署",
+              "file": "content/softwareInstall/交换机通讯管理系统 5.0-组网版/计费系统部署.md"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "id": "softwareInstall/交换机通讯管理系统 6.0-Linux版",
+          "title": "交换机通讯管理系统 6.0(Linux版)",
+          "children": [
+            {
+              "type": "doc",
+              "id": "softwareInstall/交换机通讯管理系统 6.0-Linux版/Docker部署-联网版",
+              "title": "Docker部署(联网版)",
+              "file": "content/softwareInstall/交换机通讯管理系统 6.0-Linux版/Docker部署-联网版.md"
+            },
+            {
+              "type": "doc",
+              "id": "softwareInstall/交换机通讯管理系统 6.0-Linux版/Docker部署-离线版",
+              "title": "Docker部署(离线版)",
+              "file": "content/softwareInstall/交换机通讯管理系统 6.0-Linux版/Docker部署-离线版.md"
+            },
+            {
+              "type": "doc",
+              "id": "softwareInstall/交换机通讯管理系统 6.0-Linux版/计费系统部署-联网版",
+              "title": "计费系统部署(联网版)",
+              "file": "content/softwareInstall/交换机通讯管理系统 6.0-Linux版/计费系统部署-联网版.md"
+            },
+            {
+              "type": "doc",
+              "id": "softwareInstall/交换机通讯管理系统 6.0-Linux版/计费系统部署-离线版",
+              "title": "计费系统部署(离线版)",
+              "file": "content/softwareInstall/交换机通讯管理系统 6.0-Linux版/计费系统部署-离线版.md"
+            },
+            {
+              "type": "doc",
+              "id": "softwareInstall/交换机通讯管理系统 6.0-Linux版/计费-话务台系统部署-联网版",
+              "title": "计费-话务台系统部署(联网版)",
+              "file": "content/softwareInstall/交换机通讯管理系统 6.0-Linux版/计费-话务台系统部署-联网版.md"
+            },
+            {
+              "type": "doc",
+              "id": "softwareInstall/交换机通讯管理系统 6.0-Linux版/计费-话务台系统部署-离线版",
+              "title": "计费-话务台系统部署(离线版)",
+              "file": "content/softwareInstall/交换机通讯管理系统 6.0-Linux版/计费-话务台系统部署-离线版.md"
+            },
+            {
+              "type": "category",
+              "id": "softwareInstall/交换机通讯管理系统 6.0-Linux版/德视伟业",
+              "title": "德视伟业",
+              "children": [
+                {
+                  "type": "doc",
+                  "id": "softwareInstall/交换机通讯管理系统 6.0-Linux版/德视伟业/计费",
+                  "title": "计费",
+                  "file": "content/softwareInstall/交换机通讯管理系统 6.0-Linux版/德视伟业/计费.md"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "id": "softwareInstall/SIP录音管理系统",
+          "title": "SIP 录音管理系统",
+          "children": [
+            {
+              "type": "doc",
+              "id": "softwareInstall/SIP录音管理系统/Windows 环境软件安装",
+              "title": "Windows 环境前期配置",
+              "file": "content/softwareInstall/SIP录音管理系统/Windows 环境软件安装.md"
+            },
+            {
+              "type": "doc",
+              "id": "softwareInstall/SIP录音管理系统/SIP电话录音系统",
+              "title": "SIP电话录音系统",
+              "file": "content/softwareInstall/SIP录音管理系统/SIP电话录音系统.md"
+            },
+            {
+              "type": "doc",
+              "id": "softwareInstall/SIP录音管理系统/SIP电话录音系统O版",
+              "title": "SIP电话录音系统 O版",
+              "file": "content/softwareInstall/SIP录音管理系统/SIP电话录音系统O版.md"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "id": "softwareInstall/物联网AloT通讯平台",
+          "title": "物联网AloT通讯平台",
+          "file": "content/softwareInstall/物联网AloT通讯平台.md"
+        },
+        {
+          "type": "doc",
+          "id": "softwareInstall/智慧屏内容发布系统",
+          "title": "智慧屏内容发布系统",
+          "file": "content/softwareInstall/智慧屏内容发布系统.md"
+        },
+        {
+          "type": "doc",
+          "id": "softwareInstall/智能会议语音识别翻译系统",
+          "title": "智能会议语音识别翻译系统",
+          "file": "content/softwareInstall/智能会议语音识别翻译系统.md"
+        },
+        {
+          "type": "doc",
+          "id": "softwareInstall/电话智能总机系统",
+          "title": "电话智能总机系统",
+          "file": "content/softwareInstall/电话智能总机系统.md"
+        },
+        {
+          "type": "doc",
+          "id": "softwareInstall/电话语音通知系统",
+          "title": "电话语音通知系统",
+          "file": "content/softwareInstall/电话语音通知系统.md"
+        },
+        {
+          "type": "doc",
+          "id": "softwareInstall/电话企业通讯录系统",
+          "title": "电话企业通讯录系统",
+          "file": "content/softwareInstall/电话企业通讯录系统.md"
+        },
+        {
+          "type": "doc",
+          "id": "softwareInstall/融合调度系统-基于华为eSpaceU1900",
+          "title": "融合调度系统(基于华为eSpaceU1900)",
+          "file": "content/softwareInstall/融合调度系统-基于华为eSpaceU1900.md"
+        },
+        {
+          "type": "doc",
+          "id": "softwareInstall/Windows 系统软关机控制",
+          "title": "Windows 系统软关机控制",
+          "file": "content/softwareInstall/Windows 系统软关机控制.md"
+        },
+        {
+          "type": "doc",
+          "id": "softwareInstall/华为eSpaceU1900监控系统-项目定制",
+          "title": "华为eSpaceU1900监控系统(项目定制)",
+          "file": "content/softwareInstall/华为eSpaceU1900监控系统-项目定制.md"
+        },
+        {
+          "type": "doc",
+          "id": "softwareInstall/NECWakeUpCallSystem叫醒查询系统-项目定制",
+          "title": "NECWakeUpCallSystem叫醒查询系统(项目定制)",
+          "file": "content/softwareInstall/NECWakeUpCallSystem叫醒查询系统-项目定制.md"
+        },
+        {
+          "type": "doc",
+          "id": "softwareInstall/AVAYA会议管理系统",
+          "title": "AVAYA会议管理系统",
+          "file": "content/softwareInstall/AVAYA会议管理系统.md"
+        },
+        {
+          "type": "doc",
+          "id": "softwareInstall/会畅中间件-项目定制",
+          "title": "会畅中间件(项目定制)",
+          "file": "content/softwareInstall/会畅中间件-项目定制.md"
+        },
+        {
+          "type": "doc",
+          "id": "softwareInstall/账号认证系统",
+          "title": "账号认证系统",
+          "file": "content/softwareInstall/账号认证系统.md"
+        }
+      ]
+    },
+    {
+      "id": "userGuide",
+      "label": "使用手册",
+      "dir": "userGuide",
+      "firstDoc": "userGuide/交换机通讯管理系统 4.0/Web查询统计平台-完整",
+      "children": [
+        {
+          "type": "category",
+          "id": "userGuide/交换机通讯管理系统 4.0",
+          "title": "交换机通讯管理系统 4.0",
+          "children": [
+            {
+              "type": "doc",
+              "id": "userGuide/交换机通讯管理系统 4.0/Web查询统计平台-完整",
+              "title": "Web查询统计平台-完整",
+              "file": "content/userGuide/交换机通讯管理系统 4.0/Web查询统计平台-完整.md"
+            },
+            {
+              "type": "doc",
+              "id": "userGuide/交换机通讯管理系统 4.0/Web查询统计平台-计费",
+              "title": "Web查询统计平台-计费",
+              "file": "content/userGuide/交换机通讯管理系统 4.0/Web查询统计平台-计费.md"
+            },
+            {
+              "type": "doc",
+              "id": "userGuide/交换机通讯管理系统 4.0/Web查询统计平台-录音",
+              "title": "Web查询统计平台-录音",
+              "file": "content/userGuide/交换机通讯管理系统 4.0/Web查询统计平台-录音.md"
+            },
+            {
+              "type": "doc",
+              "id": "userGuide/交换机通讯管理系统 4.0/Web查询统计平台-中间件",
+              "title": "Web查询统计平台-中间件",
+              "file": "content/userGuide/交换机通讯管理系统 4.0/Web查询统计平台-中间件.md"
+            },
+            {
+              "type": "doc",
+              "id": "userGuide/交换机通讯管理系统 4.0/管理程序-电话计费",
+              "title": "管理程序-电话计费",
+              "file": "content/userGuide/交换机通讯管理系统 4.0/管理程序-电话计费.md"
+            },
+            {
+              "type": "doc",
+              "id": "userGuide/交换机通讯管理系统 4.0/管理程序-电话录音",
+              "title": "管理程序-电话录音",
+              "file": "content/userGuide/交换机通讯管理系统 4.0/管理程序-电话录音.md"
+            },
+            {
+              "type": "doc",
+              "id": "userGuide/交换机通讯管理系统 4.0/管理程序-酒店中间件",
+              "title": "管理程序-酒店中间件",
+              "file": "content/userGuide/交换机通讯管理系统 4.0/管理程序-酒店中间件.md"
+            },
+            {
+              "type": "doc",
+              "id": "userGuide/交换机通讯管理系统 4.0/客户端程序-酒店中间件",
+              "title": "客户端程序-酒店中间件",
+              "file": "content/userGuide/交换机通讯管理系统 4.0/客户端程序-酒店中间件.md"
+            },
+            {
+              "type": "doc",
+              "id": "userGuide/交换机通讯管理系统 4.0/客户端程序-酒店版话务台",
+              "title": "客户端程序-话务台(酒店版)",
+              "file": "content/userGuide/交换机通讯管理系统 4.0/客户端程序-酒店版话务台.md"
+            },
+            {
+              "type": "doc",
+              "id": "userGuide/交换机通讯管理系统 4.0/客户端程序-酒店版话务台标准版",
+              "title": "客户端程序-话务台(酒店标准版)",
+              "file": "content/userGuide/交换机通讯管理系统 4.0/客户端程序-酒店版话务台标准版.md"
+            },
+            {
+              "type": "doc",
+              "id": "userGuide/交换机通讯管理系统 4.0/客户端程序-办公版话务台",
+              "title": "客户端程序-话务台(办公版)",
+              "file": "content/userGuide/交换机通讯管理系统 4.0/客户端程序-办公版话务台.md"
+            },
+            {
+              "type": "doc",
+              "id": "userGuide/交换机通讯管理系统 4.0/客户端程序-办公版话务台标准版",
+              "title": "客户端程序-话务台(办公标准版)",
+              "file": "content/userGuide/交换机通讯管理系统 4.0/客户端程序-办公版话务台标准版.md"
+            },
+            {
+              "type": "doc",
+              "id": "userGuide/交换机通讯管理系统 4.0/客户端程序-办公版话务台星网锐捷",
+              "title": "客户端程序-话务台(星网锐捷办公版)",
+              "file": "content/userGuide/交换机通讯管理系统 4.0/客户端程序-办公版话务台星网锐捷.md"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "id": "userGuide/交换机通讯管理系统 5.0-组网版",
+          "title": "交换机通讯管理系统 5.0(组网版)",
+          "children": [
+            {
+              "type": "doc",
+              "id": "userGuide/交换机通讯管理系统 5.0-组网版/Web查询统计平台",
+              "title": "Web查询统计平台",
+              "file": "content/userGuide/交换机通讯管理系统 5.0-组网版/Web查询统计平台.md"
+            },
+            {
+              "type": "doc",
+              "id": "userGuide/交换机通讯管理系统 5.0-组网版/Web管理平台",
+              "title": "Web管理平台",
+              "file": "content/userGuide/交换机通讯管理系统 5.0-组网版/Web管理平台.md"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "id": "userGuide/交换机通讯管理系统 6.0-Linux版",
+          "title": "交换机通讯管理系统 6.0(Linux版)",
+          "children": [
+            {
+              "type": "doc",
+              "id": "userGuide/交换机通讯管理系统 6.0-Linux版/Web查询统计平台",
+              "title": "Web查询统计平台",
+              "file": "content/userGuide/交换机通讯管理系统 6.0-Linux版/Web查询统计平台.md"
+            },
+            {
+              "type": "doc",
+              "id": "userGuide/交换机通讯管理系统 6.0-Linux版/Web管理平台",
+              "title": "Web管理平台",
+              "file": "content/userGuide/交换机通讯管理系统 6.0-Linux版/Web管理平台.md"
+            },
+            {
+              "type": "doc",
+              "id": "userGuide/交换机通讯管理系统 6.0-Linux版/中间件操作指南",
+              "title": "中间件操作指南",
+              "file": "content/userGuide/交换机通讯管理系统 6.0-Linux版/中间件操作指南.md"
+            },
+            {
+              "type": "doc",
+              "id": "userGuide/交换机通讯管理系统 6.0-Linux版/话务台操作指南-办公版",
+              "title": "话务台操作指南-办公版",
+              "file": "content/userGuide/交换机通讯管理系统 6.0-Linux版/话务台操作指南-办公版.md"
+            },
+            {
+              "type": "doc",
+              "id": "userGuide/交换机通讯管理系统 6.0-Linux版/话务台操作指南-酒店版",
+              "title": "话务台操作指南-酒店版",
+              "file": "content/userGuide/交换机通讯管理系统 6.0-Linux版/话务台操作指南-酒店版.md"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "id": "userGuide/交换机通讯管理系统 4.0 EN",
+          "title": "Switch Communication Management System 4.0",
+          "children": [
+            {
+              "type": "doc",
+              "id": "userGuide/交换机通讯管理系统 4.0 EN/Web查询统计平台",
+              "title": "Web Query Statistics Platform",
+              "file": "content/userGuide/交换机通讯管理系统 4.0 EN/Web查询统计平台.md"
+            },
+            {
+              "type": "doc",
+              "id": "userGuide/交换机通讯管理系统 4.0 EN/客户端程序-酒店中间件",
+              "title": "客户端程序-酒店中间件",
+              "file": "content/userGuide/交换机通讯管理系统 4.0 EN/客户端程序-酒店中间件.md"
+            },
+            {
+              "type": "doc",
+              "id": "userGuide/交换机通讯管理系统 4.0 EN/客户端程序-办公版话务台标准版",
+              "title": "客户端程序-话务台(办公标准版)",
+              "file": "content/userGuide/交换机通讯管理系统 4.0 EN/客户端程序-办公版话务台标准版.md"
+            },
+            {
+              "type": "doc",
+              "id": "userGuide/交换机通讯管理系统 4.0 EN/客户端程序-酒店版话务台标准版",
+              "title": "客户端程序-话务台(酒店标准版)",
+              "file": "content/userGuide/交换机通讯管理系统 4.0 EN/客户端程序-酒店版话务台标准版.md"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "id": "userGuide/交换机通讯管理系统 5.0-组网版 EN",
+          "title": "Switch Communication Management System 5.0",
+          "children": [
+            {
+              "type": "doc",
+              "id": "userGuide/交换机通讯管理系统 5.0-组网版 EN/Web查询统计平台",
+              "title": "Web Query Statistics Platform",
+              "file": "content/userGuide/交换机通讯管理系统 5.0-组网版 EN/Web查询统计平台.md"
+            },
+            {
+              "type": "doc",
+              "id": "userGuide/交换机通讯管理系统 5.0-组网版 EN/Web管理平台",
+              "title": "Web management platform",
+              "file": "content/userGuide/交换机通讯管理系统 5.0-组网版 EN/Web管理平台.md"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "id": "userGuide/交换机通讯管理系统 6.0-Linux版 EN",
+          "title": "Switch Communication Management System 6.0",
+          "children": [
+            {
+              "type": "doc",
+              "id": "userGuide/交换机通讯管理系统 6.0-Linux版 EN/Web查询统计平台",
+              "title": "Web查询统计平台",
+              "file": "content/userGuide/交换机通讯管理系统 6.0-Linux版 EN/Web查询统计平台.md"
+            },
+            {
+              "type": "doc",
+              "id": "userGuide/交换机通讯管理系统 6.0-Linux版 EN/Web管理平台",
+              "title": "Web管理平台",
+              "file": "content/userGuide/交换机通讯管理系统 6.0-Linux版 EN/Web管理平台.md"
+            },
+            {
+              "type": "doc",
+              "id": "userGuide/交换机通讯管理系统 6.0-Linux版 EN/中间件操作指南",
+              "title": "中间件操作指南",
+              "file": "content/userGuide/交换机通讯管理系统 6.0-Linux版 EN/中间件操作指南.md"
+            },
+            {
+              "type": "doc",
+              "id": "userGuide/交换机通讯管理系统 6.0-Linux版 EN/话务台操作指南-办公版",
+              "title": "话务台操作指南-办公版",
+              "file": "content/userGuide/交换机通讯管理系统 6.0-Linux版 EN/话务台操作指南-办公版.md"
+            },
+            {
+              "type": "doc",
+              "id": "userGuide/交换机通讯管理系统 6.0-Linux版 EN/话务台操作指南-酒店版",
+              "title": "话务台操作指南-酒店版",
+              "file": "content/userGuide/交换机通讯管理系统 6.0-Linux版 EN/话务台操作指南-酒店版.md"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "id": "userGuide/SIP录音管理系统",
+          "title": "SIP录音管理系统",
+          "file": "content/userGuide/SIP录音管理系统.md"
+        }
+      ]
+    },
+    {
+      "id": "knowledgeBase",
+      "label": "知识库",
+      "dir": "knowledgeBase",
+      "firstDoc": "knowledgeBase/Web端排错/IIS安装失败原因",
+      "children": [
+        {
+          "type": "category",
+          "id": "knowledgeBase/Web端排错",
+          "title": "Web排错",
+          "children": [
+            {
+              "type": "doc",
+              "id": "knowledgeBase/Web端排错/IIS安装失败原因",
+              "title": "IIS安装失败原因",
+              "file": "content/knowledgeBase/Web端排错/IIS安装失败原因.md"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "id": "knowledgeBase/BS端排错",
+          "title": "BS排错",
+          "children": [
+            {
+              "type": "doc",
+              "id": "knowledgeBase/BS端排错/业务预警邮件无法发送问题",
+              "title": "业务预警邮件无法发送问题",
+              "file": "content/knowledgeBase/BS端排错/业务预警邮件无法发送问题.md"
+            },
+            {
+              "type": "doc",
+              "id": "knowledgeBase/BS端排错/日志时间格式解析错误问题",
+              "title": "日志时间格式解析错误问题",
+              "file": "content/knowledgeBase/BS端排错/日志时间格式解析错误问题.md"
+            },
+            {
+              "type": "doc",
+              "id": "knowledgeBase/BS端排错/计费话单无法找到",
+              "title": "计费话单无法找到",
+              "file": "content/knowledgeBase/BS端排错/计费话单无法找到.md"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "id": "knowledgeBase/CS端排错",
+          "title": "CS排错",
+          "children": [
+            {
+              "type": "doc",
+              "id": "knowledgeBase/CS端排错/计费Config说明",
+              "title": "计费Config说明",
+              "file": "content/knowledgeBase/CS端排错/计费Config说明.md"
+            },
+            {
+              "type": "doc",
+              "id": "knowledgeBase/CS端排错/区域格式导致安装CS端报错",
+              "title": "CS端安装报错",
+              "file": "content/knowledgeBase/CS端排错/区域格式导致安装CS端报错.md"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "id": "knowledgeBase/技术文件",
+          "title": "技术文件",
+          "children": [
+            {
+              "type": "doc",
+              "id": "knowledgeBase/技术文件/对接酒馆配置",
+              "title": "优软酒店通讯中间件与酒管系统接口通讯说明",
+              "file": "content/knowledgeBase/技术文件/对接酒馆配置.md"
+            },
+            {
+              "type": "doc",
+              "id": "knowledgeBase/技术文件/华为Telnet命令",
+              "title": "华为计费开通Telnet命令",
+              "file": "content/knowledgeBase/技术文件/华为Telnet命令.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "update",
+      "label": "更新",
+      "dir": "update",
+      "firstDoc": "update/交换机通讯管理系统4.0/查询端/黄河税务局需求版本",
+      "children": [
+        {
+          "type": "category",
+          "id": "update/交换机通讯管理系统4.0",
+          "title": "交换机通讯管理系统4.0",
+          "children": [
+            {
+              "type": "category",
+              "id": "update/交换机通讯管理系统4.0/查询端",
+              "title": "查询端",
+              "children": [
+                {
+                  "type": "doc",
+                  "id": "update/交换机通讯管理系统4.0/查询端/黄河税务局需求版本",
+                  "title": "黄河税务局需求版本",
+                  "file": "content/update/交换机通讯管理系统4.0/查询端/黄河税务局需求版本.md"
+                },
+                {
+                  "type": "doc",
+                  "id": "update/交换机通讯管理系统4.0/查询端/分类账单汇总功能",
+                  "title": "分类账单汇总功能",
+                  "file": "content/update/交换机通讯管理系统4.0/查询端/分类账单汇总功能.md"
+                },
+                {
+                  "type": "doc",
+                  "id": "update/交换机通讯管理系统4.0/查询端/部门账单分部门查询",
+                  "title": "部门账单分部门查询",
+                  "file": "content/update/交换机通讯管理系统4.0/查询端/部门账单分部门查询.md"
+                },
+                {
+                  "type": "doc",
+                  "id": "update/交换机通讯管理系统4.0/查询端/员工月度账单速度优化",
+                  "title": "员工月度账单速度优化",
+                  "file": "content/update/交换机通讯管理系统4.0/查询端/员工月度账单速度优化.md"
+                }
+              ]
+            },
+            {
+              "type": "category",
+              "id": "update/交换机通讯管理系统4.0/话务台",
+              "title": "话务台",
+              "children": [
+                {
+                  "type": "category",
+                  "id": "update/交换机通讯管理系统4.0/话务台/酒店版",
+                  "title": "酒店版",
+                  "children": [
+                    {
+                      "type": "doc",
+                      "id": "update/交换机通讯管理系统4.0/话务台/酒店版/20251013-酒店版话务台叫醒更新",
+                      "title": "20251013-酒店版话务台叫醒更新",
+                      "file": "content/update/交换机通讯管理系统4.0/话务台/酒店版/20251013-酒店版话务台叫醒更新.md"
+                    },
+                    {
+                      "type": "doc",
+                      "id": "update/交换机通讯管理系统4.0/话务台/酒店版/20251118-星纵P系列酒店版话务台",
+                      "title": "2025111802-星纵P系列酒店版话务台",
+                      "file": "content/update/交换机通讯管理系统4.0/话务台/酒店版/20251118-星纵P系列酒店版话务台.md"
+                    },
+                    {
+                      "type": "doc",
+                      "id": "update/交换机通讯管理系统4.0/话务台/酒店版/20251210-酒店版话务台请求OM更新",
+                      "title": "20251210-酒店版话务台请求OM更新",
+                      "file": "content/update/交换机通讯管理系统4.0/话务台/酒店版/20251210-酒店版话务台请求OM更新.md"
+                    }
+                  ]
+                },
+                {
+                  "type": "category",
+                  "id": "update/交换机通讯管理系统4.0/话务台/中间件",
+                  "title": "中间件",
+                  "children": [
+                    {
+                      "type": "doc",
+                      "id": "update/交换机通讯管理系统4.0/话务台/中间件/20251011-中间件叫醒反馈颜色修改",
+                      "title": "20251011-中间件叫醒反馈颜色修改",
+                      "file": "content/update/交换机通讯管理系统4.0/话务台/中间件/20251011-中间件叫醒反馈颜色修改.md"
+                    },
+                    {
+                      "type": "doc",
+                      "id": "update/交换机通讯管理系统4.0/话务台/中间件/20251013-中间件叫醒是被弹屏改为叫醒未接",
+                      "title": "20251013-叫醒失败弹屏改成叫醒未接",
+                      "file": "content/update/交换机通讯管理系统4.0/话务台/中间件/20251013-中间件叫醒是被弹屏改为叫醒未接.md"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "category",
+              "id": "update/交换机通讯管理系统4.0/计费",
+              "title": "计费",
+              "children": [
+                {
+                  "type": "doc",
+                  "id": "update/交换机通讯管理系统4.0/计费/20251011-叫醒次数回馈更新",
+                  "title": "20251011-叫醒次数回馈更新",
+                  "file": "content/update/交换机通讯管理系统4.0/计费/20251011-叫醒次数回馈更新.md"
+                },
+                {
+                  "type": "doc",
+                  "id": "update/交换机通讯管理系统4.0/计费/20251118-更新叫醒时长",
+                  "title": "20251118-更新叫醒时长",
+                  "file": "content/update/交换机通讯管理系统4.0/计费/20251118-更新叫醒时长.md"
+                },
+                {
+                  "type": "doc",
+                  "id": "update/交换机通讯管理系统4.0/计费/潮流酒店话务台免打扰功能",
+                  "title": "潮流酒店话务台免打扰功能",
+                  "file": "content/update/交换机通讯管理系统4.0/计费/潮流酒店话务台免打扰功能.md"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "id": "update/交换机通讯管理系统6.0",
+          "title": "交换机通讯管理系统6.0",
+          "children": [
+            {
+              "type": "doc",
+              "id": "update/交换机通讯管理系统6.0/登录页面更新",
+              "title": "登录页面更新",
+              "file": "content/update/交换机通讯管理系统6.0/登录页面更新.md"
+            },
+            {
+              "type": "doc",
+              "id": "update/交换机通讯管理系统6.0/德视伟业计费程序和sql脚本更新",
+              "title": "德视伟业计费程序和sql脚本更新",
+              "file": "content/update/交换机通讯管理系统6.0/德视伟业计费程序和sql脚本更新.md"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "id": "update/SIP录音",
+          "title": "SIP录音",
+          "children": [
+            {
+              "type": "doc",
+              "id": "update/SIP录音/20251031-删除录音加接口",
+              "title": "20251031-删除录音加接口",
+              "file": "content/update/SIP录音/20251031-删除录音加接口.md"
+            },
+            {
+              "type": "doc",
+              "id": "update/SIP录音/20251103-config加了Blacklist",
+              "title": "20251103-config加了Blacklist",
+              "file": "content/update/SIP录音/20251103-config加了Blacklist.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "technicalsupport",
+      "label": "技术支持",
+      "dir": "technicalsupport",
+      "firstDoc": "technicalsupport/案例配置/潮流-清徐东湖国际酒店",
+      "children": [
+        {
+          "type": "category",
+          "id": "technicalsupport/案例配置",
+          "title": "案例配置",
+          "children": [
+            {
+              "type": "doc",
+              "id": "technicalsupport/案例配置/潮流-清徐东湖国际酒店",
+              "title": "潮流-清徐东湖国际酒店",
+              "file": "content/technicalsupport/案例配置/潮流-清徐东湖国际酒店.md"
+            },
+            {
+              "type": "doc",
+              "id": "technicalsupport/案例配置/西门子-计费&酒店管理中间件",
+              "title": "西门子-计费&酒店管理中间件",
+              "file": "content/technicalsupport/案例配置/西门子-计费&酒店管理中间件.md"
+            },
+            {
+              "type": "doc",
+              "id": "technicalsupport/案例配置/波司登亿联计费案例",
+              "title": "波司登亿联计费案例",
+              "file": "content/technicalsupport/案例配置/波司登亿联计费案例.md"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "id": "technicalsupport/远程客户信息",
+          "title": "远程客户信息",
+          "children": [
+            {
+              "type": "doc",
+              "id": "technicalsupport/远程客户信息/统信Linux组网版计费&话务台",
+              "title": "统信Linux组网版计费&话务台",
+              "file": "content/technicalsupport/远程客户信息/统信Linux组网版计费&话务台.md"
+            },
+            {
+              "type": "doc",
+              "id": "technicalsupport/远程客户信息/西门子-计费&酒店管理中间件",
+              "title": "西门子-计费&酒店管理中间件",
+              "file": "content/technicalsupport/远程客户信息/西门子-计费&酒店管理中间件.md"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

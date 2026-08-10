@@ -1,0 +1,82 @@
+---
+title: Docker部署(联网版)
+sidebar_position: 1
+---
+
+import React from 'react';
+import '../../../src/css/style.css'; // 导入 CSS 文件
+import SimpleWordDownload from '../../../src/components/SimpleWordDownload';
+
+## 一、Docker安装
+<span class="red" style={{fontSize: '22px'}}>建议安装Docker时，系统处于联网状态，这样会更加方便快捷</span>
+### 1、输入命令安装Docker
+  curl -fsSL ht&#8203;tps://get.docker.com | sudo sh
+```
+curl -fsSL https://get.docker.com | sudo sh
+```
+
+### 2、检查Docker是否安装成功
+  docker --version
+```
+docker --version
+```
+
+### 3、启动Docker服务
+（1）创建docker用户组  
+  sudo groupadd docker
+```
+sudo groupadd docker
+```
+
+（2）将当前用户加入docker组  
+  sudo usermod -aG docker $USER
+```
+sudo usermod -aG docker $USER
+```
+
+
+（3）验证组是否存在  
+  getent group docker
+```
+getent group docker
+```
+
+（4）设置开机自启动  
+  sudo systemctl enable docker
+```
+sudo systemctl enable docker
+```
+
+
+（5）启动Docker  
+  sudo systemctl start docker
+```
+sudo systemctl start docker
+```
+
+
+<span class="red" style={{fontSize: '22px'}}>注：如上步骤结束后，证明Docker安装成功，进行第二部安装Docker—Compose</span>
+
+
+## 二、Docker-Compose安装
+### 1、命令安装
+  curl -L ht&#8203;tps://github.com/docker/compose/releases/download/1.23.1/docker-compose-`uname -s\`-\`uname -m` > /usr/local/bin/docker-compose
+```
+curl -L https://github.com/docker/compose/releases/download/1.23.1/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+```
+
+### 2、赋予执行权限
+sudo chmod +x /usr/local/bin/docker-compose
+```
+sudo chmod +x /usr/local/bin/docker-compose
+```
+
+### 3、验证安装
+docker-compose --version
+```
+docker-compose --version
+```
+
+<span class="red" style={{fontSize:"22px"}}>注：如上步骤结束后，Docker部署步骤完成</span>
+
+<SimpleWordDownload />

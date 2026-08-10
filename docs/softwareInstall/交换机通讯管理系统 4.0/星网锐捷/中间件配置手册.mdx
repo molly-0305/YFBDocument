@@ -1,0 +1,176 @@
+---
+title: 中间件配置手册
+sidebar_position: 3
+---
+
+import React from 'react';
+import '../../../../src/css/style.css'; // 导入 CSS 文件
+import SimpleWordDownload from '../../../../src/components/SimpleWordDownload';
+
+## 一、IPPBX配置
+### 1、新增HTTP API的连接账号
+参数配置---HTTP API配置  
+点击添加客户端，新增HTTP API的连接账号
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/3/1.png').default} alt=""/>
+
+### 2、添加API的访问控制
+（1）系统管理---访问控制，添加API的访问控制，如下图
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/3/2.png').default} alt=""/>
+<br />
+
+
+（2）协议选择TCP，端口8180，在白名单里填写当前网段/子网掩码255.255.255.0，点击提交
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/3/3.png').default} alt=""/>
+<br />
+
+（3）配置完成后在“系统管理”---“系统重启”中执行重启
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/3/4.png').default} alt=""/>
+
+
+### 3、上传语音文件
+上传叫醒语音文件  
+在IPPBX中，点击参数设置---语音文件  
+使用类型选择闹钟，语言可以选择中文或英文  
+选择文件，点击上传
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/3/5.png').default} alt=""/>
+
+
+### 4、勾选分机闹钟
+点击“分机列表”--- 选择“分机”--- 批量修改分机  
+将“闹钟”勾上并保存
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/3/6.png').default} alt=""/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/3/7.png').default} alt=""/>
+
+
+## 一、IPPBX配置
+&emsp;打开“中间件基础管理系统”所安装的“BillCommon”，并对其进行设置  
+&emsp;<span class="red">注意：在打开之前，右键单机“BillCommon”选择“属性”---“兼容性”---勾选“以管理员身份运行”，操作如下图：</span>
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/3/8.png').default} alt=""/>
+
+
+### 1、服务器设置
+本机信息-IP地址，例如：192.168.6.27（是安装软件的服务器IP地址）  
+<span class="red">注：此IP地址要与IPPBX地址互联互通</span>  
+数据库信息-IP地址：localhost，测试连接---成功---保存
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/3/9.png').default} alt="" style={{maxWidth: "50%"}}/>
+<br />
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/3/10.png').default} alt="" style={{maxWidth: "40%"}} />
+
+
+### 2、配重登录页面
+(1) 用户名：admin，密码：88888  
+选上记住密码和自动登录，点击登录
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/3/11.png').default} alt="" style={{maxWidth: "50%"}}/>
+<br />
+
+
+(2) 下图为管理端首页面
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/3/12.png').default} alt=""/>
+
+### 3、CDR连接
+交换机品牌：<span class="red">星网锐捷</span>  
+交换机型号：<span class="red">SU系列-API</span>  
+通讯方式：<span class="red">TCP Server</span>  
+地址：<span class="red">服务器IP地址</span>  
+端口号：<span class="red">9999</span>
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/3/13.png').default} alt="" style={{maxWidth: "70%"}}/>
+<br />
+
+
+点击API通讯连接  
+IP地址：<span class="red">填写星网IPPBX地址</span>  
+端口号：<span class="red">8180</span>  
+用户名和密码：<span class="red">PBX中，参数配置>HTTP API配置中的用户名和密码，一致即可</span>  
+点击保存
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/3/14.png').default} alt="" style={{maxWidth: "50%"}}/>
+<br />
+
+
+点击保存，启动CDR
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/3/15.png').default} alt="" style={{maxWidth: "50%"}}/>
+
+
+### 4、PMSI连接
+交换机品牌：<span class="red">星网锐捷</span>  
+交换机型号：<span class="red">SU系列-API</span>  
+IP地址：<span class="red">星网IPPBX地址</span>  
+端口号：<span class="red">8180</span>  
+用户名和密码：<span class="red">PBX中，参数配置---HTTP API配置中的用户名和密码，一致即可</span>
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/3/16.png').default} alt="" style={{maxWidth: "70%"}}/>
+
+
+### 5、接口参数
+
+（1）叫醒  
+语音号码：<span class="red">77与PBX一致</span>  
+在PBX中查看叫醒语音号码  
+参数配置---业务设置---闹钟显示号码
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/3/17.png').default} alt=""/>
+<br />
+
+（2）房态迷你吧  
+语音号码：<span class="red">6666</span>
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/3/18.png').default} alt=""/>
+<br />
+
+
+（3）叫醒测试  
+&emsp;在PBX---分机管理---分机列表中选中需要叫醒的话机，并按照规定填写叫醒时间，下拉点击提交即可，若在设置的规定时限，话机叫醒电话来电，即测试成功。<br />
+&emsp;举例图下图所示：
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/3/19.png').default} alt=""/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/3/20.png').default} alt=""/>
+
+### 6、房态迷你吧测试
+
+先用TCP/IP工具模拟酒管系统接收  
+（1）酒管通讯设置：按照下图设置  
+&emsp;目标IP地址为第三方酒管IP地址  
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/3/21.png').default} alt=""/>
+<br />
+
+（2）TCP测试工具设置  
+&emsp;1）创建连接
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/3/22.png').default} alt=""/>
+<br />
+
+
+2）核对无误后，点击连接
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/3/23.png').default} alt=""/>
+<br />
+
+（3）房态迷你吧测试  
+&emsp;在话机按键步骤可在网关接口参数---房态迷你吧模块中的流程中查看（如下图所示）  
+&emsp;<strong>员工编号密码设置：</strong>  
+&emsp;在系统参数---管理员信息里进行添加  
+&emsp;员工编号及员工密码设置：  
+&emsp;在系统参数---管理员信息中进行设置
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/3/24.png').default} alt=""/>
+<br />
+
+<span class="red">
+注：用户名、密码设置要求必须为1位  
+如下图所示
+</span>
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/3/25.png').default} alt="" style={{maxWidth: "60%"}}/>
+<br />
+
+<strong>房态：</strong>  
+房态测试：话务台拨打房态迷你吧中所设置的语音号码，拨打成功后，根据话务员提示，根据相关信息进行输入  
+例如：6666  
+接收区显示此数据（如下图）即为连接成功
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/3/26.png').default} alt=""/>
+<br />
+
+<strong>迷你吧：</strong>  
+迷你吧测试：话务台拨打房态迷你吧中所设置的语音号码，拨打成功后，根据话务员提示，根据相关信息进行输入  
+例如：6666  
+接收区显示此数据（如下图）即为连接成功
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/3/27.png').default} alt=""/>
+
+### 7、业务参数
+叫醒设置，设置叫醒次数和间隔时间，点击保存，如果默认不修改也需要点击一下保存
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/3/28.png').default} alt=""/>
+
+
+
+<SimpleWordDownload />
